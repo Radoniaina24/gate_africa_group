@@ -1,4 +1,3 @@
-import ContactSection from "@/component/Contact/Contact";
 import Emedia from "@/component/EMEDIA";
 import ProgramsSection from "@/component/EMEDIA/Program";
 import Header from "@/component/Header/Header";
@@ -13,7 +12,6 @@ export default function Home() {
       <UST />
       <Emedia />
       <ProgramsSection />
-      {/* <ContactSection /> */}
     </>
   );
 }

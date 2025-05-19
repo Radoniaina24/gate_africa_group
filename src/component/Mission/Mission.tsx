@@ -74,7 +74,7 @@ export default function Mission() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {missionItems.map((item, index) => {
             // Couleurs spécifiques pour chaque mission
-            let bgColor = "bg-white";
+            const bgColor = "bg-white";
             let accentColor = "bg-red-50";
             let iconColor = "text-red-600";
 

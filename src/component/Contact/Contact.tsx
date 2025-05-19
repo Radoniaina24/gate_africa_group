@@ -197,7 +197,7 @@ const ContactSection = () => {
               transition={{ duration: 0.8 }}
               className="text-gray-600 mt-4"
             >
-              1234, Rue de l'Innovation, Dakar, Sénégal
+              1234, Rue de l&apos;Innovation, Dakar, Sénégal
             </motion.p>
           </div>
         </div>

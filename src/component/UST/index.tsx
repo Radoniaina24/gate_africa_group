@@ -73,8 +73,8 @@ export default function UST() {
             Université des Sciences et Technologies
           </motion.h3>
           <p className="text-gray-600 mt-2">
-            Explorez nos programmes d'excellence en sciences, technologie et
-            innovation.
+            Explorez nos programmes d&apos;excellence en sciences, technologie
+            et innovation.
           </p>
           <a
             href="https://ust-io.com"

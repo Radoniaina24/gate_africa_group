@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Navbar from "./Navbar";
 import Hero from "../Hero/Hero";
 export default function Header() {

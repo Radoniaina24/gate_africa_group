@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { BookOpenCheck, Code, Laptop, Mic, Database } from "lucide-react";
+import { Code, Laptop, Mic, Database } from "lucide-react";
 import React, { JSX } from "react";
 
 interface ProgramCardProps {

@@ -9,7 +9,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.3 }}
         className="text-white text-4xl md:text-6xl font-extrabold max-w-3xl drop-shadow-xl"
       >
-        Transformer l'Afrique grâce à l'innovation
+        Transformer l&apos;Afrique grâce à l&apos;innovation
       </motion.h1>
 
       <motion.p
@@ -19,7 +19,7 @@ export default function Hero() {
         className="text-gray-200 text-lg md:text-xl mt-4 max-w-2xl drop-shadow-md"
       >
         Notre mission est de catalyser le changement positif à travers la
-        technologie et l'entrepreneuriat.
+        technologie et l&apos;entrepreneuriat.
       </motion.p>
 
       <motion.div
