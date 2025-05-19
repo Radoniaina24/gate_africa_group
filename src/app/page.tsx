@@ -1,16 +1,14 @@
-import Emedia from "@/component/EMEDIA";
 import ProgramsSection from "@/component/EMEDIA/Program";
 import Header from "@/component/Header/Header";
 import Mission from "@/component/Mission/Mission";
-import UST from "@/component/UST";
+import Tabs from "@/component/Tabs/Tabs";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Mission />
-      <UST />
-      <Emedia />
+      <Tabs />
       <ProgramsSection />
     </>
   );
