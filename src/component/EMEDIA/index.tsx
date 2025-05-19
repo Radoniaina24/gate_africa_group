@@ -33,72 +33,87 @@ const emediaPrograms = [
 
 export default function Emedia() {
   return (
-    <section
-      id="emedia"
-      className="relative py-20 px-6 md:px-20 bg-gradient-to-br from-blue-50 via-white to-slate-100"
-    >
-      {/* Texture de fond subtile */}
+    <section className="relative w-full">
+      <div className="absolute top-0 left-0 w-full z-10 -mt-2">
+        <svg
+          className="w-full h-14 md:h-32"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#ffffff"
+            d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,234.7C672,245,768,235,864,202.7C960,171,1056,117,1152,112C1248,107,1344,149,1392,170.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          />
+        </svg>
+      </div>
+
+      {/* Contenu principal avec fond */}
       <div
-        className="absolute inset-0 opacity-10 pointer-events-none"
+        id="emedia"
+        className="relative bg-cover bg-center bg-no-repeat text-white py-20 px-6 md:px-20"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 40%, #3b82f6 0%, transparent 20%), radial-gradient(circle at 80% 70%, #60a5fa 0%, transparent 25%)",
+            "url('https://res.cloudinary.com/dx3xhdaym/image/upload/v1735890221/IMG_2423_jxympk.jpg')",
         }}
-      ></div>
+      >
+        {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/60 z-0" />
 
-      <div className="relative max-w-7xl mx-auto text-center z-10">
-        {/* Carte principale */}
-        <motion.div
-          whileHover={{ rotateY: 10, rotateX: 5 }}
-          transition={{ type: "spring", stiffness: 300 }}
-          className="bg-white p-10 rounded-2xl shadow-2xl inline-block"
-        >
-          <motion.img
-            src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747222338/logoEmedia_ookb0v.jpg"
-            alt="Logo E-Media"
-            className="h-28 mx-auto mb-6 animate-pulse"
-          />
-          <motion.h3
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-3xl font-bold text-blue-600"
+        {/* Contenu texte */}
+        <div className="relative max-w-7xl mx-auto text-center z-10">
+          <motion.div
+            whileHover={{ rotateY: 10, rotateX: 5 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="bg-transparent p-10 rounded-2xl inline-block"
           >
-            E-Media - École du Cinéma et Audiovisuel
-          </motion.h3>
-          <p className="text-gray-600 mt-2 max-w-xl mx-auto">
-            Formations en cinéma, réalisation, montage et production
-            audiovisuelle.
-          </p>
-          <a
-            href="https://e-mediauniversity.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-blue-600 text-white mt-6 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition shadow-lg"
-          >
-            Explorer E-Media <ExternalLink className="w-4 h-4 ml-2" />
-          </a>
-        </motion.div>
-
-        {/* Programmes E-Media */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {emediaPrograms.map((program, index) => (
-            <motion.div
-              key={index}
+            <motion.img
+              src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747652836/logoEmedia-removebg-preview_1_tfhj7p.png"
+              alt="Logo E-Media"
+              className="h-28 mx-auto mb-6 animate-pulse"
+            />
+            <motion.h3
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: program.delay }}
+              transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-white p-6 rounded-xl shadow-md text-center"
+              className="text-3xl font-bold text-blue-500"
             >
-              {program.icon}
-              <h4 className="text-xl font-bold text-gray-800 mb-1">
-                {program.title}
-              </h4>
-              <p className="text-gray-600">{program.description}</p>
-            </motion.div>
-          ))}
+              E-Media - École du Cinéma et Audiovisuel
+            </motion.h3>
+            <p className="text-white mt-2 max-w-xl mx-auto">
+              Formations en cinéma, réalisation, montage et production
+              audiovisuelle.
+            </p>
+            <a
+              href="https://e-mediauniversity.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-blue-600 text-white mt-6 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition shadow-lg"
+            >
+              Explorer E-Media <ExternalLink className="w-4 h-4 ml-2" />
+            </a>
+          </motion.div>
+
+          {/* Programmes */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {emediaPrograms.map((program, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: program.delay }}
+                viewport={{ once: true }}
+                className="bg-transparent p-6 rounded-xl shadow-md text-center"
+              >
+                {program.icon}
+                <h4 className="text-xl font-bold text-white mb-1">
+                  {program.title}
+                </h4>
+                <p className="text-white">{program.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
