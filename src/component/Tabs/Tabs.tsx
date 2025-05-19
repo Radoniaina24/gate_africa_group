@@ -1,15 +1,15 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Emedia from "../EMEDIA";
 import UST from "../UST";
 import { FaGraduationCap } from "react-icons/fa";
+import AELI from "../AELI";
 
 const tabs = [
   { label: "Université E-media", component: <Emedia /> },
   { label: " Université UST", component: <UST /> },
-  { label: " Université AELI", component: <UST /> },
+  { label: " Université AELI", component: <AELI /> },
   //   { label: "GATE OF AFRICA Magazine", component: <UST /> },
 ];
 

@@ -3,11 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BadgeCheck, ExternalLink, Film, Video } from "lucide-react";
 
-// Données des programmes E-Media
+// Données des programmes E-Media avec des icônes colorées
 const emediaPrograms = [
   {
     icon: (
-      <Video className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <Video className="w-10 h-10 mx-auto text-blue-500 animate-bounce mb-2" />
     ),
     title: "Production",
     description: "Création de courts-métrages et documentaires primés.",
@@ -15,7 +15,7 @@ const emediaPrograms = [
   },
   {
     icon: (
-      <Film className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <Film className="w-10 h-10 mx-auto text-indigo-500 animate-bounce mb-2" />
     ),
     title: "Montage & Réalisation",
     description: "Formations sur les outils professionnels et storytelling.",
@@ -23,7 +23,7 @@ const emediaPrograms = [
   },
   {
     icon: (
-      <BadgeCheck className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <BadgeCheck className="w-10 h-10 mx-auto text-green-500 animate-bounce mb-2" />
     ),
     title: "Accréditations",
     description: "Reconnaissance nationale et partenariats internationaux.",
@@ -35,14 +35,14 @@ export default function Emedia() {
   return (
     <section
       id="emedia"
-      className="relative py-20 px-6 md:px-20 bg-gradient-to-br from-red-50 via-white to-slate-100"
+      className="relative py-20 px-6 md:px-20 bg-gradient-to-br from-blue-50 via-white to-slate-100"
     >
       {/* Texture de fond subtile */}
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 40%, #f87171 0%, transparent 20%), radial-gradient(circle at 80% 70%, #facc15 0%, transparent 25%)",
+            "radial-gradient(circle at 20% 40%, #3b82f6 0%, transparent 20%), radial-gradient(circle at 80% 70%, #60a5fa 0%, transparent 25%)",
         }}
       ></div>
 
@@ -56,26 +56,26 @@ export default function Emedia() {
           <motion.img
             src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747222338/logoEmedia_ookb0v.jpg"
             alt="Logo E-Media"
-            className="h-30 mx-auto mb-6 animate-pulse"
+            className="h-28 mx-auto mb-6 animate-pulse"
           />
           <motion.h3
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-gray-800"
+            className="text-3xl font-bold text-blue-600"
           >
             E-Media - École du Cinéma et Audiovisuel
           </motion.h3>
-          <p className="text-gray-600 mt-2">
-            Formations en cinéma, réalisation, montage, et production
+          <p className="text-gray-600 mt-2 max-w-xl mx-auto">
+            Formations en cinéma, réalisation, montage et production
             audiovisuelle.
           </p>
           <a
             href="https://e-mediauniversity.io"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-red-600 text-white mt-6 px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition shadow-lg"
+            className="inline-flex items-center justify-center bg-blue-600 text-white mt-6 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition shadow-lg"
           >
             Explorer E-Media <ExternalLink className="w-4 h-4 ml-2" />
           </a>
@@ -93,7 +93,9 @@ export default function Emedia() {
               className="bg-white p-6 rounded-xl shadow-md text-center"
             >
               {program.icon}
-              <h4 className="text-xl font-bold mb-1">{program.title}</h4>
+              <h4 className="text-xl font-bold text-gray-800 mb-1">
+                {program.title}
+              </h4>
               <p className="text-gray-600">{program.description}</p>
             </motion.div>
           ))}
