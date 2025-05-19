@@ -1,210 +1,144 @@
 "use client";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 import { motion } from "framer-motion";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import { useState } from "react";
+import { PhoneCall, MapPin, Clock } from "lucide-react";
+import React from "react";
+
+const ContactSchema = Yup.object().shape({
+  name: Yup.string().required("Nom requis"),
+  email: Yup.string().email("Email invalide").required("Email requis"),
+  message: Yup.string().required("Message requis"),
+});
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-    // Simulate form submission
-    setTimeout(() => setIsSubmitted(false), 3000);
-  };
-
   return (
-    <motion.form
-      onSubmit={handleSubmit}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      className="bg-white p-8 rounded-lg shadow-md"
-    >
-      <div className="mb-4">
-        <label
-          htmlFor="name"
-          className="block text-sm font-semibold text-gray-800"
-        >
-          Nom
-        </label>
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-        />
-      </div>
-      <div className="mb-4">
-        <label
-          htmlFor="email"
-          className="block text-sm font-semibold text-gray-800"
-        >
-          Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="message"
-          className="block text-sm font-semibold text-gray-800"
-        >
-          Message
-        </label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
-        />
-      </div>
-      <motion.button
-        type="submit"
-        className="w-full py-3 text-white bg-blue-600 hover:bg-blue-500 transition rounded-md shadow-lg"
-      >
-        {isSubmitted ? "Message envoyé" : "Envoyer"}
-      </motion.button>
-    </motion.form>
-  );
-};
+    <section className="bg-gradient-to-br from-white via-slate-50 to-sky-50 py-20 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+        {/* Formulaire */}
+        <div>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center lg:text-left"
+          >
+            Contactez-Nous
+          </motion.h2>
 
-const SocialLinks = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="flex justify-center gap-6 mt-6"
-    >
-      <a
-        href="https://facebook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-blue-600 transition"
-      >
-        <Facebook size={24} />
-      </a>
-      <a
-        href="https://twitter.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-blue-600 transition"
-      >
-        <Twitter size={24} />
-      </a>
-      <a
-        href="https://instagram.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-blue-600 transition"
-      >
-        <Instagram size={24} />
-      </a>
-      <a
-        href="https://linkedin.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-blue-600 transition"
-      >
-        <Linkedin size={24} />
-      </a>
-    </motion.div>
-  );
-};
+          <Formik
+            initialValues={{ name: "", email: "", message: "" }}
+            validationSchema={ContactSchema}
+            onSubmit={(values, actions) => {
+              actions.setSubmitting(false);
+              actions.resetForm();
+            }}
+          >
+            {({ isSubmitting }) => (
+              <Form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium">
+                    Nom
+                  </label>
+                  <Field
+                    type="text"
+                    name="name"
+                    className="mt-1 w-full p-3 border-gray-300 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
+                  />
+                  <ErrorMessage
+                    name="name"
+                    component="div"
+                    className="text-red-500 text-sm mt-1"
+                  />
+                </div>
 
-const Footer = () => {
-  return (
-    <motion.footer
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="bg-blue-800 text-white py-8 mt-16 relative"
-    >
-      <div className="container mx-auto text-center">
-        <p className="text-sm">© 2025 Groupe Africa. Tous droits réservés.</p>
-        <SocialLinks />
-      </div>
-      <motion.div
-        className="absolute inset-0 bg-blue-700 opacity-40 blur-md"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
-      />
-    </motion.footer>
-  );
-};
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium">
+                    Email
+                  </label>
+                  <Field
+                    type="email"
+                    name="email"
+                    className="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component="div"
+                    className="text-red-500 text-sm mt-1"
+                  />
+                </div>
 
-const ContactSection = () => {
-  return (
-    <section id="contact" className="py-20 px-6 md:px-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto text-center">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-3xl md:text-4xl font-bold text-gray-800 mb-12"
-        >
-          Contactez-nous
-        </motion.h2>
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium"
+                  >
+                    Message
+                  </label>
+                  <Field
+                    as="textarea"
+                    name="message"
+                    rows="5"
+                    className="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
+                  />
+                  <ErrorMessage
+                    name="message"
+                    component="div"
+                    className="text-red-500 text-sm mt-1"
+                  />
+                </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <motion.h3
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-2xl font-bold text-gray-800 mb-4"
-            >
-              Formulaire de Contact
-            </motion.h3>
-            <ContactForm />
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-sky-600 hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition w-full"
+                >
+                  Envoyer
+                </button>
+              </Form>
+            )}
+          </Formik>
+        </div>
+
+        {/* Informations de contact */}
+        <div className="flex flex-col justify-center space-y-10">
+          <div className="flex items-start gap-4">
+            <PhoneCall className="w-8 h-8 text-sky-600" />
+            <div>
+              <h4 className="text-lg font-semibold text-gray-800">
+                Appelez-nous
+              </h4>
+              <p className="text-gray-600">+261 32 12 345 67</p>
+            </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <motion.h3
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-2xl font-bold text-gray-800 mb-4"
-            >
-              Localisation
-            </motion.h3>
-            <div id="map" className="w-full h-64 bg-gray-300 rounded-lg"></div>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-gray-600 mt-4"
-            >
-              1234, Rue de l&apos;Innovation, Dakar, Sénégal
-            </motion.p>
+          <div className="flex items-start gap-4">
+            <MapPin className="w-8 h-8 text-sky-600" />
+            <div>
+              <h4 className="text-lg font-semibold text-gray-800">
+                Emplacement
+              </h4>
+              <p className="text-gray-600">
+                Lot II D 123 Antananarivo, Madagascar
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <Clock className="w-8 h-8 text-sky-600" />
+            <div>
+              <h4 className="text-lg font-semibold text-gray-800">
+                Heures de travail
+              </h4>
+              <p className="text-gray-600">Lun - Ven : 08h00 - 17h00</p>
+              <p className="text-gray-600">Samedi : 08h00 - 12h00</p>
+            </div>
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };
 
-export default ContactSection;
+export default ContactForm;

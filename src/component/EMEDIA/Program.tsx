@@ -1,6 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-import { Code, Laptop, Mic, Database } from "lucide-react";
+import {
+  Code,
+  Laptop,
+  Mic,
+  Database,
+  BriefcaseBusiness,
+  Award,
+  Sun,
+} from "lucide-react";
 import React, { JSX } from "react";
 
 interface ProgramCardProps {
@@ -64,6 +72,27 @@ const ProgramsSection = () => {
       description:
         "Analyse de données, machine learning, et intelligence artificielle pour l’avenir.",
       colorClass: "text-purple-600",
+    },
+    {
+      icon: <BriefcaseBusiness />,
+      title: "Business & Innovation",
+      description:
+        "Des programmes axés sur la stratégie, le marketing et la création de valeur.",
+      colorClass: "text-yellow-600",
+    },
+    {
+      icon: <Award />,
+      title: "Entrepreneuriat & Leadership",
+      description:
+        "Former les leaders de demain grâce à un apprentissage pratique et collaboratif.",
+      colorClass: "text-indigo-600",
+    },
+    {
+      icon: <Sun />,
+      title: "Énergies Renouvelables",
+      description:
+        "Promouvoir la transition énergétique durable à travers la technologie verte.",
+      colorClass: "text-green-600",
     },
   ];
 
