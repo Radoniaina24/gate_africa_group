@@ -1,14 +1,15 @@
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import React from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 text-white pt-16 pb-8">
+    <footer className="bg-blue-600 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Column 1 - About */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">
+            <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 text-transparent bg-clip-text">
               Gate Africa Group
             </h3>
             <p className="text-white/90 mb-4">
@@ -19,23 +20,25 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white/90 text-white/80">
-                <i className="fab fa-facebook-f text-xl"></i>
+                <Facebook className="text-xl" />
               </a>
               <a href="#" className="hover:text-white/90 text-white/80">
-                <i className="fab fa-twitter text-xl"></i>
+                <Twitter className="text-xl" />
               </a>
               <a href="#" className="hover:text-white/90 text-white/80">
-                <i className="fab fa-linkedin-in text-xl"></i>
+                <Linkedin className="text-xl" />
               </a>
               <a href="#" className="hover:text-white/90 text-white/80">
-                <i className="fab fa-instagram text-xl"></i>
+                <Instagram className="text-xl" />
               </a>
             </div>
           </div>
 
           {/* Column 3 - Contact */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Contact</h3>
+            <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 text-transparent bg-clip-text">
+              Contact
+            </h3>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mt-1 mr-3 text-white" />
@@ -49,16 +52,16 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-white" />
-                <span className="text-white/90">
-                  administration@aeli.africa
-                </span>
+                <span className="text-white/90">admin@gateafricagroup.com</span>
               </li>
             </ul>
           </div>
 
           {/* Column 4 - Newsletter */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Newsletter</h3>
+            <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 text-transparent bg-clip-text">
+              Newsletter
+            </h3>
             <p className="text-white/90 mb-4">
               Abonnez-vous à notre newsletter pour recevoir les dernières
               actualités et offres spéciales.
@@ -71,7 +74,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="bg-white text-red-600 hover:bg-yellow-100 font-bold py-2 px-4 rounded-md w-full transition duration-300"
+                className="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 text-white font-bold py-2 px-4 rounded-md w-full transition duration-300 hover:brightness-110"
               >
                 S&apos;abonner
               </button>
