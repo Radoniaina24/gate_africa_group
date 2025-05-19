@@ -11,7 +11,7 @@ import React from "react";
 const ustDomains = [
   {
     icon: (
-      <BookOpenCheck className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <BookOpenCheck className="w-10 h-10 mx-auto text-blue-500 animate-bounce mb-2" />
     ),
     title: "Sciences Informatiques",
     description: "Formations avancées en programmation, IA, et cybersécurité.",
@@ -19,7 +19,7 @@ const ustDomains = [
   },
   {
     icon: (
-      <Rocket className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <Rocket className="w-10 h-10 mx-auto text-purple-500 animate-bounce mb-2" />
     ),
     title: "Ingénierie",
     description: "Innovations en électronique, mécanique et énergie durable.",
@@ -27,7 +27,7 @@ const ustDomains = [
   },
   {
     icon: (
-      <GraduationCap className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <GraduationCap className="w-10 h-10 mx-auto text-green-500 animate-bounce mb-2" />
     ),
     title: "Recherche & Développement",
     description:

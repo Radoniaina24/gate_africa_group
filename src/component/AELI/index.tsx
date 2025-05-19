@@ -1,37 +1,34 @@
 "use client";
 import { motion } from "framer-motion";
-import {
-  BookOpenCheck,
-  ExternalLink,
-  GraduationCap,
-  Rocket,
-} from "lucide-react";
+import { Rocket, GraduationCap, Sun, ExternalLink } from "lucide-react";
 import React from "react";
 
-const ustDomains = [
+const aeliDomains = [
   {
     icon: (
-      <BookOpenCheck className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <Rocket className="w-10 h-10 mx-auto text-amber-500 animate-bounce mb-2" />
     ),
-    title: "Sciences Informatiques",
-    description: "Formations avancées en programmation, IA, et cybersécurité.",
+    title: "Business & Innovation",
+    description:
+      "Des programmes axés sur la stratégie, le marketing et la création de valeur.",
     delay: 0,
   },
   {
     icon: (
-      <Rocket className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <GraduationCap className="w-10 h-10 mx-auto text-indigo-500 animate-bounce mb-2" />
     ),
-    title: "Ingénierie",
-    description: "Innovations en électronique, mécanique et énergie durable.",
+    title: "Entrepreneuriat & Leadership",
+    description:
+      "Former les leaders de demain grâce à un apprentissage pratique et collaboratif.",
     delay: 0.2,
   },
   {
     icon: (
-      <GraduationCap className="w-10 h-10 mx-auto text-red-600 animate-bounce mb-2" />
+      <Sun className="w-10 h-10 mx-auto text-emerald-500 animate-bounce mb-2" />
     ),
-    title: "Recherche & Développement",
+    title: "Énergies Renouvelables",
     description:
-      "Encourager l'innovation par la recherche scientifique appliquée.",
+      "Promouvoir la transition énergétique durable à travers la technologie verte.",
     delay: 0.4,
   },
 ];
@@ -39,15 +36,15 @@ const ustDomains = [
 export default function AELI() {
   return (
     <section
-      id="ust"
-      className="relative py-20 px-6 md:px-20 bg-gradient-to-br from-gray-50 via-white to-slate-100"
+      id="aeli"
+      className="relative py-20 px-6 md:px-20 bg-gradient-to-br from-green-50 via-white to-yellow-50"
     >
       {/* Texture décorative subtile */}
       <div
         className="absolute inset-0 pointer-events-none opacity-10"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 30% 30%, #f87171 0%, transparent 25%), radial-gradient(circle at 70% 70%, #facc15 0%, transparent 20%)",
+            "radial-gradient(circle at 30% 30%, #34d399 0%, transparent 25%), radial-gradient(circle at 70% 70%, #fbbf24 0%, transparent 20%)",
         }}
       ></div>
 
@@ -59,8 +56,8 @@ export default function AELI() {
           className="bg-white p-10 rounded-2xl shadow-2xl inline-block"
         >
           <motion.img
-            src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747221943/logoUST_eyzey1.png"
-            alt="Logo UST"
+            src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1746176127/Candidature/admin_20250502085526.jpg"
+            alt="Logo AELI"
             className="h-30 mx-auto mb-6 animate-pulse"
           />
           <motion.h3
@@ -70,25 +67,25 @@ export default function AELI() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-gray-800"
           >
-            Université des Sciences et Technologies
+            AELI – Université Entrepreneuriale de Madagascar
           </motion.h3>
           <p className="text-gray-600 mt-2">
-            Explorez nos programmes d&apos;excellence en sciences, technologie
-            et innovation.
+            Première université dédiée à l&apos;entrepreneuriat, au leadership
+            et aux énergies renouvelables à Madagascar.
           </p>
           <a
-            href="https://ust-io.com"
+            href="https://aeli-madagascar.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-red-600 text-white mt-6 px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition shadow-lg"
+            className="inline-flex items-center justify-center bg-emerald-600 text-white mt-6 px-6 py-3 rounded-full font-semibold hover:bg-emerald-500 transition shadow-lg"
           >
-            Découvrir UST <ExternalLink className="w-4 h-4 ml-2" />
+            Découvrir AELI <ExternalLink className="w-4 h-4 ml-2" />
           </a>
         </motion.div>
 
         {/* Domaines */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {ustDomains.map((domain, index) => (
+          {aeliDomains.map((domain, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
