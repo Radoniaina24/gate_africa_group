@@ -2,7 +2,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
-import { PhoneCall, MapPin, Clock } from "lucide-react";
 import React from "react";
 
 const ContactSchema = Yup.object().shape({
@@ -15,7 +14,7 @@ const ContactForm = () => {
   return (
     <section className="bg-gradient-to-br from-white via-slate-50 to-sky-50 py-20 px-6 md:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-        {/* Formulaire */}
+        {/* Formulaire de contact */}
         <div>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -44,7 +43,7 @@ const ContactForm = () => {
                   <Field
                     type="text"
                     name="name"
-                    className="mt-1 w-full p-3 border-gray-300 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
+                    className="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
                   />
                   <ErrorMessage
                     name="name"
@@ -101,39 +100,22 @@ const ContactForm = () => {
           </Formik>
         </div>
 
-        {/* Informations de contact */}
-        <div className="flex flex-col justify-center space-y-10">
-          <div className="flex items-start gap-4">
-            <PhoneCall className="w-8 h-8 text-sky-600" />
-            <div>
-              <h4 className="text-lg font-semibold text-gray-800">
-                Appelez-nous
-              </h4>
-              <p className="text-gray-600">+261 32 12 345 67</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <MapPin className="w-8 h-8 text-sky-600" />
-            <div>
-              <h4 className="text-lg font-semibold text-gray-800">
-                Emplacement
-              </h4>
-              <p className="text-gray-600">
-                Lot II D 123 Antananarivo, Madagascar
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <Clock className="w-8 h-8 text-sky-600" />
-            <div>
-              <h4 className="text-lg font-semibold text-gray-800">
-                Heures de travail
-              </h4>
-              <p className="text-gray-600">Lun - Ven : 08h00 - 17h00</p>
-              <p className="text-gray-600">Samedi : 08h00 - 12h00</p>
-            </div>
+        {/* Carte Google Maps */}
+        <div className="flex flex-col justify-center">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center lg:text-left">
+            Localisation
+          </h3>
+          <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19806.78595013018!2d47.5105!3d-18.8887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21e68d20b36a63b5%3A0x62967c8f6b2d0e5b!2sE-Media%20Madagascar%2C%20Nanisana%2C%20Antananarivo%2C%20Madagascar!5e0!3m2!1sen!2sus!4v1675598356510!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Carte de localisation"
+            ></iframe>
           </div>
         </div>
       </div>

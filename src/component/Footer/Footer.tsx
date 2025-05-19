@@ -48,11 +48,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <FaPhone className="mr-3 text-white" />
-                <span className="text-white/90">+261 38 78 777 37</span>
+                <span className="text-white/90">+23054884377</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-white" />
-                <span className="text-white/90">admin@gateafricagroup.com</span>
+                <span className="text-white/90">
+                  contact@gateafricagroup.com
+                </span>
               </li>
             </ul>
           </div>
