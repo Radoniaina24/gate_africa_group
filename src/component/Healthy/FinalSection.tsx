@@ -9,7 +9,7 @@ export default function FinalSection() {
           <Image
             width={500}
             height={500}
-            src="/api/placeholder/1200/600"
+            src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747748304/34086341_tobf_x8fc_221006_ydg3a0.jpg"
             alt="Silhouette de l'Afrique avec des icônes médicales"
             className="w-full h-full object-cover"
           />

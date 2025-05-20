@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 export interface CardProps {
-  color: "blue" | "green";
+  color: "blue" | "red";
   icon: string;
   title: string;
   description: string;
@@ -18,10 +18,9 @@ export const Card: React.FC<CardProps> = ({
   imageSrc,
   imageAlt,
 }) => {
-  const bgColor = `bg-${color}-100`;
+  const bgColor = `bg-green-200`;
   const hoverBgColor = `group-hover:bg-${color}-200`;
-  const iconBgColor = `bg-${color}-500/10`;
-  const borderColor = `border-${color}-100`;
+  const iconBgColor = `bg-green-500/10`;
   const textColor = `text-${color}-900`;
 
   return (
@@ -35,19 +34,19 @@ export const Card: React.FC<CardProps> = ({
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105"
+          className="object-cover w-full h-full transform transition-transform duration-700"
         />
       </div>
       <div className="p-8 relative z-10">
         <div className="flex items-center mb-6">
           <div
-            className={`w-16 h-16 ${iconBgColor} backdrop-blur-sm rounded-2xl flex items-center justify-center mr-5 shadow-lg`}
+            className={`w-16 h-16 ${iconBgColor} backdrop-blur-sm rounded-full flex items-center justify-center mr-5 shadow-lg`}
           >
-            <span className="text-3xl">{icon}</span>
+            <span className="text-2xl">{icon}</span>
           </div>
           <h4 className={`text-2xl font-bold ${textColor}`}>{title}</h4>
         </div>
-        <p className={`text-gray-600 ml-16 pl-5 border-l-2 ${borderColor}`}>
+        <p className={`text-gray-600 ml-16 pl-5 border-l-2 border-green-500`}>
           {description}
         </p>
       </div>

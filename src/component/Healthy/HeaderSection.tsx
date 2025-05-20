@@ -33,9 +33,9 @@ export default function HeaderSection() {
           <div className="lg:w-1/2 relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/30 to-transparent z-10"></div>
             <Image
-              width={500}
-              height={500}
-              src="/api/placeholder/800/600"
+              width={300}
+              height={300}
+              src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747747611/21552_kxba6l.jpg"
               alt="Professionnels de santé africains avec technologie médicale"
               className="w-full h-full object-cover"
             />
