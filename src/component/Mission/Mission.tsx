@@ -48,7 +48,6 @@ const cardVariants = {
 export default function Mission() {
   return (
     <section
-      id="mission"
       className="py-20 px-6 md:px-20 relative overflow-hidden"
       style={{
         backgroundImage: "linear-gradient(135deg, #f8faff 0%, #eef2f7 100%)",

@@ -60,8 +60,8 @@ const allCompany = [
 export default function CompanySection() {
   return (
     <section
-      className="py-24 bg-gradient-to-br from-gray-50 to-white"
-      id="company"
+      className="pt-24 bg-gradient-to-br from-gray-50 to-white"
+      id="mission"
     >
       <div className="container mx-auto px-4 text-center">
         <motion.h2
