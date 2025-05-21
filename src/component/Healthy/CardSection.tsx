@@ -1,4 +1,5 @@
-// components/CardsSection.tsx
+"use client";
+import { motion } from "framer-motion";
 import { Card, CardProps } from "./Card";
 
 const cards: CardProps[] = [
@@ -44,14 +45,37 @@ const cards: CardProps[] = [
   },
 ];
 
+// Animation variants
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 const CardsSection: React.FC = () => (
-  <div className="relative mb-32">
+  <motion.div
+    className="relative mb-32"
+    variants={containerVariants}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.2 }}
+  >
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
       {cards.map((card, index) => (
-        <Card key={index} {...card} />
+        <motion.div key={index} variants={cardVariants}>
+          <Card {...card} />
+        </motion.div>
       ))}
     </div>
-  </div>
+  </motion.div>
 );
 
 export default CardsSection;

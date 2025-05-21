@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 interface GalerieItem {
   src: string;
@@ -26,23 +27,49 @@ const galerie: GalerieItem[] = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 export default function Galerie() {
   return (
     <section>
       <h2 className="text-2xl font-bold mb-4">Galerie</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <motion.div
+        className="grid grid-cols-2 md:grid-cols-4 gap-4"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         {galerie.map((image, index) => (
-          <div key={index} className="relative h-52 rounded-lg overflow-hidden">
+          <motion.div
+            key={index}
+            variants={itemVariants}
+            className="relative h-52 rounded-lg overflow-hidden"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 200, damping: 15 }}
+          >
             <Image
               src={image.src}
               alt={image.alt}
               width={400}
               height={400}
-              className="object-cover w-full h-full transition-transform"
+              className="object-cover w-full h-full"
             />
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

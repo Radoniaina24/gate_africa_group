@@ -17,10 +17,6 @@ export default function RadioSection() {
             <p className="text-lg text-blue-200">Votre radio locale préférée</p>
           </div>
         </div>
-        {/* <div className="flex items-center bg-black bg-opacity-30 px-4 py-2 rounded-lg">
-          <Clock className="mr-2" />
-          <span className="font-mono text-xl">{currentTime}</span>
-        </div> */}
       </header>
 
       {/* À propos de la radio */}
