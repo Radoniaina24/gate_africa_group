@@ -74,8 +74,8 @@ export default function ServicesSection() {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           Découvrez les services distincts proposés par{" "}
-          <strong>Landmark</strong> et <strong>Sophys</strong> pour répondre à
-          tous vos besoins professionnels avec qualité et expertise.
+          <strong>Landm&apos;ark</strong> et <strong>Sophys</strong> pour
+          répondre à tous vos besoins professionnels avec qualité et expertise.
         </motion.p>
 
         <motion.div
