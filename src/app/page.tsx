@@ -4,6 +4,7 @@ import Footer from "@/component/Footer/Footer";
 import Header from "@/component/Header/Header";
 import Healthy from "@/component/Healthy/Healthy";
 import Mission from "@/component/Mission/Mission";
+import RadioSection from "@/component/Radio/Radio";
 import Tabs from "@/component/Tabs/Tabs";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Mission />
       <Tabs />
       <Healthy />
+      <RadioSection />
       <ContactForm />
       <Footer />
     </>

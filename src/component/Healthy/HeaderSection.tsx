@@ -35,7 +35,7 @@ export default function HeaderSection() {
             <Image
               width={300}
               height={300}
-              src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747747611/21552_kxba6l.jpg"
+              src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747804142/clinique_xcy1bm.jpg"
               alt="Professionnels de santé africains avec technologie médicale"
               className="w-full h-full object-cover"
             />
