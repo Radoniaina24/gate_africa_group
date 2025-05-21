@@ -33,8 +33,8 @@ export default function HeaderSection() {
           <div className="lg:w-1/2 relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/30 to-transparent z-10"></div>
             <Image
-              width={300}
-              height={300}
+              width={600}
+              height={600}
               src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747804142/clinique_xcy1bm.jpg"
               alt="Professionnels de santé africains avec technologie médicale"
               className="w-full h-full object-cover"
