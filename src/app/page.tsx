@@ -1,4 +1,5 @@
 import { CollaborationSection } from "@/component/Collaboration/Collaboration";
+import CompanySection from "@/component/Company/Company";
 import ContactForm from "@/component/Contact/Contact";
 import Footer from "@/component/Footer/Footer";
 
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <Header />
       <Mission />
+      <CompanySection />
       <Tabs />
       <CollaborationSection />
       <Healthy />
