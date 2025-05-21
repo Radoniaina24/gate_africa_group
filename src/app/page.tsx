@@ -5,6 +5,7 @@ import Header from "@/component/Header/Header";
 import Healthy from "@/component/Healthy/Healthy";
 import Mission from "@/component/Mission/Mission";
 import RadioSection from "@/component/Radio/Radio";
+import ServicesSection from "@/component/Service/Service";
 import Tabs from "@/component/Tabs/Tabs";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Tabs />
       <Healthy />
       <RadioSection />
+      <ServicesSection />
       <ContactForm />
       <Footer />
     </>
