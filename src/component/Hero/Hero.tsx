@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaChevronDown } from "react-icons/fa";
+import Link from "next/link";
 export default function Hero() {
   return (
     <section className="relative z-20 flex flex-col justify-center items-center h-screen text-center px-4">
@@ -28,9 +30,11 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1 }}
         className="mt-8"
       >
-        <button className="bg-red-600 text-white font-semibold hover:bg-red-500 transition px-6 py-3 rounded-full shadow-lg">
-          En savoir plus
-        </button>
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <Link href="#mission" className="text-white text-4xl cursor-pointer">
+            <FaChevronDown />
+          </Link>
+        </div>
       </motion.div>
     </section>
   );

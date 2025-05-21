@@ -8,6 +8,7 @@ import Mission from "@/component/Mission/Mission";
 import RadioSection from "@/component/Radio/Radio";
 import ServicesSection from "@/component/Service/Service";
 import Tabs from "@/component/Tabs/Tabs";
+import VideoSection from "@/component/Video/Video";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Healthy />
       <RadioSection />
       <ServicesSection />
+      <VideoSection />
       <ContactForm />
       <Footer />
     </>
