@@ -3,27 +3,47 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, HeartPulse, Lightbulb } from "lucide-react";
 
+// Liste des missions
 const missionItems = [
   {
-    icon: <GraduationCap className="h-12 w-12 mb-4 animate-pulse" />,
+    icon: <GraduationCap />,
     title: "Éducation",
     description: "Promouvoir l'accès à une éducation de qualité pour tous.",
     delay: 0.1,
   },
   {
-    icon: <HeartPulse className="h-12 w-12 mb-4 animate-pulse" />,
+    icon: <HeartPulse />,
     title: "Santé",
     description:
       "Renforcer les systèmes de santé pour une Afrique en bonne santé.",
     delay: 0.3,
   },
   {
-    icon: <Lightbulb className="h-12 w-12 mb-4 animate-pulse" />,
+    icon: <Lightbulb />,
     title: "Innovation",
     description: "Encourager la créativité et les technologies émergentes.",
     delay: 0.5,
   },
 ];
+
+// Variants pour animations
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 export default function Mission() {
   return (
@@ -32,12 +52,9 @@ export default function Mission() {
       className="py-20 px-6 md:px-20 relative overflow-hidden"
       style={{
         backgroundImage: "linear-gradient(135deg, #f8faff 0%, #eef2f7 100%)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
       }}
     >
-      {/* Motif de fond décoratif thématique */}
+      {/* Motifs de fond */}
       <div className="absolute inset-0 z-0 opacity-5">
         <div
           className="absolute top-0 left-0 w-full h-full"
@@ -46,14 +63,14 @@ export default function Mission() {
           }}
         />
       </div>
-      {/* Formes décoratives thématiques */}
-      <div className="absolute -top-10 right-0 w-64 h-64 rounded-full bg-blue-100 opacity-30 z-0" />{" "}
-      {/* Éducation - bleu */}
-      <div className="absolute top-40 -left-20 w-56 h-56 rounded-full bg-red-100 opacity-20 z-0" />{" "}
-      {/* Santé - rouge */}
-      <div className="absolute -bottom-10 right-20 w-72 h-72 rounded-full bg-yellow-100 opacity-25 z-0" />{" "}
-      {/* Innovation - jaune */}
+
+      {/* Formes décoratives */}
+      <div className="absolute -top-10 right-0 w-64 h-64 rounded-full bg-blue-100 opacity-30 z-0" />
+      <div className="absolute top-40 -left-20 w-56 h-56 rounded-full bg-red-100 opacity-20 z-0" />
+      <div className="absolute -bottom-10 right-20 w-72 h-72 rounded-full bg-yellow-100 opacity-25 z-0" />
+
       <div className="max-w-7xl mx-auto relative z-10">
+        {/* Titre avec animation */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -71,9 +88,15 @@ export default function Mission() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {/* Cartes animées */}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-10"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {missionItems.map((item, index) => {
-            // Couleurs spécifiques pour chaque mission
             const bgColor = "bg-white";
             let accentColor = "bg-red-50";
             let iconColor = "text-red-600";
@@ -92,17 +115,19 @@ export default function Mission() {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: item.delay }}
-                viewport={{ once: true }}
-                className={`flex flex-col items-center text-center ${bgColor} p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 duration-300`}
+                variants={cardVariants}
+                whileHover={{
+                  scale: 1.03,
+                  rotate: 0.5,
+                  boxShadow: "0px 15px 25px rgba(0,0,0,0.1)",
+                }}
+                className={`flex flex-col items-center text-center ${bgColor} p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform duration-300`}
               >
                 <div
                   className={`w-20 h-20 flex items-center justify-center ${accentColor} rounded-full mb-6`}
                 >
                   {React.cloneElement(item.icon, {
-                    className: `h-12 w-12 ${iconColor} mb-0`,
+                    className: `h-12 w-12 ${iconColor}`,
                   })}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -112,7 +137,7 @@ export default function Mission() {
               </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

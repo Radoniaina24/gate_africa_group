@@ -1,13 +1,27 @@
 "use client";
 import { Globe } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export const CollaborationSection = () => {
   const [activeTab, setActiveTab] = useState("about");
+
   return (
-    <div className="relative bg-gradient-to-b from-blue-50 to-white py-16">
+    <motion.div
+      className="relative bg-gradient-to-b from-blue-50 to-white py-16"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 relative">
+        <motion.div
+          className="text-center mb-16 relative"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           {/* Drapeaux stylisés */}
           <div className="relative mx-auto w-full max-w-3xl mb-10">
             <div className="absolute top-0 lg:-top-3 left-0 lg:-left-24 transform -translate-x-3/4 -translate-y-1/2 w-32 h-32 opacity-90 z-10">
@@ -61,7 +75,11 @@ export const CollaborationSection = () => {
           </p>
 
           {/* Badge de collaboration */}
-          <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-full shadow-lg z-10">
+          <motion.div
+            className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 bg-white p-3 rounded-full shadow-lg z-10"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <div className="bg-gradient-to-r from-green-500 to-blue-600 p-0.5 rounded-full">
               <div className="bg-white p-1 rounded-full">
                 <svg
@@ -80,11 +98,17 @@ export const CollaborationSection = () => {
                 </svg>
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Navigation des onglets */}
-        <div className="border-b border-gray-200 mb-10">
+        <motion.div
+          className="border-b border-gray-200 mb-10"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
           <nav className="flex justify-center -mb-px space-x-8">
             <button
               onClick={() => setActiveTab("about")}
@@ -107,118 +131,124 @@ export const CollaborationSection = () => {
               Universités
             </button>
           </nav>
-        </div>
+        </motion.div>
 
-        {/* Contenu de l&apos;onglet À propos */}
-        {activeTab === "about" && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="rounded-xl overflow-hidden shadow-2xl bg-white">
-              <div className="relative aspect-video bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-                <Globe className="w-24 h-24 text-white opacity-70" />
-                <div className="absolute inset-0 bg-black opacity-20"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold">
-                    Coopération Académique Régionale
-                  </h3>
-                  <p className="mt-2">
-                    Renforcer les liens éducatifs dans l&apos;océan Indien
+        {/* Contenu des onglets */}
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          {activeTab === "about" && (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="rounded-xl overflow-hidden shadow-2xl bg-white">
+                <div className="relative aspect-video bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+                  <Globe className="w-24 h-24 text-white opacity-70" />
+                  <div className="absolute inset-0 bg-black opacity-20"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-bold">
+                      Coopération Académique Régionale
+                    </h3>
+                    <p className="mt-2">
+                      Renforcer les liens éducatifs dans l&apos;océan Indien
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Notre Vision de Collaboration
+                </h3>
+                <p className=" text-gray-600 mb-6">
+                  La collaboration entre Madagascar et Maurice représente un
+                  partenariat stratégique visant à élever le niveau
+                  d&apos;éducation supérieure dans la région de l&apos;océan
+                  Indien. En unissant les forces de l&apos;Université E-media et
+                  de l&apos;Université AELI, nous créons un hub
+                  d&apos;excellence académique qui bénéficie aux étudiants des
+                  deux îles.
+                </p>
+                <p className=" text-gray-600 mb-8">
+                  Ce partenariat favorise la mobilité étudiante, le partage des
+                  connaissances et la recherche collaborative dans des domaines
+                  critiques pour le développement régional, comme les
+                  technologies numériques, le développement durable et
+                  l&apos;innovation entrepreneuriale.
+                </p>
+              </div>
+            </div>
+          )}
+          {activeTab === "universities" && (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Université E-media */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                <div className="h-48 bg-gradient-to-r from-blue-600 to-blue-400 relative">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <h3 className="text-3xl font-bold text-white">
+                      Université E-media
+                    </h3>
+                  </div>
+                  {/* Motif vectoriel décoratif */}
+                  <svg
+                    className="absolute bottom-0 left-0 w-full opacity-30"
+                    viewBox="0 0 600 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0,50 Q150,0 300,50 T600,50 V100 H0 Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-600 mb-6">
+                    L&apos;Université E-media est reconnue pour son excellence
+                    dans les domaines des médias numériques, des technologies de
+                    l&apos;information et de la communication. Fondée avec la
+                    vision de former les leaders de demain dans l&apos;ère
+                    numérique, elle offre des programmes innovants alignés sur
+                    les besoins de l&apos;industrie.
+                  </p>
+                </div>
+              </div>
+
+              {/* Université AELI */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                <div className="h-48 bg-gradient-to-r from-purple-600 to-purple-400 relative">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <h3 className="text-3xl font-bold text-white">
+                      Université AELI
+                    </h3>
+                  </div>
+                  {/* Motif vectoriel décoratif */}
+                  <svg
+                    className="absolute bottom-0 left-0 w-full opacity-30"
+                    viewBox="0 0 600 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0,50 Q150,0 300,50 T600,50 V100 H0 Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-600 mb-6">
+                    L&apos;Université AELI se distingue par son approche
+                    multidisciplinaire de l&apos;éducation, avec une forte
+                    orientation vers l&apos;entreprenariat, les langues
+                    internationales et l&apos;innovation. Elle s&apos;engage à
+                    développer des compétences adaptées aux défis mondiaux du
+                    21ème siècle.
                   </p>
                 </div>
               </div>
             </div>
-
-            <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Notre Vision de Collaboration
-              </h3>
-              <p className=" text-gray-600 mb-6">
-                La collaboration entre Madagascar et Maurice représente un
-                partenariat stratégique visant à élever le niveau
-                d&apos;éducation supérieure dans la région de l&apos;océan
-                Indien. En unissant les forces de l&apos;Université E-media et
-                de l&apos;Université AELI, nous créons un hub d&apos;excellence
-                académique qui bénéficie aux étudiants des deux îles.
-              </p>
-              <p className=" text-gray-600 mb-8">
-                Ce partenariat favorise la mobilité étudiante, le partage des
-                connaissances et la recherche collaborative dans des domaines
-                critiques pour le développement régional, comme les technologies
-                numériques, le développement durable et l&apos;innovation
-                entrepreneuriale.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Contenu de l&apos;onglet Universités */}
-        {activeTab === "universities" && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Université E-media */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-              <div className="h-48 bg-gradient-to-r from-blue-600 to-blue-400 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-3xl font-bold text-white">
-                    Université E-media
-                  </h3>
-                </div>
-                {/* Motif vectoriel décoratif */}
-                <svg
-                  className="absolute bottom-0 left-0 w-full opacity-30"
-                  viewBox="0 0 600 100"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0,50 Q150,0 300,50 T600,50 V100 H0 Z"
-                    fill="#ffffff"
-                  />
-                </svg>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-6">
-                  L&apos;Université E-media est reconnue pour son excellence
-                  dans les domaines des médias numériques, des technologies de
-                  l&apos;information et de la communication. Fondée avec la
-                  vision de former les leaders de demain dans l&apos;ère
-                  numérique, elle offre des programmes innovants alignés sur les
-                  besoins de l&apos;industrie.
-                </p>
-              </div>
-            </div>
-
-            {/* Université AELI */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-              <div className="h-48 bg-gradient-to-r from-purple-600 to-purple-400 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-3xl font-bold text-white">
-                    Université AELI
-                  </h3>
-                </div>
-                {/* Motif vectoriel décoratif */}
-                <svg
-                  className="absolute bottom-0 left-0 w-full opacity-30"
-                  viewBox="0 0 600 100"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0,50 Q150,0 300,50 T600,50 V100 H0 Z"
-                    fill="#ffffff"
-                  />
-                </svg>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-6">
-                  L&apos;Université AELI se distingue par son approche
-                  multidisciplinaire de l&apos;éducation, avec une forte
-                  orientation vers l&apos;entreprenariat, les langues
-                  internationales et l&apos;innovation. Elle s&apos;engage à
-                  développer des compétences adaptées aux défis mondiaux du
-                  21ème siècle.
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
+          )}
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
