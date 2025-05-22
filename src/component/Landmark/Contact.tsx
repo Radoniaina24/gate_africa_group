@@ -12,7 +12,7 @@ export default function Contact() {
             <Award className="w-10 h-10 text-white" />
           </div>
 
-          <h3 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
+          <h3 className="text-2xl lg:text-5xl font-black text-white mb-6 leading-tight">
             Prêt à vivre l&apos;expérience
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
               {" "}
@@ -21,9 +21,8 @@ export default function Contact() {
           </h3>
 
           <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-3xl mx-auto">
-            Rejoignez plus de 15 000 entreprises qui nous font confiance pour
-            leurs projets les plus ambitieux. Notre équipe d&apos;experts vous
-            accompagne de A à Z pour garantir votre succès.
+            Notre équipe d&apos;experts vous accompagne de A à Z pour garantir
+            votre succès.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-lg mx-auto">
