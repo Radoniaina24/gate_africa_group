@@ -15,7 +15,7 @@ const allCompany = [
     url: "school",
   },
   {
-    title: "AELI – Université Entrepreneuriale de Madagascar",
+    title: "AELI – Université Entrepreneuriale ",
     description:
       "Première université dédiée à l'entrepreneuriat, au leadership et aux énergies renouvelables à Madagascar.",
     image:
