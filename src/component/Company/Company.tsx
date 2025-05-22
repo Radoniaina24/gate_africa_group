@@ -12,6 +12,7 @@ const allCompany = [
       "Formations en cinéma, réalisation, montage et production audiovisuelle.",
     image:
       "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747222338/logoEmedia_ookb0v.jpg", // Remplace par le lien réel
+    url: "school",
   },
   {
     title: "AELI – Université Entrepreneuriale de Madagascar",
@@ -19,6 +20,7 @@ const allCompany = [
       "Première université dédiée à l'entrepreneuriat, au leadership et aux énergies renouvelables à Madagascar.",
     image:
       "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1746176127/Candidature/admin_20250502085526.jpg",
+    url: "school",
   },
   {
     title: "Université des Sciences et Technologies",
@@ -26,20 +28,23 @@ const allCompany = [
       "Explorez nos programmes d'excellence en sciences, technologie et innovation.",
     image:
       "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747221943/logoUST_eyzey1.png", // Remplace par le lien réel
+    url: "school",
   },
   {
     title: "Clinique & Innovation",
     description:
       "Renforcer les systèmes de santé pour une Afrique en bonne santé.",
     image:
-      "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747804142/clinique_xcy1bm.jpg", // Remplace par le lien réel
+      "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747804142/clinique_xcy1bm.jpg",
+    url: "clinique",
   },
   {
     title: "E-Media 107.8 FM",
     description:
       "Une radio dynamique et engagée, au service de l'information, de la culture et de la proximité avec ses auditeurs.",
     image:
-      "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747805711/radio_tfde71.jpg", // à remplacer par le lien réel
+      "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747805711/radio_tfde71.jpg",
+    url: "radio",
   },
   {
     title: "Landm'ark",
@@ -47,6 +52,7 @@ const allCompany = [
       "Landmark propose un service de location de véhicules adaptés à tous vos besoins professionnels ou événementiels.",
     image:
       "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747811175/landmark_cn1yj9.jpg",
+    url: "landmark",
   },
   {
     title: "Sophys – Nettoyage Premium",
@@ -54,6 +60,7 @@ const allCompany = [
       "Service de nettoyage haut de gamme pour entreprises, véhicules et événements. Une propreté irréprochable garantie.",
     image:
       "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747811368/sophys_gyrxet.jpg",
+    url: "sophys",
   },
 ];
 

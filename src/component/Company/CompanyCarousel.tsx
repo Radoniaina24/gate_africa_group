@@ -157,7 +157,7 @@ const CompanyCarousel = ({
                       alt={company.title}
                       className="object-cover transition-transform duration-700 hover:scale-110"
                       fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      sizes="(max-width: 500px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div
                       className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent transition-opacity duration-300 ${
@@ -167,9 +167,9 @@ const CompanyCarousel = ({
                     {company.url && hoveredCard === index && (
                       <div className="absolute bottom-4 right-4">
                         <a
-                          href={company.url}
+                          href={`#${company.url}`}
                           className="p-2 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transform transition-transform duration-300 shadow-md"
-                          target="_blank"
+                          // target="_blank"
                           rel="noopener noreferrer"
                         >
                           <ExternalLink size={20} className="text-blue-600" />

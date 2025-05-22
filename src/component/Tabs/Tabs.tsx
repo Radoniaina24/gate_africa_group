@@ -17,7 +17,7 @@ export default function Tabs() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="">
+    <section className="" id="school">
       <div className="max-w-4xl mx-auto text-center pt-10">
         <div className="flex items-center justify-center gap-4">
           <div className="p-4 bg-blue-100 rounded-full shadow-md">
@@ -67,6 +67,6 @@ export default function Tabs() {
           {tabs[activeTab].component}
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

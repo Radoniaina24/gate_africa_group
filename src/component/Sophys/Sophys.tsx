@@ -6,7 +6,7 @@ import Service from "./Service";
 
 export default function SophysSection() {
   return (
-    <section>
+    <section id="sophys">
       <div className="min-h-screen bg-black text-white overflow-hidden">
         {/* Animated Background */}
 

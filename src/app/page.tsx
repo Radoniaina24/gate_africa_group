@@ -17,7 +17,6 @@ export default function Home() {
       <Header />
       <CompanySection />
       <Mission />
-
       <Tabs />
       <CollaborationSection />
       <Healthy />
