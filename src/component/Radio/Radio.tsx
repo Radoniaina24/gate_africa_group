@@ -2,28 +2,29 @@
 import { Radio } from "lucide-react";
 import Galerie from "./Galerie";
 import About from "./About";
+import { FaBroadcastTower } from "react-icons/fa";
 
 export default function RadioSection() {
   return (
-    <section className="bg-gradient-to-b from-blue-50 via-white to-blue-50">
-      <div className="text-center mb-20">
-        <div className="inline-block px-6 py-2 border-b-2 border-red-600 mb-6">
-          <span className="text-red-700 font-bold uppercase tracking-wider text-sm">
-            E-Media 107.8 FM – La voix dynamique de l&apos;Afrique
-          </span>
+    <section
+      className="bg-gradient-to-b from-blue-50 via-white to-blue-50"
+      id="radio"
+    >
+      <div className="max-w-4xl mx-auto text-center py-10">
+        <div className="flex items-center justify-center gap-4">
+          <div className="p-4 bg-red-100 rounded-full shadow-md">
+            <FaBroadcastTower className="text-red-600 text-4xl" />
+          </div>
+          <h1 className="text-4xl font-extrabold text-red-700 tracking-wide">
+            E-media 107.8 FM
+          </h1>
         </div>
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          Une radio engagée, proche de vous
-        </h3>
-        <p className="text-gray-700 max-w-3xl mx-auto">
-          Depuis sa création,{" "}
-          <strong className="text-red-600">e-media 107.8 FM</strong>{" "}
-          s&apos;impose comme un acteur incontournable du paysage médiatique
-          local. Notre mission ? Informer, éduquer et divertir à travers une
-          programmation riche et inclusive : actualité, culture, musique, débats
-          et initiatives citoyennes. Nous faisons résonner les voix de nos
-          communautés et valorisons les talents d&apos;aujourd&apos;hui et de
-          demain.
+        <p className="mt-2 text-gray-600 text-sm md:text-base">
+          E-media 107.8 FM est une radio dynamique qui informe, divertit et
+          connecte la communauté à travers une programmation riche, engagée et
+          actuelle. Portée par une équipe passionnée, elle donne la parole à
+          tous et diffuse les ondes de la culture, de l&apos;actualité et de
+          l&apos;innovation.
         </p>
       </div>
       <div className="relative w-full overflow-hidden leading-[0] -mb-1">

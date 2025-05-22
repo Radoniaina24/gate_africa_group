@@ -5,9 +5,9 @@ import Footer from "@/component/Footer/Footer";
 
 import Header from "@/component/Header/Header";
 import Healthy from "@/component/Healthy/Healthy";
+import Landmark from "@/component/Landmark/Landmark";
 import Mission from "@/component/Mission/Mission";
 import RadioSection from "@/component/Radio/Radio";
-import ServicesSection from "@/component/Service/Service";
 import Tabs from "@/component/Tabs/Tabs";
 import VideoSection from "@/component/Video/Video";
 
@@ -22,7 +22,8 @@ export default function Home() {
       <CollaborationSection />
       <Healthy />
       <RadioSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+      <Landmark />
       <VideoSection />
       <ContactForm />
       <Footer />
