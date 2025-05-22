@@ -56,8 +56,8 @@ export default function Why() {
               src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747811368/sophys_gyrxet.jpg"
               alt="Équipe Sophys au travail"
               className="rounded-2xl shadow-2xl"
-              width={400}
-              height={400}
+              width={550}
+              height={550}
             />
             <div className="absolute -bottom-6 -right-6 bg-yellow-400 text-gray-900 p-6 rounded-2xl shadow-lg">
               <div className="text-3xl font-bold">100%</div>
