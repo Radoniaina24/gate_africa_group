@@ -219,7 +219,7 @@ const CompanyCarousel = ({ allCompany }: { allCompany: any; title?: any }) => {
                   onMouseEnter={() => setHoveredCard(index)}
                   onMouseLeave={() => setHoveredCard(null)}
                 >
-                  <div className="group relative bg-white rounded-3xl overflow-hidden shadow">
+                  <div className="group relative bg-white/80 backdrop-blur-xl rounded-3xl overflow-hidden shadow-lg hover:shadow-3xl transition-all duration-700 h-full border border-white/20 hover:border-white/40 transform hover:-translate-y-4 hover:rotate-1">
                     {/* Badge premium flottant - plus compact */}
                     {company.badge && (
                       <div className="absolute top-3 left-3 z-20">
