@@ -1,6 +1,5 @@
 import Service from "./Service";
 import Header from "./Header";
-import Contact from "./Contact";
 import Roadshow from "./Roadshow";
 import Benefit from "./Benefit";
 
@@ -49,9 +48,6 @@ export default function Landmark() {
 
           {/* Advantages Grid */}
           <Benefit />
-
-          {/* Premium CTA */}
-          <Contact />
         </div>
       </div>
     </section>

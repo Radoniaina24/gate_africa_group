@@ -22,7 +22,6 @@ export default function Home() {
       <CollaborationSection />
       <Healthy />
       <RadioSection />
-      {/* <ServicesSection /> */}
       <Landmark />
       <VideoSection />
       <ContactForm />
