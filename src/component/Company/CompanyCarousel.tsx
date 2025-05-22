@@ -246,7 +246,7 @@ const CompanyCarousel = ({ allCompany }: { allCompany: any; title?: any }) => {
                       {/* Bouton d'action flottant - plus petit */}
                       {company.url && (
                         <div
-                          className={`absolute top-3 right-3 transition-all duration-500 ${
+                          className={`absolute top-3 left-3 transition-all duration-500 ${
                             hoveredCard === index
                               ? "scale-100 opacity-100"
                               : "scale-0 opacity-0"
