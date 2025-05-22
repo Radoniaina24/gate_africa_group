@@ -8,8 +8,8 @@ import Healthy from "@/component/Healthy/Healthy";
 import Landmark from "@/component/Landmark/Landmark";
 import Mission from "@/component/Mission/Mission";
 import RadioSection from "@/component/Radio/Radio";
+import SophysSection from "@/component/Sophys/Sophys";
 import Tabs from "@/component/Tabs/Tabs";
-import VideoSection from "@/component/Video/Video";
 
 export default function Home() {
   return (
@@ -23,7 +23,8 @@ export default function Home() {
       <Healthy />
       <RadioSection />
       <Landmark />
-      <VideoSection />
+      <SophysSection />
+      {/* <VideoSection /> */}
       <ContactForm />
       <Footer />
     </>
