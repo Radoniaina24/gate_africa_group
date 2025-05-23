@@ -7,7 +7,7 @@ export default function Footer() {
     <section>
       <div className="relative w-full overflow-hidden leading-[0] -mb-1">
         <svg
-          className="block w-full h-20 md:h-32 rotate-180"
+          className="block w-full h-20 md:h-32 rotate-180 bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-100/30"
           viewBox="0 0 1440 320"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
