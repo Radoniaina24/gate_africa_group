@@ -8,6 +8,7 @@ import Healthy from "@/component/Healthy/Healthy";
 import Landmark from "@/component/Landmark/Landmark";
 import Mission from "@/component/Mission/Mission";
 import RadioSection from "@/component/Radio/Radio";
+import Scroll from "@/component/Scroll/Scroll";
 import SophysSection from "@/component/Sophys/Sophys";
 import Tabs from "@/component/Tabs/Tabs";
 
@@ -26,6 +27,7 @@ export default function Home() {
       {/* <VideoSection /> */}
       <ContactForm />
       <Footer />
+      <Scroll />
     </>
   );
 }
