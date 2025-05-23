@@ -253,9 +253,10 @@ const CompanyCarousel = ({ allCompany }: { allCompany: any; title?: any }) => {
                           }`}
                         >
                           <a
-                            href={`#${company.url}`}
+                            href={`https://www.gateafricagroup.com/#${company.url}`}
                             className="group/btn p-2 bg-white/90 hover:bg-white rounded-xl flex items-center justify-center transform transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 backdrop-blur-sm"
                             rel="noopener noreferrer"
+                            target="_blanck"
                           >
                             <ArrowUpRight
                               size={16}
