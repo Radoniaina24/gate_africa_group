@@ -3,6 +3,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Mail, MessageSquare, Send, User } from "lucide-react";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function FormContact() {
   const ContactSchema = Yup.object().shape({
@@ -12,12 +13,35 @@ export default function FormContact() {
   });
   return (
     <div className="flex flex-col justify-center">
+      <Toaster position="top-right" />
       <Formik
         initialValues={{ name: "", email: "", message: "" }}
         validationSchema={ContactSchema}
-        onSubmit={(values, actions) => {
-          actions.setSubmitting(false);
-          actions.resetForm();
+        onSubmit={async (values, actions) => {
+          const toastId = toast.loading("Envoi du message...");
+          try {
+            const response = await fetch("/api/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                name: values.name,
+                email: values.email,
+                message: values.message,
+              }),
+            });
+
+            if (!response.ok) throw new Error("Erreur serveur");
+
+            toast.success("Message envoyé avec succès !", { id: toastId });
+            actions.resetForm();
+          } catch (error) {
+            console.log(error);
+            toast.error("Une erreur est survenue. Veuillez réessayer.", {
+              id: toastId,
+            });
+          } finally {
+            actions.setSubmitting(false);
+          }
         }}
       >
         {({ isSubmitting, errors, touched }) => (
