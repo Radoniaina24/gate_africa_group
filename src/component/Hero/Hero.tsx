@@ -79,7 +79,7 @@ export default function Hero() {
             </span>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 items-start mb-20">
+          <div className="flex flex-col sm:flex-row gap-6 items-start ">
             <div className="relative group">
               <div className="absolute -inset-1  blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
               <AnimatedButton
