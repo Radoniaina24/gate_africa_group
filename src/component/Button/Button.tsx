@@ -27,11 +27,11 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   const borderColor = `border-${color}-500`;
   const hoverTextColor = "group-hover:text-white";
   const sizeClass = sizeClasses[size];
-
+  console.log(borderColor);
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer rounded font-semibold overflow-hidden relative z-10 border group ${borderColor} ${sizeClass} ${className}`}
+      className={`cursor-pointer rounded font-semibold overflow-hidden relative z-10 border group  border-${color}-500 ${sizeClass} ${className}`}
     >
       <span
         className={`relative z-10 ${textColor} ${hoverTextColor} duration-500`}

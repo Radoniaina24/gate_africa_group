@@ -34,7 +34,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-out"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dbpoyo4gw/image/upload/v1749534205/bani%C3%A8re_mvhhsk.jpg")`,
+          backgroundImage: `url("https://res.cloudinary.com/dbpoyo4gw/image/upload/v1749534205/bani%C3%A8re_mvhhsk.jpg")`,
           transform: `translate(${mousePosition.x * 0.02 - 1}px, ${
             mousePosition.y * 0.02 - 1
           }px) scale(1.02)`,
@@ -42,9 +42,9 @@ export default function Hero() {
       ></div>
 
       {/* Animated Geometric Shapes */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute w-96 h-96 bg-gradient-to-r from-blue-500/30 to-cyan-500/30 rounded-full blur-3xl"
+          className="absolute w-96 h-96 bg-gradient-to-r from-red-500/30 to-rose-500/30 rounded-full blur-3xl"
           style={{
             top: "10%",
             left: "10%",
@@ -55,7 +55,7 @@ export default function Hero() {
           }}
         ></div>
         <div
-          className="absolute w-80 h-80 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full blur-3xl"
+          className="absolute w-80 h-80 bg-gradient-to-r from-red-600/30 to-red-400/30 rounded-full blur-3xl"
           style={{
             bottom: "20%",
             right: "10%",
@@ -66,7 +66,7 @@ export default function Hero() {
           }}
         ></div>
         <div
-          className="absolute w-64 h-64 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full blur-3xl"
+          className="absolute w-64 h-64 bg-gradient-to-r from-white/20 to-red-200/20 rounded-full blur-3xl"
           style={{
             top: "60%",
             left: "70%",
@@ -76,7 +76,7 @@ export default function Hero() {
             }px)`,
           }}
         ></div>
-      </div>
+      </div> */}
 
       {/* Floating Icons */}
       {floatingElements.map((element, index) => {
@@ -84,7 +84,7 @@ export default function Hero() {
         return (
           <div
             key={index}
-            className="absolute text-white/20 animate-pulse"
+            className="absolute text-white/30 animate-pulse"
             style={{
               left: `${element.x}%`,
               top: `${element.y}%`,
@@ -109,10 +109,10 @@ export default function Hero() {
         >
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-black text-white mb-8 leading-none">
-            <span className="block bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent hover:from-blue-400 hover:to-purple-400 transition-all duration-1000 cursor-default">
+            <span className="block bg-gradient-to-r from-white via-red-100 to-red-200 bg-clip-text text-transparent hover:from-red-400 hover:to-white transition-all duration-1000 cursor-default">
               Transformer
             </span>
-            <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent hover:from-pink-400 hover:to-blue-400 transition-all duration-1000 cursor-default">
+            <span className="block bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent hover:from-red-600 hover:to-red-400 transition-all duration-1000 cursor-default">
               l&apos;Afrique
             </span>
             <span className="block text-white/90 text-4xl sm:text-5xl lg:text-5xl mt-4">
@@ -121,9 +121,9 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 mb-12 max-w-4xl leading-relaxed font-light">
+          <p className="text-xl sm:text-2xl lg:text-3xl text-red-50 mb-12 max-w-4xl leading-relaxed font-light">
             Notre mission est de{" "}
-            <span className="text-blue-400 font-semibold">
+            <span className="text-red-300 font-semibold">
               catalyser le changement positif
             </span>{" "}
             à travers la technologie et l&apos;entrepreneuriat. Solutions
@@ -134,7 +134,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-6 items-start mb-16">
             <AnimatedButton label="Devenir membre" size="lg" />
 
-            <AnimatedButton label="Qui sommes nous?" color="blue" size="lg" />
+            <AnimatedButton label="Qui sommes nous?" color="red" size="lg" />
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function Hero() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="w-8 h-14 border-2 border-white/60 rounded-full flex justify-center cursor-pointer hover:border-white transition-colors duration-300">
-          <div className="w-1.5 h-4 bg-gradient-to-b from-blue-400 to-purple-400 rounded-full mt-3 animate-bounce"></div>
+          <div className="w-1.5 h-4 bg-gradient-to-b from-red-400 to-red-600 rounded-full mt-3 animate-bounce"></div>
         </div>
         <p className="text-white/60 text-sm mt-2 text-center">Défiler</p>
       </div>
