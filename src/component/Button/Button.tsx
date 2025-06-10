@@ -69,7 +69,7 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer rounded font-semibold overflow-hidden relative z-10 border group ${borderColor} ${sizeClass} ${className}`}
+      className={`cursor-pointer rounded font-semibold overflow-hidden relative z-10 border group ${borderColor} sm:sm  md:${sizeClass} ${className}`}
     >
       <span
         className={`relative z-10 ${textColor} ${hoverTextColor} duration-500`}
