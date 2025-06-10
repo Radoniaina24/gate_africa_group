@@ -132,7 +132,11 @@ export default function Hero() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 items-start mb-16">
-            <AnimatedButton label="Devenir membre" size="lg" />
+            <AnimatedButton
+              label="Télécharger la brochure"
+              color="blue"
+              size="lg"
+            />
 
             <AnimatedButton label="Qui sommes nous?" color="red" size="lg" />
           </div>
