@@ -34,7 +34,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-out"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(&apos;https://res.cloudinary.com/dbpoyo4gw/image/upload/v1749534205/bani%C3%A8re_mvhhsk.jpg&apos;)`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dbpoyo4gw/image/upload/v1749534205/bani%C3%A8re_mvhhsk.jpg")`,
           transform: `translate(${mousePosition.x * 0.02 - 1}px, ${
             mousePosition.y * 0.02 - 1
           }px) scale(1.02)`,
