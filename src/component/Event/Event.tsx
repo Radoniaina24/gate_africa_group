@@ -64,7 +64,7 @@ export default function App() {
           <article className="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-3 animate-on-scroll opacity-0 translate-y-10 border-t-8 border-red-600">
             <div className="relative overflow-hidden">
               <Image
-                src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1749121383/ibis_kuwrr3.jpg"
+                src="https://res.cloudinary.com/dikefxjpd/image/upload/v1749703988/hotel-carlton-madagascar_wn5vxr.jpg"
                 alt="Carrefour de l'Emploi"
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 width={400}
@@ -84,11 +84,13 @@ export default function App() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-600">
                   <CalendarIcon className="w-5 h-5 text-red-600 mr-3" />
-                  <span className="font-medium">12 & 13 Septembre 2024</span>
+                  <span className="font-medium">19 & 20 Septembre 2025</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <LocationIcon className="w-5 h-5 text-red-600 mr-3" />
-                  <span className="font-medium">HÔTEL IBIS Antananarivo</span>
+                  <span className="font-medium">
+                    HÔTEL Carlton Antananarivo
+                  </span>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -124,13 +126,11 @@ export default function App() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-600">
                   <CalendarIcon className="w-5 h-5 text-red-600 mr-3" />
-                  <span className="font-medium">30 & 31 Août 2024</span>
+                  <span className="font-medium">30 & 31 Août 2025</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <LocationIcon className="w-5 h-5 text-red-600 mr-3" />
-                  <span className="font-medium">
-                    Membres Gate Group International
-                  </span>
+                  <span className="font-medium">HÔTEL Ibis Antananarivo</span>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed mb-6">
