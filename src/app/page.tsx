@@ -1,6 +1,7 @@
 import Event from "@/component/Event/Event";
 import GateAfricaPresentation from "@/component/GateAfricaPresentation/GateAfricaPresentation";
 import Header from "@/component/Header/Header";
+import GateOfAfricaDesign from "@/features/Blog";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Header />
       <Event />
       <GateAfricaPresentation />
-      {/* <GateOfAfricaDesign /> */}
+      <GateOfAfricaDesign />
     </>
   );
 }

@@ -1,25 +1,9 @@
 import { ArrowRight } from "lucide-react";
-import { Article } from "./Post";
-import { FC } from "react";
+
 import Image from "next/image";
+import { Post } from "@/interface/Post";
 /* eslint-disable */
-export const ArticleCard: FC<Article> = ({
-  category,
-  categoryColor,
-  title,
-  excerpt,
-  date,
-  readTime,
-  link,
-  gradient,
-  imageUrl,
-  imageAlt = title,
-}) => {
-  /**
-   * Formate la date en français
-   * @param dateString - Date au format string
-   * @returns Date formatée
-   */
+export function ArticleCard({ post }: { post: Post }) {
   const formatDate = (dateString: string): string => {
     try {
       return new Date(dateString).toLocaleDateString("fr-FR", {
@@ -37,7 +21,7 @@ export const ArticleCard: FC<Article> = ({
     <article
       className="bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 overflow-hidden hover:scale-105 transition-all duration-300 group shadow-xl hover:shadow-2xl"
       role="article"
-      aria-labelledby={`article-title-${title
+      aria-labelledby={`article-title-${post?.title?.rendered
         .replace(/\s+/g, "-")
         .toLowerCase()}`}
     >
@@ -45,14 +29,16 @@ export const ArticleCard: FC<Article> = ({
       <header className="relative">
         <div
           className={`aspect-video relative overflow-hidden ${
-            !imageUrl ? `bg-gradient-to-br ${gradient}` : ""
+            !post.blog_post_layout_featured_media_urls.full
+              ? `bg-gradient-to-br `
+              : ""
           }`}
         >
-          {imageUrl ? (
+          {post.blog_post_layout_featured_media_urls.full ? (
             <>
               <Image
-                src={imageUrl}
-                alt={imageAlt}
+                src={post.blog_post_layout_featured_media_urls.full[0]}
+                alt={post.blog_post_layout_featured_media_urls.full[0]}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
                 width={500}
@@ -63,7 +49,7 @@ export const ArticleCard: FC<Article> = ({
                   target.style.display = "none";
                   const parent = target.parentElement;
                   if (parent) {
-                    parent.classList.add(`bg-gradient-to-br`, gradient);
+                    parent.classList.add(`bg-gradient-to-br`, "");
                   }
                 }}
               />
@@ -76,10 +62,12 @@ export const ArticleCard: FC<Article> = ({
           {/* Badge catégorie */}
           <div className="absolute bottom-4 left-4 z-10">
             <span
-              className={`${categoryColor} text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg backdrop-blur-sm`}
+              className={`bg-red-500 text-white px-3 py-1 rounded-full text-xs capitalize font-medium shadow-lg backdrop-blur-sm`}
               role="badge"
             >
-              {category}
+              {Object.values(post.categories_names).map((cat, index) => (
+                <span key={index}>{cat.name}</span>
+              ))}
             </span>
           </div>
         </div>
@@ -93,38 +81,37 @@ export const ArticleCard: FC<Article> = ({
           role="group"
           aria-label="Métadonnées de l'article"
         >
-          <time dateTime={date} className="flex items-center">
-            {formatDate(date)}
+          <time dateTime={post.date} className="flex items-center">
+            {formatDate(post.date)}
           </time>
           <span className="mx-2" aria-hidden="true">
             •
-          </span>
-          <span
-            className="flex items-center"
-            aria-label={`Temps de lecture: ${readTime}`}
-          >
-            {readTime}
           </span>
         </div>
 
         {/* Titre */}
         <h3
-          id={`article-title-${title.replace(/\s+/g, "-").toLowerCase()}`}
-          className="text-xl font-bold text-white mb-3 group-hover:text-red-300 transition-colors duration-200 leading-tight"
+          id={`article-title-${post?.title?.rendered
+            .replace(/\s+/g, "-")
+            .toLowerCase()}`}
+          className="text-lg font-bold text-white mb-3 group-hover:text-red-300 transition-colors duration-200 leading-tight"
         >
-          {title}
+          {post.title.rendered}
         </h3>
 
         {/* Extrait */}
-        <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
-          {excerpt}
-        </p>
+
+        <div
+          className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3"
+          dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+        />
 
         {/* Lien de lecture */}
         <a
-          href={link}
+          href={post.link}
+          target="_blanck"
           className="inline-flex items-center text-red-400 hover:text-red-300 text-sm font-medium transition-colors duration-200 group/link"
-          aria-label={`Lire l'article complet: ${title}`}
+          aria-label={`Lire l'article complet: ${post.title.rendered}`}
         >
           <span>Lire la suite</span>
           <ArrowRight
@@ -135,4 +122,4 @@ export const ArticleCard: FC<Article> = ({
       </div>
     </article>
   );
-};
+}
