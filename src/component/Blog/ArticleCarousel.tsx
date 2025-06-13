@@ -43,6 +43,7 @@ const ArticleCarousel = ({
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </button>
+
       <Swiper
         loop={true}
         autoplay={{
@@ -65,7 +66,12 @@ const ArticleCarousel = ({
             slidesPerView: 3,
           },
         }}
-        pagination={{ clickable: true }}
+        pagination={{
+          clickable: true,
+          el: ".swiper-pagination-custom", // lien avec ta div custom
+          bulletClass: "swiper-pagination-bullet-custom",
+          bulletActiveClass: "swiper-pagination-bullet-custom-active",
+        }}
       >
         {loading
           ? Array.from({ length: 3 }).map((_, index) => (
@@ -79,6 +85,7 @@ const ArticleCarousel = ({
               </SwiperSlide>
             ))}
       </Swiper>
+      <div className="swiper-pagination-custom my-6 flex justify-center gap-2" />
     </div>
   );
 };

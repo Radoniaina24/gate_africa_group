@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.swiper-pagination-bullet-custom {
+  @apply w-3 h-3 rounded-full bg-white/20 transition-all duration-300;
+}
+
+.swiper-pagination-bullet-custom-active {
+  @apply bg-red-500 w-3 h-3;
+}
