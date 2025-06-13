@@ -7,7 +7,7 @@ import ArticlesSection from "@/component/Blog/Post";
 
 export default function GateOfAfricaDesign() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-red-900 to-gray-900 overflow-hidden">
+    <div className="">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-red-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>

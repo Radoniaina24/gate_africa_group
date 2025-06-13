@@ -60,7 +60,7 @@ function ArticlesSection() {
             href="https://gateofafrica.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center mx-auto group"
+            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl flex items-center justify-center mx-auto group"
           >
             Voir tous les articles
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
