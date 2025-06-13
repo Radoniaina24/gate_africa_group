@@ -2,6 +2,7 @@ import EmediaFMSection from "@/component/EmediaFMSection/EmediaFMSection";
 import Event from "@/component/Event/Event";
 import GateAfricaPresentation from "@/component/GateAfricaPresentation/GateAfricaPresentation";
 import Header from "@/component/Header/Header";
+import Health from "@/component/Health";
 import UniversitesSection from "@/component/UniversitesSection/UniversitesSection";
 import GateOfAfricaDesign from "@/features/Blog";
 
@@ -15,30 +16,8 @@ export default function Home() {
         <GateOfAfricaDesign />
         <EmediaFMSection />
         <UniversitesSection />
+        <Health />
       </div>
     </>
   );
-}
-
-{
-  /* <CompanySection /> */
-}
-{
-  /* <Mission />
-      <Tabs /> */
-}
-{
-  /* <CollaborationSection />
-      <Healthy />
-      <RadioSection />
-      <Landmark />
-      <SophysSection /> */
-}
-{
-  /* <VideoSection /> */
-}
-{
-  /* <ContactForm />
-      <Footer />
-      <Scroll /> */
 }
