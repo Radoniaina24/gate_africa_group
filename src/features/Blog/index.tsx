@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-
 import Hero from "@/component/Blog/Hero";
-import Footer from "@/component/Blog/Footer";
-import ArticlesSection from "@/component/Blog/Post";
 
 export default function GateOfAfricaDesign() {
   return (
@@ -17,15 +14,7 @@ export default function GateOfAfricaDesign() {
           style={{ animationDuration: "20s" }}
         ></div>
       </div>
-
-      {/* Hero Section */}
       <Hero />
-      {/* Article */}
-
-      <ArticlesSection />
-      {/* Footer Note */}
-      <Footer />
-
       <style jsx>{`
         @keyframes fade-in-up {
           from {

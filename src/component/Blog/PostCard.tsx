@@ -19,7 +19,7 @@ export function ArticleCard({ post }: { post: Post }) {
 
   return (
     <article
-      className="bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 overflow-hidden hover:scale-105 transition-all duration-300 group shadow-xl hover:shadow-2xl"
+      className="bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 overflow-hidden  transition-all duration-300 group shadow-xl hover:shadow-2xl"
       role="article"
       aria-labelledby={`article-title-${post?.title?.rendered
         .replace(/\s+/g, "-")
@@ -28,7 +28,7 @@ export function ArticleCard({ post }: { post: Post }) {
       {/* En-tête avec image ou gradient */}
       <header className="relative">
         <div
-          className={`aspect-video relative overflow-hidden ${
+          className={`aspect-[5/2] relative overflow-hidden ${
             !post.blog_post_layout_featured_media_urls.full
               ? `bg-gradient-to-br `
               : ""
@@ -41,8 +41,8 @@ export function ArticleCard({ post }: { post: Post }) {
                 alt={post.blog_post_layout_featured_media_urls.full[0]}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
-                width={500}
-                height={500}
+                width={400}
+                height={160}
                 onError={(e) => {
                   // Fallback vers le gradient si l'image ne charge pas
                   const target = e.target as HTMLImageElement;
@@ -60,9 +60,9 @@ export function ArticleCard({ post }: { post: Post }) {
           )}
 
           {/* Badge catégorie */}
-          <div className="absolute bottom-4 left-4 z-10">
+          <div className="absolute bottom-3 left-3 z-10">
             <span
-              className={`bg-red-500 text-white px-3 py-1 rounded-full text-xs capitalize font-medium shadow-lg backdrop-blur-sm`}
+              className={`bg-red-500 text-white px-2 py-1 rounded-full text-xs capitalize font-medium shadow-lg backdrop-blur-sm`}
               role="badge"
             >
               {Object.values(post.categories_names).map((cat, index) => (
@@ -74,10 +74,10 @@ export function ArticleCard({ post }: { post: Post }) {
       </header>
 
       {/* Contenu de l'article */}
-      <div className="p-6">
+      <div className="p-4">
         {/* Métadonnées */}
         <div
-          className="flex items-center text-gray-400 text-sm mb-3"
+          className="flex items-center text-gray-400 text-xs mb-2"
           role="group"
           aria-label="Métadonnées de l'article"
         >
@@ -94,7 +94,7 @@ export function ArticleCard({ post }: { post: Post }) {
           id={`article-title-${post?.title?.rendered
             .replace(/\s+/g, "-")
             .toLowerCase()}`}
-          className="text-lg font-bold text-white mb-3 group-hover:text-red-300 transition-colors duration-200 leading-tight"
+          className="text-base font-bold text-white mb-2 group-hover:text-red-300 transition-colors duration-200 leading-tight"
         >
           {post.title.rendered}
         </h3>
@@ -102,7 +102,7 @@ export function ArticleCard({ post }: { post: Post }) {
         {/* Extrait */}
 
         <div
-          className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3"
+          className="text-gray-300 text-xs leading-relaxed mb-2 line-clamp-2"
           dangerouslySetInnerHTML={{ __html: post.content.rendered }}
         />
 
@@ -110,12 +110,12 @@ export function ArticleCard({ post }: { post: Post }) {
         <a
           href={post.link}
           target="_blanck"
-          className="inline-flex items-center text-red-400 hover:text-red-300 text-sm font-medium transition-colors duration-200 group/link"
+          className="inline-flex items-center text-red-400 hover:text-red-300 text-xs font-medium transition-colors duration-200 group/link"
           aria-label={`Lire l'article complet: ${post.title.rendered}`}
         >
           <span>Lire la suite</span>
           <ArrowRight
-            className="ml-1 w-4 h-4 group-hover/link:translate-x-1 transition-transform duration-200"
+            className="ml-1 w-3 h-3 group-hover/link:translate-x-1 transition-transform duration-200"
             aria-hidden="true"
           />
         </a>
