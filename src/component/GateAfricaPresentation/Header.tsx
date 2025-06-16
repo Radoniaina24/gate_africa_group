@@ -15,11 +15,11 @@ export default function Header() {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white bg-opacity-20 rounded-full mb-8 backdrop-blur-sm">
             <Building2 className="w-10 h-10 text-red-500" />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+          <h1 className="text-5xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             Gate Africa Group
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-white to-blue-200 mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl text-blue-100 font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-xl text-blue-100 font-light max-w-3xl mx-auto leading-relaxed">
             Gate Africa Group est un groupe panafricain implanté à Madagascar, à
             l&apos;île Maurice et en pleine expansion à l&apos;international.
           </p>

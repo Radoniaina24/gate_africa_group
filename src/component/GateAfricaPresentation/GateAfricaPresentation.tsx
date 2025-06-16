@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./Header";
 import Implantations from "./Implantations";
-import Activity from "./Activity";
 
 import Mission from "./Mission";
 
@@ -13,13 +12,8 @@ export default function GateAfricaPresentation() {
 
       {/* Section principale */}
       <div className="max-w-7xl mx-auto px-6 py-16">
-        {/* Implantations géographiques */}
         <Implantations />
 
-        {/* Secteurs d'activité */}
-        <Activity />
-
-        {/* Mission */}
         <Mission />
       </div>
     </div>

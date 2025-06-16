@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
       "via.placeholder.com",
       "source.unsplash.com",
       "gateofafrica.com",
+      "flagcdn.com",
     ],
     remotePatterns: [
       {
