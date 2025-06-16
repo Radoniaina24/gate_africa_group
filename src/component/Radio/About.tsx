@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
       {/* Bloc texte */}
-      <motion.div className="md:col-span-2  p-6 rounded-xl bg-gradient-to-br from-gray-900 via-red-900 to-gray-900">
+      <motion.div className="md:col-span-2  p-6 rounded-xl bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
         <div className="grid grid-cols-1 xl:grid-cols-2 ">
           <div className="rounded-2xl p-5 sm:p-10 ">
             <div className=" flex gap-3 text-md font-semibold  text-white leading-relaxed ">
