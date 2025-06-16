@@ -83,8 +83,19 @@ export default function Hero() {
                   <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
                 </Link>
               </div>
+            </div>{" "}
+            <div>
+              <ArticlesSection />
+              {/* <a
+                href="https://gateofafrica.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-3 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl flex items-center justify-center mx-auto group"
+              >
+                Voir tous les articles
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a> */}
             </div>
-
             {/* Right Content - Professional Image Section */}
             <div
               className={`relative ${
@@ -120,19 +131,6 @@ export default function Hero() {
                   l&apos;Afrique
                 </p>
               </div>
-            </div>
-
-            <div>
-              <ArticlesSection />
-              <a
-                href="https://gateofafrica.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-3 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl flex items-center justify-center mx-auto group"
-              >
-                Voir tous les articles
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
             </div>
           </div>
         </div>

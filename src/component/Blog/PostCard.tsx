@@ -62,7 +62,7 @@ export function ArticleCard({ post }: { post: Post }) {
           {/* Badge catégorie */}
           <div className="absolute bottom-3 left-3 z-10">
             <span
-              className={`bg-red-500 text-white px-2 py-1 rounded-full text-xs capitalize font-medium shadow-lg backdrop-blur-sm`}
+              className={`bg-red-500 text-white px-2 py-1 rounded-full text-xs  lowercase font-medium shadow-lg backdrop-blur-sm`}
               role="badge"
             >
               {Object.values(post.categories_names).map((cat, index) => (
