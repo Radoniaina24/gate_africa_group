@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import ArticlesSection from "./Post";
+import Link from "next/link";
 /* eslint-disable */
 export default function Hero() {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -13,7 +14,11 @@ export default function Hero() {
     }, 4000);
     return () => clearInterval(interval);
   }, []);
-
+  const highlights = [
+    "Suivi par des millions de personnes",
+    "Couverture panafricaine",
+    "Actualités en temps réel",
+  ];
   return (
     <div className="relative z-10 max-w-7xl mx-auto px-6 pt-12">
       <section className="py-16 px-4">
@@ -32,7 +37,7 @@ export default function Hero() {
 
         {/* Main Content */}
         <div className="max-w-7xl mx-auto ">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center ">
             {/* Left Content */}
             <div
               className={`space-y-3 ${
@@ -47,17 +52,36 @@ export default function Hero() {
                   </span>
                 </h1>
               </div>
-              <ArticlesSection />
-              <div>
-                <a
-                  href="https://gateofafrica.com/"
+              <p className="text-md text-gray-300 leading-relaxed max-w-lg">
+                Découvrez &apos;actualité économique, politique et sociale du
+                continent africain avec le média en ligne de référence du groupe
+                Gate Africa.
+              </p>
+
+              {/* Highlights */}
+              <div className="space-y-4">
+                {highlights.map((highlight, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center text-gray-300 group"
+                  >
+                    <div className="w-3 h-3 bg-gradient-to-r from-red-400 to-red-600 rounded-full mr-4 group-hover:scale-110 transition-transform duration-300"></div>
+                    <span className="text-md font-medium">{highlight}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-4">
+                <Link
+                  href={"https://gateofafrica.com/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl flex items-center justify-center mx-auto group"
+                  className="group bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
                 >
-                  Voir tous les articles
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+                  Visitez GateOfAfrica.com
+                  <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
+                </Link>
               </div>
             </div>
 
@@ -96,6 +120,19 @@ export default function Hero() {
                   l&apos;Afrique
                 </p>
               </div>
+            </div>
+
+            <div>
+              <ArticlesSection />
+              <a
+                href="https://gateofafrica.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-3 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl flex items-center justify-center mx-auto group"
+              >
+                Voir tous les articles
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
           </div>
         </div>
