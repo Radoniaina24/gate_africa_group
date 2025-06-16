@@ -1,6 +1,7 @@
 import Event from "@/component/Event/Event";
 import GateAfricaPresentation from "@/component/GateAfricaPresentation/GateAfricaPresentation";
 import Header from "@/component/Header/Header";
+import RadioSection from "@/component/Radio/Radio";
 
 import GateOfAfricaDesign from "@/features/Blog";
 
@@ -12,8 +13,8 @@ export default function Home() {
       <GateAfricaPresentation />
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-red-900 to-gray-900 overflow-hidden">
         <GateOfAfricaDesign />
-        {/* <EmediaFMSection />
-        <UniversitesSection />
+        <RadioSection />
+        {/* <UniversitesSection />
         <Health /> */}
       </div>
     </>

@@ -1,53 +1,80 @@
 "use client";
 import React from "react";
-import Contact from "./Contact";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
+import { ArrowRight, CheckCircle } from "lucide-react";
+import Galerie from "./Galerie";
 
 export default function About() {
-  const texte =
-    "Fondée en 2024, notre radio locale est bien plus qu’un simple média : c’est une véritable voix pour la communauté. Animée par la passion de l'information, de la culture et de la musique, notre équipe s'engage chaque jour à offrir une programmation riche, dynamique et accessible à tous. Nous mettons un point d’honneur à valoriser les talents locaux, à donner la parole aux acteurs de notre région, et à proposer des émissions captivantes qui abordent l’actualité, la culture, la musique, le sport, la vie associative et bien plus encore. Grâce à une approche moderne, interactive et proche de ses auditeurs, notre radio devient un lien fort entre les citoyens, les artistes, les entrepreneurs et les institutions. Rejoignez-nous et vivez une expérience radiophonique authentique, engagée et profondément enracinée dans la vie locale.";
-
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
       {/* Bloc texte */}
-      <motion.div
-        className="md:col-span-2 bg-black bg-opacity-30 p-6 rounded-xl"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <h2 className="text-2xl font-bold mb-4">
-          À Propos de E-media 107.8 FM
-        </h2>
-        <p className="mb-4">{texte}</p>
-        <Contact />
-      </motion.div>
-
-      {/* Bloc image */}
-      <motion.div
-        className="relative h-40 md:h-auto rounded-xl overflow-hidden"
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        whileHover={{ scale: 1.02 }}
-      >
-        <Image
-          src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1747805711/radio_tfde71.jpg"
-          alt="Studio radio"
-          className="object-cover w-full h-full"
-          width={400}
-          height={400}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
-        <div className="absolute bottom-4 left-4 right-4">
-          <p className="font-bold text-white text-sm">
-            Studio moderne au cœur de la ville
-          </p>
+      <motion.div className="md:col-span-2  p-6 rounded-xl bg-gradient-to-br from-gray-900 via-red-900 to-gray-900">
+        <div className="grid grid-cols-1 xl:grid-cols-2 ">
+          <div className="rounded-2xl p-5 sm:p-10 ">
+            <div className=" flex gap-3 text-md font-semibold  text-white leading-relaxed ">
+              <div>
+                <CheckCircle className="text-red-500" />{" "}
+              </div>
+              Écoutez de la bonne musique, vos émissions préférées et accédez à
+              des contenus éducatifs de qualité.
+            </div>
+            <div className=" flex gap-3 text-md font-semibold leading-relaxed">
+              <div>
+                <CheckCircle className="text-red-500" />
+              </div>
+              E-media FM : la radio économique et éducative numéro 1 à
+              Madagascar, écoutée dans plus de 5 grandes régions du pays.
+            </div>
+            <div className="mt-4">
+              <a
+                href="https://gateofafrica.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 flex justify-center items-center py-3 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl  group"
+              >
+                Ecouter la radio
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>{" "}
+          </div>
+          <StatsSection />
         </div>
       </motion.div>
+
+      <Galerie />
     </section>
+  );
+}
+
+interface StatCardProps {
+  title: string;
+  subtitle: string;
+}
+
+const StatCard = ({ title, subtitle }: StatCardProps) => (
+  <div className="bg-white rounded-xl p-6 border border-red-200 shadow-md hover:shadow-lg transition-shadow duration-300 hover:border-red-400">
+    <div className="text-4xl font-extrabold text-red-600 mb-2">{title}</div>
+    <div className="text-sm font-medium text-gray-800">{subtitle}</div>
+  </div>
+);
+
+function StatsSection() {
+  const stats = [
+    { title: "#1", subtitle: "Radio Économique" },
+    { title: "5+", subtitle: "Grandes Régions" },
+    { title: "📻", subtitle: "Contenu Éducatif" },
+  ];
+
+  return (
+    <div className="flex items-center">
+      <div className="hidden xl:block">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {stats.map((stat, index) => (
+            <StatCard key={index} title={stat.title} subtitle={stat.subtitle} />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }

@@ -1,32 +1,11 @@
 "use client";
 import { Radio } from "lucide-react";
-import Galerie from "./Galerie";
+
 import About from "./About";
-import { FaBroadcastTower } from "react-icons/fa";
 
 export default function RadioSection() {
   return (
-    <section
-      className="bg-gradient-to-b from-blue-50 via-white to-blue-50"
-      id="radio"
-    >
-      <div className="max-w-4xl mx-auto text-center py-10">
-        <div className="flex items-center justify-center gap-4">
-          <div className="p-4 bg-red-100 rounded-full shadow-md">
-            <FaBroadcastTower className="text-red-600 text-4xl" />
-          </div>
-          <h1 className="text-4xl font-extrabold text-red-700 tracking-wide">
-            E-media 107.8 FM
-          </h1>
-        </div>
-        <p className="mt-2 text-gray-600 text-sm md:text-base">
-          E-media 107.8 FM est une radio dynamique qui informe, divertit et
-          connecte la communauté à travers une programmation riche, engagée et
-          actuelle. Portée par une équipe passionnée, elle donne la parole à
-          tous et diffuse les ondes de la culture, de l&apos;actualité et de
-          l&apos;innovation.
-        </p>
-      </div>
+    <section className="" id="radio">
       <div className="relative w-full overflow-hidden leading-[0] -mb-1">
         <svg
           className="block w-full h-0 md:h-20 rotate-180"
@@ -40,9 +19,9 @@ export default function RadioSection() {
           />
         </svg>
       </div>
-      <div className="bg-blue-900 text-white min-h-screen p-6 md:p-8">
+      <div className="bg-blue-900 text-white  p-6 md:p-8">
         {/* En-tête */}
-        <header className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+        <header className=" flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
           <div className="flex items-center">
             <div className="bg-red-600 rounded-full p-3 mr-4">
               <Radio size={32} />
@@ -57,12 +36,8 @@ export default function RadioSection() {
             </div>
           </div>
         </header>
-
-        {/* À propos de la radio */}
+        <div></div>
         <About />
-
-        {/* Galerie d'images */}
-        <Galerie />
       </div>
     </section>
   );
