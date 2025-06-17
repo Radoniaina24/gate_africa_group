@@ -31,3 +31,19 @@ body {
 .swiper-pagination-bullet-custom-active {
   @apply bg-red-500 w-3 h-3;
 }
+
+/* Animation CSS classique */
+@keyframes custom-marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.my-marquee {
+  animation: custom-marquee 15s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+}

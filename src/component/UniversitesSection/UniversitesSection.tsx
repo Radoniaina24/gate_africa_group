@@ -6,8 +6,9 @@ const SectionHeader: React.FC = () => (
     <div className="inline-flex items-center bg-red-100 text-red-600 px-6 py-3 rounded-full text-sm font-semibold mb-6">
       Excellence Académique
     </div>
-    <h1 className="text-4xl sm:text-5xl lg:text-5xl font-black text-gray-900 mb-8">
-      La force de nos <span className="text-red-600">3 universités</span>
+    <h1 className="text-4xl sm:text-5xl lg:text-5xl uppercase  font-black text-gray-900 mb-8">
+      La force de nos
+      <br /> <span className="text-red-600 ">3 universités</span>
     </h1>
     <div className="max-w-4xl mx-auto space-y-6 text-md text-gray-800 leading-relaxed">
       <p className="font-medium">
