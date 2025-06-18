@@ -28,7 +28,7 @@ export default function About() {
             </div>
             <div className="mt-4">
               <a
-                href="https://gateofafrica.com/"
+                href="https://www.facebook.com/share/18v4DXYssJ/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 flex justify-center items-center py-3 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl  group"

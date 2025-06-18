@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // Header principal
@@ -68,9 +69,17 @@ const UniversityCard: React.FC<University> = ({
   link,
   tags,
 }) => (
-  <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 w-full max-w-sm">
+  <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200">
     {/* Image d’en-tête */}
-    <img src={imageUrl} alt={name} className="w-full h-36 object-cover" />
+    <div className="flex justify-center">
+      <Image
+        src={imageUrl}
+        alt={name}
+        width={200}
+        height={200}
+        className="object-cover"
+      />
+    </div>
 
     {/* Contenu */}
     <div className="p-4 space-y-3">
@@ -154,12 +163,11 @@ const UniversitesSection: React.FC = () => {
   return (
     <section className=" bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-          <SectionHeader />
+        <div className="grid grid-cols-1">
           <SynergyStatement />
         </div>
-
-        <div className="grid lg:grid-cols-3 gap-8">
+        <SectionHeader />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {universities.map((uni, idx) => (
             <UniversityCard key={idx} {...uni} />
           ))}

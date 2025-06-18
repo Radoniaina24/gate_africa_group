@@ -37,9 +37,9 @@ export default function Health() {
           </div>
           <div className="grid lg:grid-cols-2 gap-6 h-auto py-10">
             {/* Gate Africa Agribusiness */}
-            <Agribusiness />
+            {/* <Agribusiness /> */}
             {/* Landmark */}
-            <LandMark />
+            {/* <LandMark /> */}
           </div>
         </div>
       </div>
