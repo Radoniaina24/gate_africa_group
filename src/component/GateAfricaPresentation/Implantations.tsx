@@ -18,36 +18,56 @@ export default function ProfessionalLayout() {
       name: "Éducation & Universités spécialisées",
       color: "text-emerald-600",
       bgColor: "bg-emerald-50",
+      description:
+        "Des pôles d’enseignement supérieur innovants pour former les compétences clés du continent.",
     },
     {
       icon: Heart,
       name: "Santé & Médical international",
       color: "text-rose-600",
       bgColor: "bg-rose-50",
+      description:
+        "Soins spécialisés, évacuations sanitaires, accompagnement personnalisé et tourisme médical sécurisé.",
     },
     {
       icon: Cpu,
-      name: "Technologie & numérique",
+      name: "Technologie, numérique & médias",
       color: "text-blue-600",
       bgColor: "bg-blue-50",
+      description:
+        "Solutions digitales, IA, cybersécurité, automatisation, production audiovisuelle, plateformes médias et communication d’influence.",
     },
     {
       icon: Briefcase,
-      name: "Recrutement international",
+      name: "Recrutement international & Business Development",
       color: "text-indigo-600",
       bgColor: "bg-indigo-50",
+      description:
+        "Placement de talents, mobilité professionnelle, et développement de partenariats économiques durables.",
     },
     {
       icon: Wheat,
-      name: "Agriculture & agro-industrie",
+      name: "Agriculture, agro-industrie & import-export",
       color: "text-green-600",
       bgColor: "bg-green-50",
+      description:
+        "Production agricole, transformation, nutrition animale et ouverture des marchés à l’export.",
     },
     {
       icon: Video,
-      name: "Audiovisuel, médias & communication",
+      name: "Tourisme spécialisé & accompagnement sur mesure",
       color: "text-purple-600",
       bgColor: "bg-purple-50",
+      description:
+        "Tourisme médical, religieux, professionnel ou institutionnel, avec des services logistiques intégrés.",
+    },
+    {
+      icon: TrendingUp,
+      name: "Événementiel international & rayonnement stratégique",
+      color: "text-orange-600",
+      bgColor: "bg-orange-50",
+      description:
+        "Organisation de forums, salons, conférences et grands événements panafricains au service du développement et de l’influence.",
     },
   ];
 
@@ -74,43 +94,48 @@ export default function ProfessionalLayout() {
 
   return (
     <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50">
-      <div className="max-w-6xl mx-auto px-4 py-10">
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
+      <div className="container mx-auto px-4 py-10">
+        <div className="grid lg:grid-cols-3 gap-10 ">
           {/* Left Side - Activities */}
-          <div className="order-2 lg:order-1">
+          <div className=" md:col-span-2">
             <div className="sticky top-6">
-              <div className="mb-8">
+              <div className="mb-3">
                 <div className="inline-flex items-center px-3 py-1 bg-blue-50 rounded-full border border-blue-200 mb-3">
                   <Briefcase className="w-3 h-3 mr-1 text-blue-600" />
                   <span className="text-xs font-semibold text-blue-700">
                     Nos Activités
                   </span>
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                  Secteurs d&apos;Activité
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  Les 7 Piliers de Notre Engagement en Afrique
                 </h2>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Des domaines d&apos;expertise complémentaires pour répondre
-                  aux enjeux stratégiques de développement continental.
+                  Des secteurs stratégiques au service d&apos;un développement
+                  intégré, durable et panafricain.
                 </p>
               </div>
 
-              <div className="space-y-3">
+              <div className="">
                 {sectors.map((sector, index) => {
-                  const IconComponent = sector.icon;
+                  const Icon = sector.icon;
                   return (
                     <div
                       key={index}
-                      className="flex items-center space-x-3 py-2 px-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 cursor-pointer group"
+                      className="   transition-shadow duration-300 "
                     >
-                      <div
-                        className={`w-8 h-8 ${sector.bgColor} rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}
-                      >
-                        <IconComponent className={`w-4 h-4 ${sector.color}`} />
+                      <div className="flex items-center space-x-4">
+                        <div
+                          className={`w-8 h-8 ${sector.bgColor} rounded-xl flex items-center justify-center`}
+                        >
+                          <Icon className={`w-5 h-5 ${sector.color}`} />
+                        </div>
+                        <h3 className="text-md font-semibold text-gray-900">
+                          {sector.name}
+                        </h3>
                       </div>
-                      <h3 className="font-medium text-gray-900 text-sm group-hover:text-blue-700 transition-colors">
-                        {sector.name}
-                      </h3>
+                      <p className="text-gray-700 text-sm pl-12 leading-relaxed">
+                        {sector.description}
+                      </p>
                     </div>
                   );
                 })}
