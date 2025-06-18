@@ -114,7 +114,6 @@ export default function Sophys() {
               </div>
             </div>
 
-            {/* Colonne droite - Domaines d'intervention */}
             {/* Image avec badge animé */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}

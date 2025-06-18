@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 export default function Tourisme() {
   const handleClick = () => {
@@ -23,162 +24,28 @@ export default function Tourisme() {
           {/* Logo - Côté gauche */}
           <div className="lg:w-1/2 flex justify-center lg:justify-start mb-12 lg:mb-0">
             <div className="relative">
-              {/* Cercle de fond avec effet globe */}
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-200 via-teal-200 to-green-200 rounded-full animate-pulse opacity-30 scale-110"></div>
-
-              {/* Container du logo */}
-              <div className="relative bg-white rounded-full p-12 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-500 transform hover:scale-105">
-                {/* Logo globe médical */}
-                <div className="w-48 h-48 flex items-center justify-center">
-                  <svg className="w-full h-full" viewBox="0 0 200 200">
-                    {/* Globe terrestre */}
-                    <circle
-                      cx="100"
-                      cy="100"
-                      r="80"
-                      fill="url(#globeGradient)"
-                      stroke="#10b981"
-                      strokeWidth="2"
-                    />
-
-                    {/* Continents stylisés */}
-                    <path
-                      d="M60,80 Q80,60 100,80 Q120,100 140,80 Q160,60 180,80"
-                      fill="none"
-                      stroke="#059669"
-                      strokeWidth="3"
-                      opacity="0.7"
-                    />
-                    <path
-                      d="M40,120 Q60,100 80,120 Q100,140 120,120 Q140,100 160,120"
-                      fill="none"
-                      stroke="#059669"
-                      strokeWidth="3"
-                      opacity="0.7"
-                    />
-
-                    {/* Croix médicale au centre */}
-                    <rect
-                      x="92"
-                      y="75"
-                      width="16"
-                      height="50"
-                      rx="8"
-                      fill="#dc2626"
-                    />
-                    <rect
-                      x="75"
-                      y="92"
-                      width="50"
-                      height="16"
-                      rx="8"
-                      fill="#dc2626"
-                    />
-
-                    {/* Lignes de longitude/latitude */}
-                    <circle
-                      cx="100"
-                      cy="100"
-                      r="80"
-                      fill="none"
-                      stroke="#10b981"
-                      strokeWidth="1"
-                      opacity="0.3"
-                    />
-                    <ellipse
-                      cx="100"
-                      cy="100"
-                      rx="80"
-                      ry="40"
-                      fill="none"
-                      stroke="#10b981"
-                      strokeWidth="1"
-                      opacity="0.3"
-                    />
-                    <ellipse
-                      cx="100"
-                      cy="100"
-                      rx="40"
-                      ry="80"
-                      fill="none"
-                      stroke="#10b981"
-                      strokeWidth="1"
-                      opacity="0.3"
-                    />
-
-                    {/* Avions en mouvement */}
-                    <g
-                      className="animate-spin"
-                      style={{
-                        transformOrigin: "100px 100px",
-                        animationDuration: "20s",
-                      }}
-                    >
-                      <path
-                        d="M100,30 L105,35 L100,40 L95,35 Z"
-                        fill="#0891b2"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M170,100 L175,105 L170,110 L165,105 Z"
-                        fill="#0891b2"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M100,170 L105,175 L100,180 L95,175 Z"
-                        fill="#0891b2"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M30,100 L35,105 L30,110 L25,105 Z"
-                        fill="#0891b2"
-                        opacity="0.8"
-                      />
-                    </g>
-
-                    {/* Points de destination */}
-                    <circle
-                      cx="70"
-                      cy="60"
-                      r="3"
-                      fill="#f59e0b"
-                      className="animate-pulse"
-                    />
-                    <circle
-                      cx="130"
-                      cy="70"
-                      r="3"
-                      fill="#f59e0b"
-                      className="animate-pulse"
-                      style={{ animationDelay: "0.5s" }}
-                    />
-                    <circle
-                      cx="150"
-                      cy="130"
-                      r="3"
-                      fill="#f59e0b"
-                      className="animate-pulse"
-                      style={{ animationDelay: "1s" }}
-                    />
-                    <circle
-                      cx="50"
-                      cy="140"
-                      r="3"
-                      fill="#f59e0b"
-                      className="animate-pulse"
-                      style={{ animationDelay: "1.5s" }}
-                    />
-
-                    {/* Dégradé pour le globe */}
-                    <defs>
-                      <radialGradient id="globeGradient" cx="0.3" cy="0.3">
-                        <stop offset="0%" stopColor="#a7f3d0" />
-                        <stop offset="100%" stopColor="#34d399" />
-                      </radialGradient>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.9 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <Image
+                  src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750235595/medical_zwtmry.jpg"
+                  alt="Équipe Sophys au travail"
+                  className="rounded-2xl shadow-2xl"
+                  width={450}
+                  height={450}
+                />
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="absolute -bottom-5 -right-10 bg-yellow-400 text-gray-900 p-3 rounded-2xl shadow-lg"
+                ></motion.div>
+              </motion.div>
 
               {/* Éléments décoratifs - drapeaux/destinations */}
               <div className="absolute -top-6 -right-6 w-8 h-6 bg-gradient-to-r from-red-500 to-orange-500 rounded-sm animate-bounce opacity-80"></div>
@@ -270,22 +137,29 @@ export default function Tourisme() {
               </div>
             </div>
             {/* Bouton d'action */}
-            <div className="pt-2">
-              <div
+            <div className="pt-4">
+              <button
                 onClick={handleClick}
-                className=" flex font-bold underline text-white  items-center gap-5 cursor-pointer"
+                className="group text-sm relative px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
               >
-                En savoir plus
-                <div className="">
-                  <Image
-                    src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750235595/medical_zwtmry.jpg"
-                    alt="logo-gate-group-africa"
-                    width={60}
-                    height={60}
-                    className="rounded-lg  h-10"
-                  />
-                </div>
-              </div>
+                <span className="relative z-10 flex items-center space-x-2">
+                  <span>En savoir plus</span>
+                  <svg
+                    className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </button>
             </div>
           </div>
         </div>
