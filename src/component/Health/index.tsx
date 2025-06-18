@@ -2,8 +2,6 @@ import React from "react";
 import Clinique from "./Clinique";
 import Tourisme from "./Tourisme";
 import Sophys from "./Sophys";
-import Agribusiness from "./Agribusiness";
-import LandMark from "./LandMark";
 
 export default function Health() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 type EventData = {
   title: string;
@@ -36,15 +36,7 @@ const events: EventData[] = [
 ];
 
 export default function FeaturedEvents() {
-  const [activeEvent, setActiveEvent] = useState(0);
-
   // Auto-rotate header title
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveEvent((prev) => (prev + 1) % events.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
 
   // Animate on scroll
   useEffect(() => {
