@@ -19,7 +19,7 @@ export default function Tourisme() {
       </div>
 
       <div className="container mx-auto px-6 py-5 relative">
-        <div className="flex flex-col lg:flex-row items-center justify-between min-h-[80vh]">
+        <div className="flex flex-col  lg:flex-row items-center justify-between min-h-[80vh]">
           {/* Logo - Côté gauche */}
           <div className="lg:w-1/2 flex justify-center lg:justify-start mb-12 lg:mb-0">
             <div className="relative">

@@ -27,12 +27,8 @@ export default function Health() {
           {/* <div className="grid lg:grid-cols-3 gap-6 h-auto"> */}
           {/* Clinique Innovation */}
           <Clinique />
-
           {/* Medical Tourisme International */}
           <Tourisme />
-
-          {/* Sophys */}
-          {/* <Sophys /> */}
           {/* </div> */}
           {/* <div className="grid lg:grid-cols-2 gap-6 h-auto py-10"> */}
           {/* Gate Africa Agribusiness */}

@@ -2,7 +2,9 @@ import Event from "@/component/Event/Event";
 import GateAfricaPresentation from "@/component/GateAfricaPresentation/GateAfricaPresentation";
 import Header from "@/component/Header/Header";
 import Health from "@/component/Health";
+import Sophys from "@/component/Health/Sophys";
 import RadioSection from "@/component/Radio/Radio";
+
 import UniversitesSection from "@/component/UniversitesSection/UniversitesSection";
 
 import GateOfAfricaDesign from "@/features/Blog";
@@ -20,6 +22,7 @@ export default function Home() {
         <RadioSection />
         <UniversitesSection />
         <Health />
+        <Sophys />
       </div>
     </>
   );
