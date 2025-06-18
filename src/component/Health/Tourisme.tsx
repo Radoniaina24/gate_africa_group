@@ -19,7 +19,7 @@ export default function Tourisme() {
         <div className="absolute bottom-20 right-20 w-28 h-28 border-2 border-cyan-300 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-6 py-5 relative">
+      <div className="container mx-auto px-6 py-3 relative">
         <div className="flex flex-col  lg:flex-row items-center justify-between min-h-[80vh]">
           {/* Logo - Côté gauche */}
           <div className="lg:w-1/2 flex justify-center lg:justify-start mb-12 lg:mb-0">
@@ -86,7 +86,7 @@ export default function Tourisme() {
               processus : diagnostic, organisation logistique, accompagnement
               administratif et suivi post-traitement.
             </p>
-            Destinations
+
             {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-6">
               <div className="text-center p-3 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
                 <div className="text-2xl mb-2">🌍</div>

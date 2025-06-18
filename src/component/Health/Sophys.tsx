@@ -10,8 +10,8 @@ export default function Sophys() {
     );
   };
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-16">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-16 ">
+      <div className="max-w-7xl mx-auto space-y-2 px-10 lg:px-10">
         <div className="">
           {/* En-tête avec logo et titre */}
           <div className="text-center mb-12">
@@ -53,9 +53,9 @@ export default function Sophys() {
           </div>
 
           {/* Contenu principal en deux colonnes */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start place-items-center">
+          <div className="flex flex-col-reverse items-center lg:grid lg:grid-cols-2 gap-12 lg:items-start place-items-center">
             {/* Colonne gauche - Description */}
-            <div className="space-y-2">
+            <div className="">
               <p className="text-md text-gray-700 leading-relaxed">
                 <span className="font-semibold text-blue-700">Sophys</span> est
                 la filiale spécialisée de

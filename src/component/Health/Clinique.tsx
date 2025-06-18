@@ -17,7 +17,7 @@ export default function CliniqueInnovationHero() {
           <div className="lg:w-1/2 space-y-2 lg:pr-12">
             {/* Titre principal */}
             <div className="space-y-2">
-              <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent leading-tight">
+              <h1 className="text-4xl mt-8 md:mt-0 font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent leading-tight">
                 Clinique Innovation
               </h1>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
