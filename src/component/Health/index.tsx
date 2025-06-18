@@ -1,5 +1,6 @@
 import React from "react";
 import Clinique from "./Clinique";
+import Tourisme from "./Tourisme";
 
 export default function Health() {
   return (
@@ -9,7 +10,7 @@ export default function Health() {
         <div className="max-w-7xl mx-auto mb-8">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Volet Santé — Clinique Innovation
+              Volet Santé — Clinique Innovation & Medical Tourisme International
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto rounded-full"></div>
             <div className="max-w-lg mx-auto">
@@ -28,7 +29,7 @@ export default function Health() {
           <Clinique />
 
           {/* Medical Tourisme International */}
-          {/* <Tourisme /> */}
+          <Tourisme />
 
           {/* Sophys */}
           {/* <Sophys /> */}

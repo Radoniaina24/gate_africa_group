@@ -123,7 +123,7 @@ export default function CliniqueInnovationHero() {
                       cx="100"
                       cy="40"
                       r="4"
-                      className="text-cyan-500 animate-bounce"
+                      className="text-green-500 animate-bounce"
                     />
                     <circle
                       cx="160"
@@ -136,14 +136,14 @@ export default function CliniqueInnovationHero() {
                       cx="100"
                       cy="160"
                       r="4"
-                      className="text-cyan-500 animate-bounce"
+                      className="text-green-500 animate-bounce"
                       style={{ animationDelay: "1s" }}
                     />
                     <circle
                       cx="40"
                       cy="100"
                       r="4"
-                      className="text-cyan-500 animate-bounce"
+                      className="text-green-500 animate-bounce"
                       style={{ animationDelay: "1.5s" }}
                     />
                   </svg>
