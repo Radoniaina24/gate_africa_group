@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import AlbumClinique from "./Album/AlbumClinique";
 export default function CliniqueInnovationHero() {
   const handleClick = () => {
     window.open(
@@ -110,6 +111,7 @@ export default function CliniqueInnovationHero() {
             </div>
           </div>
         </div>
+        <AlbumClinique />
       </div>
     </div>
   );
