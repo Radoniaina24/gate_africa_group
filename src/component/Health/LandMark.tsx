@@ -3,6 +3,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import AlbumLandmark from "./Album/AlbumLandmark";
 
 export default function LandmarkLanding() {
   const handleClick = () => {
@@ -12,30 +13,6 @@ export default function LandmarkLanding() {
       "noopener,noreferrer"
     );
   };
-
-  // const services = [
-  //   {
-  //     icon: <Megaphone className="w-5 h-5" />,
-  //     text: "Marketing digital et communication institutionnelle",
-  //   },
-  //   {
-  //     icon: <Camera className="w-5 h-5" />,
-  //     text: "Création de contenu multimédia et audiovisuel",
-  //   },
-  //   {
-  //     icon: <Calendar className="w-5 h-5" />,
-  //     text: "Organisation d'événements corporate, salons et roadshows",
-  //   },
-  //   {
-  //     icon: <MapPin className="w-5 h-5" />,
-  //     text: "Street marketing et opérations terrain",
-  //   },
-  //   {
-  //     icon: <Award className="w-5 h-5" />,
-  //     text: "Conseil en image et positionnement de marque",
-  //   },
-  // ];
-
   return (
     <div className="bg-gradient-to-br from-rose-50 via-white to-blue-50 py-16">
       <div className="max-w-7xl mx-auto space-y-2 px-10 lg:px-10">
@@ -179,6 +156,7 @@ export default function LandmarkLanding() {
               </div>
             </div>
           </div>
+          <AlbumLandmark />
         </div>
       </div>
     </div>

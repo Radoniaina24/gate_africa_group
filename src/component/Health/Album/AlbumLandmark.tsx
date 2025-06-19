@@ -17,68 +17,58 @@ interface GalerieItem {
 
 const galerie: GalerieItem[] = [
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339476/4_m7r5wx.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342997/1_trqulm.jpg",
     alt: "Photo radio 1",
     title: "Studio Principal",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339476/3_exfoie.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342998/2_bp5kb9.jpg",
     alt: "Photo radio 2",
     title: "Équipement Audio",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339476/1_n3iple.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342998/5_thrwru.jpg",
     alt: "Photo radio 3",
     title: "Cabine d'Enregistrement",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339477/7_ytcllj.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342999/3_il3zzg.jpg",
     alt: "Photo radio 4",
     title: "Console de Mixage",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339478/10_lqygzu.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342999/7_a6jav5.jpg",
     alt: "Photo radio 5",
     title: "Espace Technique",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339479/11_hp6yyj.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343000/8_xzf107.jpg",
     alt: "Photo radio 6",
     title: "Zone Production",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339481/15_xits8k.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343000/6_pvtta0.jpg",
     alt: "Photo radio 7",
     title: "Salle de Régie",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339478/9_xslbza.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343001/11_dvtcpf.jpg",
     alt: "Photo radio 8",
     title: "Équipement Diffusion",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339479/16_g4rsqg.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343001/10_stcqoz.jpg",
     alt: "Photo radio 9",
     title: "Interface Audio",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339482/24_x6y5mr.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343006/4_oddmsq.jpg",
     alt: "Photo radio 10",
     title: "Configuration Pro",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339481/19_dehzmr.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343013/12_unyx1b.jpg",
     alt: "Photo radio 11",
-    title: "Interface Audio",
-  },
-  {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339481/21_sjvxre.jpg",
-    alt: "Photo radio 12",
-    title: "Configuration Pro",
-  },
-  {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750339476/29_kjbhyi.jpg",
-    alt: "Photo radio 13",
     title: "Configuration Pro",
   },
 ];
@@ -107,12 +97,13 @@ const itemVariants = {
   },
 };
 
-export default function Album() {
+export default function AlbumLandmark() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
   return (
     <>
       <motion.section
-        className="relative py-16 rounded-lg px-6 bg-gradient-to-br from-slate-50 via-white to-slate-100"
+        className="relative py-16 px-6 bg-gradient-to-br from-slate-50 via-white to-slate-100"
         variants={containerVariants}
         initial="hidden"
         animate="show"
@@ -121,21 +112,12 @@ export default function Album() {
         <motion.div
           className="max-w-7xl mx-auto mb-12 text-center"
           variants={itemVariants}
-        >
-          <h2 className="text-4xl md:text-4xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4">
-            Visitez notre studio
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-6"></div>
-          {/* <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Découvrez nos installations professionnelles et notre équipement de
-            pointe
-          </p> */}
-        </motion.div>
+        ></motion.div>
 
         {/* Custom Navigation Buttons */}
-        <button className="gallery-prev-btn group absolute left-4 top-1/2 -translate-y-1/2 z-20 p-4 bg-white/90 backdrop-blur-sm hover:bg-white shadow-xl rounded-full transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+        <button className="gallery-prev-btn group absolute -left-3 top-1/2 -translate-y-1/2 z-20 p-2 bg-gray-800 text-white hover:bg-red-100 shadow-md rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg">
           <svg
-            className="w-6 h-6 text-slate-700 group-hover:text-blue-600 transition-colors"
+            className="w-4 h-4 group-hover:text-red-700 transition-colors"
             fill="none"
             stroke="currentColor"
             strokeWidth="2.5"
@@ -149,9 +131,9 @@ export default function Album() {
           </svg>
         </button>
 
-        <button className="gallery-next-btn group absolute right-4 top-1/2 -translate-y-1/2 z-20 p-4 bg-white/90 backdrop-blur-sm hover:bg-white shadow-xl rounded-full transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+        <button className="gallery-next-btn group absolute -right-3 top-1/2 -translate-y-1/2 z-20 p-2 bg-gray-800 text-white hover:bg-red-100 shadow-md rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg">
           <svg
-            className="w-6 h-6 text-slate-700 group-hover:text-blue-600 transition-colors"
+            className="w-4 h-4 group-hover:text-red-700 transition-colors"
             fill="none"
             stroke="currentColor"
             strokeWidth="2.5"
@@ -171,7 +153,7 @@ export default function Album() {
             loop={true}
             centeredSlides={false}
             autoplay={{
-              delay: 4500,
+              delay: 4000,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
@@ -244,25 +226,6 @@ export default function Album() {
                         />
                       </svg>
                     </div>
-
-                    {/* Image Title Overlay */}
-                    {/* <AnimatePresence>
-                      {hoveredIndex === index && (
-                        <motion.div
-                          className="absolute bottom-0 left-0 right-0 p-6"
-                          variants={overlayVariants}
-                          initial="hidden"
-                          animate="show"
-                          exit="hidden"
-                          transition={{ duration: 0.3 }}
-                        >
-                          <h3 className="text-white font-semibold text-lg mb-1">
-                            {image.title}
-                          </h3>
-                          <div className="w-12 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence> */}
                   </div>
                 </motion.div>
               </SwiperSlide>
