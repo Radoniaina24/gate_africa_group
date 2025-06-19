@@ -93,7 +93,7 @@ export default function AlbumClinique() {
   return (
     <>
       <motion.section
-        className="relative py-16 px-6 "
+        className="relative py-10 px-6 "
         variants={containerVariants}
         initial="hidden"
         animate="show"

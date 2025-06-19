@@ -12,7 +12,7 @@ export default function CliniqueInnovationHero() {
   };
   return (
     <div className="bg-gradient-to-br ">
-      <div className="container mx-auto px-6 py-8">
+      <div className="container mx-auto px-6 pt-8">
         <div className="flex flex-col-reverse  lg:flex-row  items-center justify-between">
           {/* Contenu texte - Côté gauche */}
           <div className="lg:w-1/2 space-y-2 lg:pr-12">
