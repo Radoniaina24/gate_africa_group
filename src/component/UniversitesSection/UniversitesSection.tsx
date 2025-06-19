@@ -163,10 +163,10 @@ const UniversitesSection: React.FC = () => {
   return (
     <section className=" bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        <SectionHeader />
         <div className="grid grid-cols-1">
           <SynergyStatement />
         </div>
-        <SectionHeader />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {universities.map((uni, idx) => (
             <UniversityCard key={idx} {...uni} />
