@@ -142,6 +142,7 @@ export default function Sophys() {
               </motion.div>
             </motion.div>
           </div>
+          {/* Galerie */}
         </div>
       </div>
     </div>

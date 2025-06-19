@@ -2,6 +2,7 @@
 import { Radio } from "lucide-react";
 
 import About from "./About";
+import Album from "./Album";
 
 export default function RadioSection() {
   return (
@@ -38,6 +39,9 @@ export default function RadioSection() {
         </header>
         <div></div>
         <About />
+        <section className="py-10">
+          <Album />
+        </section>
       </div>
     </section>
   );
