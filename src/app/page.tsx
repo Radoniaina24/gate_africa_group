@@ -2,6 +2,7 @@ import Event from "@/component/Event/Event";
 import GateAfricaPresentation from "@/component/GateAfricaPresentation/GateAfricaPresentation";
 import Header from "@/component/Header/Header";
 import Health from "@/component/Health";
+import GateAfricaAgribusiness from "@/component/Health/Agribusiness";
 import LandmarkLanding from "@/component/Health/LandMark";
 import Sophys from "@/component/Health/Sophys";
 import RadioSection from "@/component/Radio/Radio";
@@ -25,6 +26,7 @@ export default function Home() {
         <Health />
         <Sophys />
         <LandmarkLanding />
+        <GateAfricaAgribusiness />
       </div>
     </>
   );
