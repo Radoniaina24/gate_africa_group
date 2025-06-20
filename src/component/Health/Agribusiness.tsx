@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 import AlbumAgri from "./Album/AlbumAgri";
-import { Target } from "lucide-react";
 
 export default function GateAfricaAgribusiness() {
   // const services = [
@@ -62,7 +61,7 @@ export default function GateAfricaAgribusiness() {
           </div>
 
           {/* Contenu principal en deux colonnes */}
-          <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-12 lg:items-start place-items-center">
+          <div className="flex flex-col-reverse items-center lg:grid lg:grid-cols-2 gap-12 lg:items-start place-items-center">
             {/* Colonne gauche - Carte visuelle avec badge animé */}
             <div className="">
               <p className="text-md text-gray-300 leading-relaxed">

@@ -4,6 +4,7 @@ import Header from "@/component/Header/Header";
 import Health from "@/component/Health";
 import GateAfricaAgribusiness from "@/component/Health/Agribusiness";
 import LandmarkLanding from "@/component/Health/LandMark";
+import GateAfricaRecruitment from "@/component/Health/Recrutement";
 import Sophys from "@/component/Health/Sophys";
 import RadioSection from "@/component/Radio/Radio";
 
@@ -27,6 +28,7 @@ export default function Home() {
         <Sophys />
         <LandmarkLanding />
         <GateAfricaAgribusiness />
+        <GateAfricaRecruitment />
       </div>
     </>
   );
