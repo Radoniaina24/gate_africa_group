@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Sprout, Factory, TrendingUp, Users, Cpu, Target } from "lucide-react";
+
 import Image from "next/image";
 import AlbumAgri from "./Album/AlbumAgri";
+import { Target } from "lucide-react";
 
 export default function GateAfricaAgribusiness() {
   // const services = [
