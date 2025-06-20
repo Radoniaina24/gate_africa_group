@@ -7,6 +7,7 @@ import LandmarkLanding from "@/component/Health/LandMark";
 import GateAfricaRecruitment from "@/component/Health/Recrutement";
 import Sophys from "@/component/Health/Sophys";
 import RadioSection from "@/component/Radio/Radio";
+import ScrollToTopButton from "@/component/Scroll/Scroll";
 
 import UniversitesSection from "@/component/UniversitesSection/UniversitesSection";
 
@@ -29,6 +30,7 @@ export default function Home() {
         <LandmarkLanding />
         <GateAfricaAgribusiness />
         <GateAfricaRecruitment />
+        <ScrollToTopButton />
       </div>
     </>
   );

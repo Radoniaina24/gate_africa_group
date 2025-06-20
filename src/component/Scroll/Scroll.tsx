@@ -93,8 +93,7 @@ const ScrollToTopButton = () => {
         className={`
             absolute inset-1 
             w-14 h-14 
-            bg-gradient-to-r from-purple-600 to-blue-600 
-            hover:from-purple-700 hover:to-blue-700 
+           
             text-white 
             rounded-full 
             shadow-2xl 
@@ -108,7 +107,7 @@ const ScrollToTopButton = () => {
       >
         {/* Icône flèche vers le haut */}
         <svg
-          className="w-6 h-6 mx-auto transform group-hover:-translate-y-1 transition-transform duration-300"
+          className="w-6 h-6 mx-auto text-red-600 transform group-hover:-translate-y-1 transition-transform duration-300"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
