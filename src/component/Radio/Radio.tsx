@@ -2,7 +2,21 @@
 import { Radio } from "lucide-react";
 
 import About from "./About";
-import Album from "./Album";
+
+import GaleriePhotoAlbum from "./AlbumStudio";
+import { motion } from "framer-motion";
+const itemVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.95 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
+  },
+};
 
 export default function RadioSection() {
   return (
@@ -40,7 +54,20 @@ export default function RadioSection() {
         <div></div>
         <About />
         <section className="py-10">
-          <Album />
+          <motion.div
+            className="max-w-7xl mx-auto  text-center"
+            variants={itemVariants}
+          >
+            <h2 className="text-4xl md:text-4xl font-bold text-white mb-4">
+              Visitez notre studio
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-6"></div>
+            {/* <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Découvrez nos installations professionnelles et notre équipement de
+            pointe
+          </p> */}
+          </motion.div>
+          {/* <Album /> */} <GaleriePhotoAlbum />
         </section>
       </div>
     </section>
