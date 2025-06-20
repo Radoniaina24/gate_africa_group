@@ -152,8 +152,8 @@ export default function GateAfricaAgribusiness() {
                   src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750415011/506512031_683211541277965_838851079179425619_n_v1949u.jpg"
                   alt="Équipe Sophys au travail"
                   className="rounded-2xl shadow-2xl"
-                  width={500}
-                  height={500}
+                  width={400}
+                  height={400}
                 />
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}

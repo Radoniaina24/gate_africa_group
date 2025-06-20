@@ -78,14 +78,14 @@ export default function GateAfricaRecruitment() {
             </h1>
           </div>
 
-          <div className="max-w-4xl mx-auto py-16">
+          <div className="max-w-5xl mx-auto py-16">
             <div className="relative">
               {/* Ligne centrale */}
               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-400 to-red-600"></div>
 
               <div className="">
-                <div className="flex items-center">
-                  <div className="w-1/2 pr-8 ">
+                <div className="flex flex-col gap-5 lg:flex-row  items-center">
+                  <div className="w-full lg:w-1/2 pr-0 lg:pr-8 ">
                     <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-red-400/20">
                       <h3 className="text-red-400 font-semibold mb-3">
                         Connexion Globale
@@ -104,7 +104,7 @@ export default function GateAfricaRecruitment() {
 
                   <div className="w-4 h-4 bg-red-400 rounded-full border-4 border-gray-900 relative z-10"></div>
 
-                  <div className="w-1/2 pl-8">
+                  <div className="w-full lg:w-1/2 pl-0 lg:pl-8">
                     <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-red-400/20">
                       <h3 className="text-red-400 font-semibold mb-3">
                         Expertise & Développement
@@ -133,7 +133,7 @@ export default function GateAfricaRecruitment() {
           <h2 className="text-3xl font-bold  text-gray-900 mb-8">
             Nos actions <span className="text-red-500">clés</span> :
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3  place-items-center  gap-8">
             <div className="grid md:grid-cols-2 gap-8 col-span-2">
               {actions.map((action, index) => (
                 <motion.div
