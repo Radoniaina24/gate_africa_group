@@ -47,7 +47,7 @@ export default function Hero() {
           }`}
         >
           {/* Enhanced Main Heading */}
-          <div className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl font-black mb-8 leading-[0.9] tracking-tight space-y-5 ">
+          <div className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl font-black  leading-[0.9] tracking-tight space-y-5 ">
             <p className="block bg-gradient-to-r from-white via-red-100 to-red-200 bg-clip-text text-transparent hover:from-red-300 hover:via-white hover:to-red-100 transition-all duration-1000 cursor-default drop-shadow-2xl">
               ACCÉLÉRATEUR
             </p>
@@ -77,21 +77,6 @@ export default function Hero() {
               </span>
               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-red-400 to-red-600 transform scale-x-0 hover:scale-x-100 transition-transform duration-500" />
             </span>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-6 items-start ">
-            <div className="relative group">
-              <div className="absolute -inset-1  blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
-              <AnimatedButton
-                label="Télécharger la brochure"
-                color="blue"
-                size="lg"
-              />
-            </div>
-            <div className="relative group">
-              <div className="absolute -inset-1  rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200" />
-              <AnimatedButton label="Qui sommes nous?" color="red" size="lg" />
-            </div>
           </div>
         </div>
       </div>
