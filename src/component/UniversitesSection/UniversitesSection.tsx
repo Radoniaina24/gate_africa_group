@@ -7,7 +7,7 @@ const SectionHeader: React.FC = () => (
     <div className="inline-flex items-center bg-red-100 text-red-600 px-6 py-3 rounded-full text-sm font-semibold mb-6">
       Excellence Académique
     </div>
-    <h1 className="text-4xl sm:text-5xl lg:text-5xl uppercase  font-black text-gray-900 mb-8">
+    <h1 className="text-4xl sm:text-3xl lg:text-3xl uppercase  font-black text-gray-900 mb-8">
       La force de nos
       <br /> <span className="text-red-600 ">3 universités</span>
     </h1>
@@ -163,6 +163,12 @@ const UniversitesSection: React.FC = () => {
   return (
     <section className=" bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        <div className=" text-center space-y-4 ">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            Volet education et enseignement supérieur
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto rounded-full mb-5"></div>
+        </div>
         <SectionHeader />
         <div className="grid grid-cols-1">
           <SynergyStatement />

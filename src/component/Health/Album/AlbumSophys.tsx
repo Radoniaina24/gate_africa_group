@@ -17,57 +17,57 @@ interface GalerieItem {
 
 const galerie: GalerieItem[] = [
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342997/1_trqulm.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397159/11_evgwkm.jpg",
     alt: "Photo radio 1",
     title: "Studio Principal",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342998/2_bp5kb9.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397157/6_mzbjmb.jpg",
     alt: "Photo radio 2",
     title: "Équipement Audio",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342998/5_thrwru.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397157/4_ijk6mk.jpg",
     alt: "Photo radio 3",
     title: "Cabine d'Enregistrement",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342999/3_il3zzg.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397157/5_i7t8sf.jpg",
     alt: "Photo radio 4",
     title: "Console de Mixage",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750342999/7_a6jav5.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397157/10_d2qcie.jpg",
     alt: "Photo radio 5",
     title: "Espace Technique",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343000/8_xzf107.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397157/7_egf1wp.jpg",
     alt: "Photo radio 6",
     title: "Zone Production",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343000/6_pvtta0.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397156/3_sjt8m0.jpg",
     alt: "Photo radio 7",
     title: "Salle de Régie",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343001/11_dvtcpf.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397156/8_ergjqe.jpg",
     alt: "Photo radio 8",
     title: "Équipement Diffusion",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343001/10_stcqoz.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397156/9_f57nbp.jpg",
     alt: "Photo radio 9",
     title: "Interface Audio",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343006/4_oddmsq.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397156/2_f2jf4x.jpg",
     alt: "Photo radio 10",
     title: "Configuration Pro",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750343013/12_unyx1b.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750397156/1_aiuenf.jpg",
     alt: "Photo radio 11",
     title: "Configuration Pro",
   },
@@ -96,12 +96,14 @@ const itemVariants = {
     },
   },
 };
-export default function AlbumLandmark() {
+
+export default function AlbumSophys() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
   return (
     <>
       <motion.section
-        className="relative py-16 px-6"
+        className="relative py-16 px-6 "
         variants={containerVariants}
         initial="hidden"
         animate="show"

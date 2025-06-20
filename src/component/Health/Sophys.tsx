@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import AlbumSophys from "./Album/AlbumSophys";
 export default function Sophys() {
   const handleClick = () => {
     window.open(
@@ -143,6 +144,9 @@ export default function Sophys() {
             </motion.div>
           </div>
           {/* Galerie */}
+          <div className="relative">
+            <AlbumSophys />
+          </div>
         </div>
       </div>
     </div>
