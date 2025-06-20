@@ -44,9 +44,9 @@ export default function GateAfricaAgribusiness() {
         <div className="">
           {/* En-tête avec logo et titre */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl shadow-lg mb-6">
+            {/* <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl shadow-lg mb-6">
               <Target className="w-10 h-10 text-white" />
-            </div>
+            </div> */}
 
             <h1 className="text-3xl font-bold text-white mb-4">
               <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
@@ -64,32 +64,6 @@ export default function GateAfricaAgribusiness() {
           {/* Contenu principal en deux colonnes */}
           <div className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-12 lg:items-start place-items-center">
             {/* Colonne gauche - Carte visuelle avec badge animé */}
-            <div className="relative">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.9 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                <Image
-                  src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750415011/506512031_683211541277965_838851079179425619_n_v1949u.jpg"
-                  alt="Équipe Sophys au travail"
-                  className="rounded-2xl shadow-2xl"
-                  width={500}
-                  height={500}
-                />
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                  viewport={{ once: true }}
-                  className="absolute -bottom-5 -right-10 bg-yellow-400 text-gray-900 p-3 rounded-2xl shadow-lg"
-                ></motion.div>
-              </motion.div>
-            </div>
-
-            {/* Colonne droite - Description */}
             <div className="">
               <p className="text-md text-gray-300 leading-relaxed">
                 <span className="font-semibold text-green-400">
@@ -164,6 +138,32 @@ export default function GateAfricaAgribusiness() {
                   </svg>
                 </button>
               </div>
+            </div>
+
+            {/* Colonne droite - Description */}
+            <div className="relative">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.9 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <Image
+                  src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750415011/506512031_683211541277965_838851079179425619_n_v1949u.jpg"
+                  alt="Équipe Sophys au travail"
+                  className="rounded-2xl shadow-2xl"
+                  width={500}
+                  height={500}
+                />
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="absolute -bottom-5 -right-10 bg-yellow-400 text-gray-900 p-3 rounded-2xl shadow-lg"
+                ></motion.div>
+              </motion.div>
             </div>
           </div>
           <AlbumAgri />
