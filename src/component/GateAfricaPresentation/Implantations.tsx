@@ -39,11 +39,11 @@ export default function ProfessionalLayout() {
     },
     {
       icon: Briefcase,
-      name: "Recrutement international & Business Development",
+      name: "Business Development & Tourisme d’affaires",
       color: "text-indigo-600",
       bgColor: "bg-indigo-50",
       description:
-        "Placement de talents, mobilité professionnelle, et développement de partenariats économiques durables.",
+        "Développement de partenariats B2B, B2G, B2A ; organisation de missions économiques, de roadshows et de voyages d’affaires sur mesure à travers AfricaBusinessTour.com.",
     },
     {
       icon: Wheat,
@@ -107,7 +107,7 @@ export default function ProfessionalLayout() {
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  Les 7 Piliers de Notre Engagement en Afrique
+                  Business Development & Tourisme d&apos;affaires
                 </h2>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   Des secteurs stratégiques au service d&apos;un développement

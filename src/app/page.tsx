@@ -1,4 +1,5 @@
 import Event from "@/component/Event/Event";
+import InternationnalSection from "@/component/Event/Internationnal";
 import GateAfricaPresentation from "@/component/GateAfricaPresentation/GateAfricaPresentation";
 import Header from "@/component/Header/Header";
 import Health from "@/component/Health";
@@ -30,6 +31,7 @@ export default function Home() {
         <LandmarkLanding />
         <GateAfricaAgribusiness />
         <GateAfricaRecruitment />
+        <InternationnalSection />
         <ScrollToTopButton />
       </div>
     </>

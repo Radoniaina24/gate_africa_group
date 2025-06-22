@@ -72,9 +72,8 @@ export default function GateAfricaRecruitment() {
           </div>
           <div className="max-w-2xl mx-auto">
             <h1 className="text-4xl lg:text-4xl font-black text-gray-900 mb-6 leading-tight">
-              Volet{" "}
-              <span className="text-red-500">Recrutement international</span> et
-              Business Development
+              Volet <span className="text-red-500"> business Development </span>{" "}
+              et Tourisme d&apos;affaires
             </h1>
           </div>
 
