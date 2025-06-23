@@ -51,7 +51,7 @@ const Navbar = () => {
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 shadow-xl backdrop-blur-md bg-white/95 border-b border-red-100">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-18">
+          <div className="flex justify-center items-center gap-5 h-18">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center py-2">
               <Image
@@ -63,9 +63,9 @@ const Navbar = () => {
               />
             </div>
             <div className="text-center py-4">
-              <p className="text-2xl font-extrabold bg-gradient-to-r from-red-600 via-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-sm">
-                Une vision panafricaine pour transformer l&apos;Afrique, secteur
-                par secteur
+              <p className="text-xl font-extrabold bg-gradient-to-r from-red-600 via-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-sm">
+                Une vision panafricaine pour transformer <br /> l&apos;Afrique,
+                secteur par secteur
               </p>
             </div>
             {/* CTA Button */}
