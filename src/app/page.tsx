@@ -1,6 +1,7 @@
 import Event from "@/component/Event/Event";
 import InternationnalSection from "@/component/Event/Internationnal";
 import GateAfricaDigital from "@/component/Event/Tech";
+import Footer from "@/component/Footer/Footer";
 import GateAfricaPresentation from "@/component/GateAfricaPresentation/GateAfricaPresentation";
 import Header from "@/component/Header/Header";
 import Health from "@/component/Health";
@@ -35,6 +36,7 @@ export default function Home() {
         <GateAfricaRecruitment />
         <InternationnalSection />
         <ScrollToTopButton />
+        <Footer />
       </div>
     </>
   );
