@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto mb-20">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Volet Média — National & International
+              National & International
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto rounded-full"></div>
             <p className="text-xl text-gray-400 font-medium tracking-wide">

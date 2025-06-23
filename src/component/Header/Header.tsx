@@ -62,9 +62,14 @@ const Navbar = () => {
                 className="h-12 w-auto rounded-lg"
               />
             </div>
-
+            <div className="text-center py-4">
+              <p className="text-2xl font-extrabold bg-gradient-to-r from-red-600 via-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-sm">
+                Une vision panafricaine pour transformer l&apos;Afrique, secteur
+                par secteur
+              </p>
+            </div>
             {/* CTA Button */}
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <a href="" download className="button_anime" type="button">
                 <span className="button__text">Télécharger la brochure</span>
                 <span className="button__icon">
@@ -81,10 +86,10 @@ const Navbar = () => {
                   </svg>
                 </span>
               </a>
-            </div>
+            </div> */}
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            {/* <div className="md:hidden">
               <button
                 onClick={toggleMenu}
                 className="text-gray-800 hover:text-red-600 p-3 transition-all duration-300 hover:bg-red-50 rounded-xl"
@@ -107,7 +112,7 @@ const Navbar = () => {
                   ></span>
                 </div>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -140,7 +145,7 @@ const Navbar = () => {
             </div>
 
             {/* CTA Section Mobile */}
-            <div className="p-6  border-t-2 border-red-100 bg-gradient-to-r from-red-50 to-white">
+            {/* <div className="p-6  border-t-2 border-red-100 bg-gradient-to-r from-red-50 to-white">
               <div className="flex justify-center ">
                 <a href="" download className="button_anime" type="button">
                   <span className="button__text">Télécharger la brochure</span>
@@ -159,7 +164,7 @@ const Navbar = () => {
                   </span>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

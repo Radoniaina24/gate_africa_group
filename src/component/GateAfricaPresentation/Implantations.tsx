@@ -4,9 +4,10 @@ import {
   GraduationCap,
   Heart,
   MapPin,
-  Video,
   Wheat,
   TrendingUp,
+  CalendarCheck,
+  Megaphone,
 } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -19,7 +20,7 @@ export default function ProfessionalLayout() {
       color: "text-emerald-600",
       bgColor: "bg-emerald-50",
       description:
-        "Des pôles d’enseignement supérieur innovants pour former les compétences clés du continent.",
+        "Des établissements d’enseignement supérieur professionnalisants, modulaires et tournés vers les métiers d’avenir du continent.",
     },
     {
       icon: Heart,
@@ -27,47 +28,47 @@ export default function ProfessionalLayout() {
       color: "text-rose-600",
       bgColor: "bg-rose-50",
       description:
-        "Soins spécialisés, évacuations sanitaires, accompagnement personnalisé et tourisme médical sécurisé.",
+        "Accès aux soins spécialisés, évacuations sanitaires, accompagnement personnalisé et structuration du tourisme médical sécurisé.",
     },
     {
       icon: Cpu,
-      name: "Technologie, numérique & médias",
+      name: "Technologie, numérique & innovation",
       color: "text-blue-600",
       bgColor: "bg-blue-50",
       description:
-        "Solutions digitales, IA, cybersécurité, automatisation, production audiovisuelle, plateformes médias et communication d’influence.",
+        "Solutions digitales, IA, cybersécurité, automatisation, et plateformes numériques à fort impact, dont les projets GateAfri et Afrimuz.",
     },
     {
-      icon: Briefcase,
-      name: "Business Development & Tourisme d’affaires",
-      color: "text-indigo-600",
-      bgColor: "bg-indigo-50",
+      icon: Megaphone, // Remplacer par une icône plus adaptée aux médias si disponible
+      name: "Médias, communication & marketing stratégique",
+      color: "text-yellow-600",
+      bgColor: "bg-yellow-50",
       description:
-        "Développement de partenariats B2B, B2G, B2A ; organisation de missions économiques, de roadshows et de voyages d’affaires sur mesure à travers AfricaBusinessTour.com.",
+        "Production audiovisuelle, presse digitale, branding, communication institutionnelle et campagnes de visibilité à l’échelle panafricaine.",
     },
     {
       icon: Wheat,
-      name: "Agriculture, agro-industrie & import-export",
+      name: "Agriculture, agro-industrie & commerce international",
       color: "text-green-600",
       bgColor: "bg-green-50",
       description:
-        "Production agricole, transformation, nutrition animale et ouverture des marchés à l’export.",
+        "Production, transformation, nutrition animale, import-export, et structuration de filières agricoles compétitives et durables.",
     },
     {
-      icon: Video,
-      name: "Tourisme spécialisé & accompagnement sur mesure",
-      color: "text-purple-600",
-      bgColor: "bg-purple-50",
+      icon: Briefcase,
+      name: "Business Development, Tourisme d’affaires & Tourisme spécialisé",
+      color: "text-indigo-600",
+      bgColor: "bg-indigo-50",
       description:
-        "Tourisme médical, religieux, professionnel ou institutionnel, avec des services logistiques intégrés.",
+        "Mise en relation B2B, B2G, développement de marchés, missions économiques, voyages d’affaires sur mesure via AfricaBusinessTour.com, et accompagnement en tourisme professionnel, médical ou religieux.",
     },
     {
-      icon: TrendingUp,
-      name: "Événementiel international & rayonnement stratégique",
+      icon: CalendarCheck, // Icône suggérée pour l'événementiel
+      name: "Événementiel international & rayonnement africain",
       color: "text-orange-600",
       bgColor: "bg-orange-50",
       description:
-        "Organisation de forums, salons, conférences et grands événements panafricains au service du développement et de l’influence.",
+        "Conception de forums, salons, conférences et événements majeurs à fort impact comme La Grande Soirée de l’Afrique ou Africa IT Summit.",
     },
   ];
 
@@ -95,7 +96,7 @@ export default function ProfessionalLayout() {
   return (
     <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <div className="container mx-auto px-4 py-10">
-        <div className="grid lg:grid-cols-3 gap-10 ">
+        <div className="grid lg:grid-cols-3 gap-10 place-items-center">
           {/* Left Side - Activities */}
           <div className=" md:col-span-2">
             <div className="sticky top-6">

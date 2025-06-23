@@ -66,13 +66,13 @@ export default function GateAfricaRecruitment() {
     },
   ];
 
-  const handleClick = () => {
-    window.open(
-      "https://www.carrefour-emploi.com",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  };
+  // const handleClick = () => {
+  //   window.open(
+  //     "https://www.carrefour-emploi.com",
+  //     "_blank",
+  //     "noopener,noreferrer"
+  //   );
+  // };
 
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
@@ -262,7 +262,7 @@ export default function GateAfricaRecruitment() {
                 className="relative"
               >
                 <Image
-                  src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1748861902/Candidature/carrefour-removebg-preview_20250602105817.jpg"
+                  src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750685397/africa_stjjic.jpg"
                   alt="Gate Africa Business Development"
                   className="rounded-2xl shadow-2xl"
                   width={500}
@@ -280,7 +280,7 @@ export default function GateAfricaRecruitment() {
           </div>
         </motion.div>
         {/* Bouton d'action */}
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <button
             onClick={handleClick}
             className="group inline-flex text-sm items-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
@@ -300,7 +300,7 @@ export default function GateAfricaRecruitment() {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
         <AlbumCarrefour />
       </div>
 
