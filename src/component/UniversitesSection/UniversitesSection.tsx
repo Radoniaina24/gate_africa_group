@@ -156,7 +156,7 @@ const UniversitesSection: React.FC = () => {
       ],
       imageUrl:
         "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1746176127/Candidature/admin_20250502085526.jpg",
-      link: "",
+      link: "https://www.facebook.com/profile.php?id=100064225684491",
     },
   ];
 
