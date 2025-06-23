@@ -7,33 +7,62 @@ import {
   Building,
   UserCheck,
   Network,
-  MapPin,
   Calendar,
+  Briefcase,
+  Target,
+  Handshake,
 } from "lucide-react";
 import Image from "next/image";
 import AlbumCarrefour from "./Album/AlbumCarrefour";
 
 export default function GateAfricaRecruitment() {
-  const actions = [
+  const cooperationAxes = [
     {
-      icon: <MapPin className="w-6 h-6" />,
+      icon: <Building className="w-6 h-6" />,
+      title: "B2B",
+      description: "Connexions stratégiques entre entreprises",
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: "B2C",
+      description: "Mise en relation entreprises - clients finaux",
+    },
+    {
+      icon: <UserCheck className="w-6 h-6" />,
+      title: "B2A",
+      description: "Partenariats entreprises - administrations",
+    },
+    {
+      icon: <Handshake className="w-6 h-6" />,
+      title: "B2G",
+      description: "Collaboration entreprises - gouvernements",
+    },
+    {
+      icon: <Globe className="w-6 h-6" />,
+      title: "G2G",
+      description: "Coopération institutionnelle internationale",
+    },
+  ];
+
+  const services = [
+    {
+      icon: <Target className="w-6 h-6" />,
       description:
-        "Recrutement international de profils qualifiés vers l'île Maurice, l'Europe, le Canada et d'autres marchés porteurs",
+        "Planification de voyages professionnels sectoriels (éducation, santé, agro, tech, etc.)",
     },
     {
       icon: <UserCheck className="w-6 h-6" />,
       description:
-        "Accompagnement des talents africains : sélection, formation, orientation et suivi jusqu'à l'intégration professionnelle",
-    },
-    {
-      icon: <Building className="w-6 h-6" />,
-      description:
-        "Développement commercial pour les entreprises africaines : mise en relation B2B, ouverture de marchés, représentation à l'étranger",
+        "Accompagnement des délégations d'investisseurs ou de décideurs publics",
     },
     {
       icon: <Calendar className="w-6 h-6" />,
       description:
-        "Organisation de forums et carrefours de l'emploi, favorisant la rencontre entre offre et demande à forte valeur ajoutée",
+        "Organisation de visites d'entreprises, forums et séjours de prospection",
+    },
+    {
+      icon: <Briefcase className="w-6 h-6" />,
+      description: "Services logistiques et protocole haut de gamme",
     },
   ];
 
@@ -67,13 +96,13 @@ export default function GateAfricaRecruitment() {
               <Network className="w-6 h-6 text-red-500" />
             </div>
             <div className="w-12 h-12 bg-red-200 rounded-full flex items-center justify-center">
-              <Users className="w-6 h-6 text-red-600" />
+              <Briefcase className="w-6 h-6 text-red-600" />
             </div>
           </div>
           <div className="max-w-2xl mx-auto">
             <h1 className="text-4xl lg:text-4xl font-black text-gray-900 mb-6 leading-tight">
-              Volet <span className="text-red-500"> business Development </span>{" "}
-              et Tourisme d&apos;affaires
+              Volet <span className="text-red-500">Business Development</span> &
+              Tourisme d&apos;affaires
             </h1>
           </div>
 
@@ -83,20 +112,20 @@ export default function GateAfricaRecruitment() {
               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-400 to-red-600"></div>
 
               <div className="">
-                <div className="flex flex-col gap-5 lg:flex-row  items-center">
-                  <div className="w-full lg:w-1/2 pr-0 lg:pr-8 ">
+                <div className="flex flex-col gap-5 lg:flex-row items-center">
+                  <div className="w-full lg:w-1/2 pr-0 lg:pr-8">
                     <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-red-400/20">
                       <h3 className="text-red-400 font-semibold mb-3">
-                        Connexion Globale
+                        Connexions Stratégiques
                       </h3>
                       <p className="text-gray-800 leading-relaxed">
-                        Connecter les talents africains aux opportunités
-                        mondiales, et accompagner la croissance des entreprises.
+                        Créer des connexions stratégiques et ouvrir des marchés
+                        à travers l&apos;Afrique et au-delà.
                         <span className="text-red-400 font-semibold">
                           {" "}
                           Gate Africa Group
                         </span>{" "}
-                        agit comme un pont stratégique.
+                        accompagne le développement économique des entreprises.
                       </p>
                     </div>
                   </div>
@@ -106,12 +135,13 @@ export default function GateAfricaRecruitment() {
                   <div className="w-full lg:w-1/2 pl-0 lg:pl-8">
                     <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-red-400/20">
                       <h3 className="text-red-400 font-semibold mb-3">
-                        Expertise & Développement
+                        Approche Intégrée
                       </h3>
                       <p className="text-gray-800 leading-relaxed">
-                        À travers notre réseau et notre expertise en mobilité
-                        professionnelle, nous facilitons le recrutement de
-                        talents qualifiés, tout en soutenant les entreprises.
+                        Nous accompagnons les investisseurs et institutions
+                        grâce à une approche intégrée, combinant expertise
+                        sectorielle, mise en relation stratégique et
+                        accompagnement sur mesure.
                       </p>
                     </div>
                   </div>
@@ -121,44 +151,109 @@ export default function GateAfricaRecruitment() {
           </div>
         </motion.div>
 
-        {/* Actions Grid */}
+        {/* Cooperation Axes */}
         <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Nos axes de <span className="text-red-500">coopération</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {cooperationAxes.map((axis, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-red-200 transition-all duration-500 hover:-translate-y-2 text-center"
+              >
+                <div className="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center group-hover:bg-red-500 transition-colors duration-300 mx-auto mb-4">
+                  <div className="text-red-500 group-hover:text-white transition-colors duration-300">
+                    {axis.icon}
+                  </div>
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">
+                  {axis.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {axis.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* AfricaBusinessTour Section */}
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className=""
+          className="mb-16"
         >
-          <h2 className="text-3xl font-bold  text-gray-900 mb-8">
-            Nos actions <span className="text-red-500">clés</span> :
+          <div className="bg-gradient-to-r from-red-50 to-red-100/50 rounded-3xl p-8 border border-red-200">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center">
+                <Plane className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  AfricaBusinessTour.com
+                </h2>
+                <p className="text-red-600 font-semibold">Initiative unique</p>
+              </div>
+            </div>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              Une initiative unique dédiée à l'organisation de voyages
+              d'affaires sur mesure, de missions économiques, de roadshows, de
+              rencontres B2B et B2G, en Afrique et à l'international.
+            </p>
+          </div>
+        </motion.div> */}
+
+        {/* Services Grid */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            Nos <span className="text-red-500">services</span>
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3  place-items-center  gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-8">
             <div className="grid md:grid-cols-2 gap-8 col-span-2">
-              {actions.map((action, index) => (
+              {services.map((service, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="group bg-white rounded-3xl text-sm p-4 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-red-200 transition-all duration-500 hover:-translate-y-2"
+                  className="group bg-white rounded-3xl text-sm p-6 shadow-lg hover:shadow-2xl border border-gray-100 hover:border-red-200 transition-all duration-500 hover:-translate-y-2"
                 >
-                  <div className="flex items-center gap-4">
-                    <div className="w-10 h-10  bg-red-50 rounded-2xl flex items-center justify-center group-hover:bg-red-500 transition-colors duration-300 flex-shrink-0">
+                  <div className="flex items-center gap-4 text-start">
+                    <div className="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center group-hover:bg-red-500 transition-colors duration-300 flex-shrink-0">
                       <div className="text-red-500 group-hover:text-white transition-colors duration-300">
-                        {action.icon}
+                        {service.icon}
                       </div>
                     </div>
                     <div className="flex-1">
                       <p className="text-gray-600 leading-relaxed">
-                        {action.description}.
+                        {service.description}
                       </p>
                     </div>
                   </div>
                 </motion.div>
               ))}
             </div>
-            <div className="relative ">
+            <div className="relative">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -168,7 +263,7 @@ export default function GateAfricaRecruitment() {
               >
                 <Image
                   src="https://res.cloudinary.com/dbpoyo4gw/image/upload/v1748861902/Candidature/carrefour-removebg-preview_20250602105817.jpg"
-                  alt="Équipe Sophys au travail"
+                  alt="Gate Africa Business Development"
                   className="rounded-2xl shadow-2xl"
                   width={500}
                   height={500}
@@ -183,29 +278,29 @@ export default function GateAfricaRecruitment() {
               </motion.div>
             </div>
           </div>
-          {/* Bouton d'action */}
-          <div className="mt-8">
-            <button
-              onClick={handleClick}
-              className="group inline-flex text-sm items-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              <span>En savoir plus</span>
-              <svg
-                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </button>
-          </div>
         </motion.div>
+        {/* Bouton d'action */}
+        <div className="mt-8">
+          <button
+            onClick={handleClick}
+            className="group inline-flex text-sm items-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <span>En savoir plus</span>
+            <svg
+              className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </button>
+        </div>
         <AlbumCarrefour />
       </div>
 

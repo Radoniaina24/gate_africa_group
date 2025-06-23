@@ -2,6 +2,7 @@
 import React from "react";
 import { Globe, Briefcase, Award, Cpu } from "lucide-react";
 import Image from "next/image";
+import AlbumInternationnal from "../Health/Album/AlbumInternationnal";
 
 // Données des événements
 const events = [
@@ -199,6 +200,7 @@ const InternationnalSection = () => {
             <EventCard key={index} {...event} />
           ))}
         </div>
+        <AlbumInternationnal />
       </div>
     </section>
   );
