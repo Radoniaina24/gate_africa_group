@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+
 import React, { useEffect } from "react";
 
 type EventData = {
@@ -10,6 +11,7 @@ type EventData = {
   description: string;
   imageUrl: string;
   label: string;
+  link?: string; // Ajout du lien optionnel
 };
 
 const events: EventData[] = [
@@ -22,6 +24,7 @@ const events: EventData[] = [
     imageUrl:
       "https://res.cloudinary.com/dikefxjpd/image/upload/v1749703988/hotel-carlton-madagascar_wn5vxr.jpg",
     label: "ÉVÉNEMENT PHARE",
+    link: "https://www.carrefour-emploi.com", // Exemple de lien
   },
   {
     title: "Salon des Universités",
@@ -32,6 +35,7 @@ const events: EventData[] = [
     imageUrl:
       "https://res.cloudinary.com/dx3xhdaym/image/upload/v1736137158/conference_3_vqnzs9.jpg",
     label: "FORMATION",
+    // link: "", // Exemple de lien
   },
 ];
 
@@ -81,9 +85,10 @@ function EventCard({
   description,
   imageUrl,
   label,
+  link,
 }: EventData) {
   return (
-    <article className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden transform  animate-on-scroll opacity-0 translate-y-10 border-t-8 border-red-600">
+    <article className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden transform animate-on-scroll opacity-0 translate-y-10 border-t-8 border-red-600">
       <div className="relative overflow-hidden">
         <Image
           src={imageUrl}
@@ -113,7 +118,26 @@ function EventCard({
             <span>{location}</span>
           </div>
         </div>
-        <p className="text-gray-700 text-sm leading-relaxed">{description}</p>
+        <p className="text-gray-700 text-sm leading-relaxed mb-4">
+          {description}
+        </p>
+
+        {/* Bouton En savoir plus */}
+        {link ? (
+          <div className="flex justify-end">
+            <a
+              href={link}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-lg transition-colors duration-300 group/btn"
+            >
+              En savoir plus
+              <ArrowRightIcon className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
+            </a>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </article>
   );
@@ -178,6 +202,25 @@ function LocationIcon({ className }: { className?: string }) {
         strokeLinejoin="round"
         strokeWidth={2}
         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+      />
+    </svg>
+  );
+}
+
+function ArrowRightIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M14 5l7 7m0 0l-7 7m7-7H3"
       />
     </svg>
   );
