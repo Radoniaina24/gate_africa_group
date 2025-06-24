@@ -23,7 +23,7 @@ const events: EventData[] = [
       "Le rendez-vous stratégique du recrutement international à Madagascar. Organisé par Gate Africa Group, l'événement réunit entreprises, institutions et talents qualifiés.",
     imageUrl:
       "https://res.cloudinary.com/dikefxjpd/image/upload/v1749703988/hotel-carlton-madagascar_wn5vxr.jpg",
-    label: "ÉVÉNEMENT PHARE",
+    label: "ÉVÉNEMENT",
     link: "https://www.carrefour-emploi.com", // Exemple de lien
   },
   {
@@ -34,7 +34,7 @@ const events: EventData[] = [
       "Un rendez-vous dédié à la découverte des filières et formations proposées par les établissements universitaires du groupe. Deux journées d'échanges et d'orientation.",
     imageUrl:
       "https://res.cloudinary.com/dx3xhdaym/image/upload/v1736137158/conference_3_vqnzs9.jpg",
-    label: "FORMATION",
+    label: "ÉVÉNEMENT",
     // link: "", // Exemple de lien
   },
 ];
@@ -67,8 +67,17 @@ export default function FeaturedEvents() {
         <BackgroundVisuals />
       </header>
 
-      <main className="max-w-4xl mx-auto px-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <main className="max-w-7xl mx-auto px-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+          <div className=" -mb-20 py-10">
+            <Image
+              src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750772443/event_jp92ix.jpg"
+              alt="event"
+              width={500}
+              height={500}
+              className="rounded-lg w-full h-[480px] "
+            />
+          </div>
           {events.map((event, index) => (
             <EventCard key={index} {...event} />
           ))}
@@ -124,12 +133,12 @@ function EventCard({
 
         {/* Bouton En savoir plus */}
         {link ? (
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <a
               href={link}
               rel="noopener noreferrer"
               target="_blank"
-              className="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-lg transition-colors duration-300 group/btn"
+              className="inline-flex items-center text-xs px-4 py-2 bg-red-600 hover:bg-red-700 text-white  font-semibold rounded-lg transition-colors duration-300 group/btn"
             >
               En savoir plus
               <ArrowRightIcon className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />

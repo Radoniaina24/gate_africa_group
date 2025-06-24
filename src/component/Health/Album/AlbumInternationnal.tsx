@@ -62,7 +62,60 @@ const galerie: GalerieItem[] = [
     alt: "Photo radio 1",
     title: "Studio Principal",
   },
-  //fsdfsdfsd
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772044/5_bruthb.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772042/4_ygpnxb.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772041/10_ryyncy.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772040/8_gv7qsb.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772040/6_a9zorl.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772040/6_a9zorl.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772040/9_ftzsr6.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772040/7_wu52eq.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772039/3_wsjqcx.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
+
+  {
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772039/2_vb33fz.jpg",
+    alt: "Photo radio 1",
+    title: "Studio Principal",
+  },
 
   {
     src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750420602/1_hhs43j.jpg",
