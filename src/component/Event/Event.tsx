@@ -22,7 +22,7 @@ const events: EventData[] = [
     description:
       "Le rendez-vous stratégique du recrutement international à Madagascar. Organisé par Gate Africa Group, l'événement réunit entreprises, institutions et talents qualifiés.",
     imageUrl:
-      "https://res.cloudinary.com/dikefxjpd/image/upload/v1749703988/hotel-carlton-madagascar_wn5vxr.jpg",
+      "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772443/event_jp92ix.jpg",
     label: "ÉVÉNEMENT",
     link: "https://www.carrefour-emploi.com", // Exemple de lien
   },
@@ -67,9 +67,9 @@ export default function FeaturedEvents() {
         <BackgroundVisuals />
       </header>
 
-      <main className="max-w-7xl mx-auto px-5">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
-          <div className=" -mb-20 py-10">
+      <main className="max-w-5xl mx-auto px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* <div className=" -mb-20 py-10">
             <Image
               src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750772443/event_jp92ix.jpg"
               alt="event"
@@ -77,7 +77,7 @@ export default function FeaturedEvents() {
               height={500}
               className="rounded-lg w-full h-[480px] "
             />
-          </div>
+          </div> */}
           {events.map((event, index) => (
             <EventCard key={index} {...event} />
           ))}
@@ -104,7 +104,7 @@ function EventCard({
           alt={title}
           width={1000}
           height={300}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         <div className="absolute bottom-3 left-4 text-white">
