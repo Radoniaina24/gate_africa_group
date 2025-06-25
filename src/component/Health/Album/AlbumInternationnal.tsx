@@ -89,12 +89,6 @@ const galerie: GalerieItem[] = [
   },
 
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772040/6_a9zorl.jpg",
-    alt: "Photo radio 1",
-    title: "Studio Principal",
-  },
-
-  {
     src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772040/9_ftzsr6.jpg",
     alt: "Photo radio 1",
     title: "Studio Principal",
