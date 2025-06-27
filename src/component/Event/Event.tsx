@@ -22,7 +22,7 @@ const events: EventData[] = [
     description:
       "Le rendez-vous stratégique du recrutement international à Madagascar. Organisé par Gate Africa Group, l'événement réunit entreprises, institutions et talents qualifiés.",
     imageUrl:
-      "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772443/event_jp92ix.jpg",
+      "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003214/event_jp92ix_1_dohm0e.jpg",
     label: "ÉVÉNEMENT",
     link: "https://www.carrefour-emploi.com", // Exemple de lien
   },
@@ -33,7 +33,7 @@ const events: EventData[] = [
     description:
       "Un rendez-vous dédié à la découverte des filières et formations proposées par les établissements universitaires du groupe. Deux journées d'échanges et d'orientation.",
     imageUrl:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1736137158/conference_3_vqnzs9.jpg",
+      "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg",
     label: "ÉVÉNEMENT",
     // link: "", // Exemple de lien
   },
@@ -100,16 +100,17 @@ function EventCard({
     <article className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border-t-8 border-red-600 max-w-4xl mx-auto">
       {/* Image visible en entier */}
       <div className="relative w-full bg-black">
-        <Image
-          src={imageUrl}
-          alt={title}
-          width={1000}
-          height={500}
-          className="w-full h-auto object-contain bg-white"
-        />
+        <div className="relative w-full h-64 bg-white">
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
+            className="object-contain  w-full h-full"
+          />
+        </div>
 
         {/* Texte par-dessus l’image */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
         <div className="absolute bottom-3 left-4 text-white z-10">
           <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-semibold">
             {label}
