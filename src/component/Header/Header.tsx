@@ -54,7 +54,7 @@ const Navbar = () => {
       {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 shadow-xl backdrop-blur-md bg-white/95 border-b border-red-100">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center items-center gap-5 h-18">
+          <div className="flex justify-between items-center gap-5 h-18">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center py-2">
               <Image
