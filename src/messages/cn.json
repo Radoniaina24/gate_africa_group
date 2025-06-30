@@ -289,5 +289,82 @@
         "badge": "即将推出"
       }
     ]
+  },
+  "gateAfricaRecruitment": {
+    "hero": {
+      "title": "<span>商务发展</span> 与商务旅游",
+      "subtitle1": "战略连接",
+      "text1": "在非洲及更广泛区域建立战略联系，开拓市场。Gate Africa Group 致力于推动企业经济增长。",
+      "subtitle2": "一体化方法",
+      "text2": "我们通过一体化方式为投资者和机构提供支持，结合行业专长、战略对接与定制化服务。"
+    },
+    "cooperationAxes": {
+      "title": "合作方向",
+      "items": [
+        {
+          "title": "B2B",
+          "description": "企业之间的战略合作"
+        },
+        {
+          "title": "B2C",
+          "description": "企业与最终客户之间的连接"
+        },
+        {
+          "title": "B2A",
+          "description": "企业与政府机构之间的合作"
+        },
+        {
+          "title": "B2G",
+          "description": "企业与政府之间的合作"
+        },
+        {
+          "title": "G2G",
+          "description": "国际政府机构间合作"
+        }
+      ]
+    },
+    "services": {
+      "title": "我们的服务",
+      "items": [
+        "组织各行业商务考察旅行（教育、健康、农业、科技等）",
+        "协助投资者或公共决策者代表团",
+        "安排企业参访、论坛与市场调研之旅",
+        "高端物流与接待礼宾服务"
+      ]
+    }
+  },
+  "internationnal": {
+    "title": "活动板块",
+    "highlight": "国际",
+    "intro": "打造非洲及全球范围的交流、创新与影响力平台。Gate Africa Group 策划并组织具有深远影响力的活动，旨在连接非洲及全球的人才、企业、机构与变革推动者。",
+    "missionTitle": "我们的使命",
+    "missionText": "我们的活动旨在强化战略领域之间的协同合作，推动多方协作，加速经济发展。",
+    "eventsTitle": "旗舰活动",
+    "events": [
+      {
+        "title": "Carrefour de l'Emploi（就业交汇）",
+        "subtitle": "马达加斯加专场",
+        "description": "一场国际招聘论坛，连接非洲人才与全球雇主。",
+        "subtext": "促进职业流动性，展示本地技能，创造海外机会。",
+        "badge": "MADAGASCAR",
+        "color": "cyan"
+      },
+      {
+        "title": "非洲之夜盛典",
+        "subtitle": "马达加斯加 2025 专场",
+        "description": "一场庆祝非洲卓越的文化、经济与机构盛事。",
+        "subtext": "一场彰显非洲影响力的盛会。",
+        "badge": "MADAGASCAR 2025",
+        "color": "amber"
+      },
+      {
+        "title": "非洲 IT 峰会",
+        "subtitle": "毛里求斯专场（2026）",
+        "description": "致力于数字转型、人工智能与技术创新的泛非峰会。",
+        "subtext": "聚集决策者、机构、科技企业及合作伙伴，共同探讨数字议题。",
+        "badge": "MAURITIUS 2026",
+        "color": "purple"
+      }
+    ]
   }
 }

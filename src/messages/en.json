@@ -298,5 +298,82 @@
         "badge": "Coming Soon"
       }
     ]
+  },
+  "gateAfricaRecruitment": {
+    "hero": {
+      "title": "<span>Business Development</span> & Corporate Tourism",
+      "subtitle1": "Strategic Connections",
+      "text1": "Creating strategic connections and opening up markets across Africa and beyond. Gate Africa Group supports the economic growth of businesses.",
+      "subtitle2": "Integrated Approach",
+      "text2": "We support investors and institutions through an integrated approach, combining sector-specific expertise, strategic networking, and tailored assistance."
+    },
+    "cooperationAxes": {
+      "title": "Our Areas of Cooperation",
+      "items": [
+        {
+          "title": "B2B",
+          "description": "Strategic connections between businesses"
+        },
+        {
+          "title": "B2C",
+          "description": "Connecting businesses to end customers"
+        },
+        {
+          "title": "B2A",
+          "description": "Partnerships between businesses and administrations"
+        },
+        {
+          "title": "B2G",
+          "description": "Collaboration between businesses and governments"
+        },
+        {
+          "title": "G2G",
+          "description": "International institutional cooperation"
+        }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "items": [
+        "Planning of sector-based business trips (education, health, agriculture, tech, etc.)",
+        "Support for investor delegations or public decision-makers",
+        "Organization of company visits, forums, and prospecting trips",
+        "Premium logistics and protocol services"
+      ]
+    }
+  },
+  "internationnal": {
+    "title": "Event Division",
+    "highlight": "international",
+    "intro": "Creating platforms for connection, innovation, and influence at both the African and global level. Gate Africa Group designs and organizes high-impact events that connect talents, businesses, institutions, and changemakers across Africa and beyond.",
+    "missionTitle": "Our Mission",
+    "missionText": "Our events aim to strengthen synergies between strategic sectors, promote cooperation, and accelerate economic development.",
+    "eventsTitle": "Flagship Events",
+    "events": [
+      {
+        "title": "Carrefour de l'Emploi",
+        "subtitle": "Madagascar Edition",
+        "description": "An international recruitment forum connecting African talents with employers from around the world.",
+        "subtext": "It promotes professional mobility, highlights local skills, and creates global opportunities.",
+        "badge": "MADAGASCAR",
+        "color": "cyan"
+      },
+      {
+        "title": "La Grande Soirée de l'Afrique",
+        "subtitle": "Madagascar 2025 Edition",
+        "description": "A cultural, economic, and institutional event celebrating African excellence.",
+        "subtext": "An evening of continental recognition.",
+        "badge": "MADAGASCAR 2025",
+        "color": "amber"
+      },
+      {
+        "title": "Africa IT Summit",
+        "subtitle": "Mauritius Edition (2026)",
+        "description": "The Pan-African summit dedicated to digital transformation, AI, and technological innovation.",
+        "subtext": "Bringing together decision-makers, institutions, tech companies, and partners to address digital challenges.",
+        "badge": "MAURITIUS 2026",
+        "color": "purple"
+      }
+    ]
   }
 }
