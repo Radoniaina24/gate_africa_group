@@ -1,7 +1,9 @@
 import { Building2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 export default function Header() {
+  const t = useTranslations("gate_presentation");
   return (
     <div className="relative overflow-hidden pt-10">
       {/* <div className="absolute inset-0 bg-black opacity-20"></div> */}
@@ -16,12 +18,11 @@ export default function Header() {
             <Building2 className="w-10 h-10 text-red-500" />
           </div>
           <h1 className="text-5xl md:text-5xl font-bold  mb-4 tracking-tight">
-            Gate Africa Group
+            {t("title")}
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-red-200 to-blue-200 mx-auto mb-6"></div>
           <p className="text-xl md:text-xl text-gray-500 font-light max-w-3xl mx-auto leading-relaxed">
-            Gate Africa Group est un groupe panafricain implanté à Madagascar, à
-            l&apos;île Maurice et en pleine expansion à l&apos;international.
+            {t("description_title")}
           </p>
         </div>
       </div>

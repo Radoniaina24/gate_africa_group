@@ -31,5 +31,61 @@
       "label": "活动",
       "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg"
     }
-  ]
+  ],
+  "gate_presentation": {
+    "description_title": "Gate Africa Group 是一家泛非集团，业务立足于马达加斯加、毛里求斯，并正积极拓展国际市场。",
+    "title": "Gate Africa Group",
+    "sectors": {
+      "education": {
+        "name": "教育与专业大学",
+        "description": "提供职业导向、模块化的高等教育，聚焦非洲大陆未来的关键行业。"
+      },
+      "health": {
+        "name": "健康与国际医疗",
+        "description": "提供专业治疗、医疗转运、个性化陪护，以及安全的医疗旅游体系建设。"
+      },
+      "tech": {
+        "name": "科技、数字化与创新",
+        "description": "数字解决方案、人工智能、网络安全、自动化，以及高影响力的平台项目，如 GateAfri 与 Afrimuz。"
+      },
+      "media": {
+        "name": "媒体、传播与战略营销",
+        "description": "音视频制作、数字媒体、品牌塑造、机构传播与泛非可见度宣传活动。"
+      },
+      "agriculture": {
+        "name": "农业、农工产业与国际贸易",
+        "description": "农产品生产、加工、动物营养、进出口，以及打造具有竞争力与可持续性的农业价值链。"
+      },
+      "business": {
+        "name": "商务拓展、商务旅游与专业旅游",
+        "description": "B2B与B2G对接、市场开拓、经贸考察、定制化商务行程（AfricaBusinessTour.com），以及专业、医疗或宗教旅游支持。"
+      },
+      "event": {
+        "name": "国际活动与非洲影响力传播",
+        "description": "策划高影响力的论坛、展会、会议与重大活动，如《非洲之夜》或 Africa IT Summit。"
+      }
+    },
+    "locations": {
+      "mg": {
+        "name": "马达加斯加",
+        "status": "总部"
+      },
+      "mu": {
+        "name": "毛里求斯",
+        "status": "区域办事处"
+      },
+      "intl": {
+        "name": "国际",
+        "status": "积极扩展中"
+      }
+    },
+    "activity": "我们的业务",
+    "activity_title": "商务拓展与商务旅游",
+    "activity_description": "服务于一体化、可持续和泛非发展的战略性行业。",
+    "implantation": "我们的布局",
+    "implantation_title": "国际影响力",
+    "implantation_description": "不断扩展的战略网络，服务遍及全球的客户。",
+    "expansion_title": "持续扩展",
+    "expansion_description": "我们的国际发展战略使我们成为印度洋及更广区域的重要参与者。"
+  }
 }

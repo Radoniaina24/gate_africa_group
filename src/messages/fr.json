@@ -31,5 +31,61 @@
       "label": "ÉVÉNEMENT",
       "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg"
     }
-  ]
+  ],
+  "gate_presentation": {
+    "description_title": "Gate Africa Group est un groupe panafricain implanté à Madagascar, à l'île Maurice et en pleine expansion à l'international.",
+    "title": "Gate Africa Group",
+    "sectors": {
+      "education": {
+        "name": "Éducation & Universités spécialisées",
+        "description": "Des établissements d’enseignement supérieur professionnalisants, modulaires et tournés vers les métiers d’avenir du continent."
+      },
+      "health": {
+        "name": "Santé & Médical international",
+        "description": "Accès aux soins spécialisés, évacuations sanitaires, accompagnement personnalisé et structuration du tourisme médical sécurisé."
+      },
+      "tech": {
+        "name": "Technologie, numérique & innovation",
+        "description": "Solutions digitales, IA, cybersécurité, automatisation, et plateformes numériques à fort impact, dont les projets GateAfri et Afrimuz."
+      },
+      "media": {
+        "name": "Médias, communication & marketing stratégique",
+        "description": "Production audiovisuelle, presse digitale, branding, communication institutionnelle et campagnes de visibilité à l’échelle panafricaine."
+      },
+      "agriculture": {
+        "name": "Agriculture, agro-industrie & commerce international",
+        "description": "Production, transformation, nutrition animale, import-export, et structuration de filières agricoles compétitives et durables."
+      },
+      "business": {
+        "name": "Business Development, Tourisme d’affaires & Tourisme spécialisé",
+        "description": "Mise en relation B2B, B2G, développement de marchés, missions économiques, voyages d’affaires sur mesure via AfricaBusinessTour.com, et accompagnement en tourisme professionnel, médical ou religieux."
+      },
+      "event": {
+        "name": "Événementiel international & rayonnement africain",
+        "description": "Conception de forums, salons, conférences et événements majeurs à fort impact comme La Grande Soirée de l’Afrique ou Africa IT Summit."
+      }
+    },
+    "locations": {
+      "mg": {
+        "name": "Madagascar",
+        "status": "Siège Social"
+      },
+      "mu": {
+        "name": "Île Maurice",
+        "status": "Bureau Régional"
+      },
+      "intl": {
+        "name": "International",
+        "status": "Expansion Active"
+      }
+    },
+    "activity": "Nos Activités",
+    "activity_title": "Business Development & Tourisme d'affaires",
+    "activity_description": "Des secteurs stratégiques au service d'un développement intégré, durable et panafricain.",
+    "implantation": "Nos Implantations",
+    "implantation_title": "Présence Internationale",
+    "implantation_description": "Un réseau stratégique en expansion continue pour servir nos clients à travers le monde.",
+    "expansion_title": "Expansion Continue",
+    "expansion_description": "Notre stratégie de développement international nous positionne comme un acteur clé dans l'océan Indien et au-delà."
+  }
 }

@@ -31,5 +31,61 @@
       "label": "EVENT",
       "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg"
     }
-  ]
+  ],
+  "gate_presentation": {
+    "description_title": "Gate Africa Group is a Pan-African group based in Madagascar, Mauritius, and expanding internationally.",
+    "title": "Gate Africa Group",
+    "sectors": {
+      "education": {
+        "name": "Education & Specialized Universities",
+        "description": "Professional and modular higher education institutions focused on the continent’s future careers."
+      },
+      "health": {
+        "name": "Health & International Medical Services",
+        "description": "Access to specialized care, medical evacuations, personalized support, and the structuring of safe medical tourism."
+      },
+      "tech": {
+        "name": "Technology, Digital & Innovation",
+        "description": "Digital solutions, AI, cybersecurity, automation, and high-impact digital platforms including GateAfri and Afrimuz projects."
+      },
+      "media": {
+        "name": "Media, Communication & Strategic Marketing",
+        "description": "Audiovisual production, digital press, branding, institutional communication, and pan-African visibility campaigns."
+      },
+      "agriculture": {
+        "name": "Agriculture, Agribusiness & International Trade",
+        "description": "Production, processing, animal nutrition, import-export, and development of competitive, sustainable agricultural value chains."
+      },
+      "business": {
+        "name": "Business Development, Corporate & Specialized Tourism",
+        "description": "B2B and B2G networking, market development, economic missions, tailor-made business trips via AfricaBusinessTour.com, and support for professional, medical, or religious tourism."
+      },
+      "event": {
+        "name": "International Events & African Influence",
+        "description": "Design of high-impact forums, trade fairs, conferences, and flagship events like La Grande Soirée de l’Afrique or Africa IT Summit."
+      }
+    },
+    "locations": {
+      "mg": {
+        "name": "Madagascar",
+        "status": "Headquarters"
+      },
+      "mu": {
+        "name": "Mauritius",
+        "status": "Regional Office"
+      },
+      "intl": {
+        "name": "International",
+        "status": "Active Expansion"
+      }
+    },
+    "activity": "Our Activities",
+    "activity_title": "Business Development & Corporate Tourism",
+    "activity_description": "Strategic sectors serving integrated, sustainable, and Pan-African development.",
+    "implantation": "Our Locations",
+    "implantation_title": "International Presence",
+    "implantation_description": "A continuously expanding strategic network to serve our clients around the world.",
+    "expansion_title": "Ongoing Expansion",
+    "expansion_description": "Our international development strategy positions us as a key player in the Indian Ocean and beyond."
+  }
 }

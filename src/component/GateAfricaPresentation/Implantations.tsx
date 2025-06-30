@@ -9,90 +9,87 @@ import {
   CalendarCheck,
   Megaphone,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
 export default function ProfessionalLayout() {
-  const sectors = [
+  const t = useTranslations("gate_presentation");
+  const sectors = (t: ReturnType<typeof useTranslations>) => [
     {
       icon: GraduationCap,
-      name: "Éducation & Universités spécialisées",
       color: "text-emerald-600",
       bgColor: "bg-emerald-50",
-      description:
-        "Des établissements d’enseignement supérieur professionnalisants, modulaires et tournés vers les métiers d’avenir du continent.",
+      name: t("sectors.education.name"),
+      description: t("sectors.education.description"),
     },
     {
       icon: Heart,
-      name: "Santé & Médical international",
       color: "text-rose-600",
       bgColor: "bg-rose-50",
-      description:
-        "Accès aux soins spécialisés, évacuations sanitaires, accompagnement personnalisé et structuration du tourisme médical sécurisé.",
+      name: t("sectors.health.name"),
+      description: t("sectors.health.description"),
     },
     {
       icon: Cpu,
-      name: "Technologie, numérique & innovation",
       color: "text-blue-600",
       bgColor: "bg-blue-50",
-      description:
-        "Solutions digitales, IA, cybersécurité, automatisation, et plateformes numériques à fort impact, dont les projets GateAfri et Afrimuz.",
+      name: t("sectors.tech.name"),
+      description: t("sectors.tech.description"),
     },
     {
-      icon: Megaphone, // Remplacer par une icône plus adaptée aux médias si disponible
-      name: "Médias, communication & marketing stratégique",
+      icon: Megaphone,
       color: "text-yellow-600",
       bgColor: "bg-yellow-50",
-      description:
-        "Production audiovisuelle, presse digitale, branding, communication institutionnelle et campagnes de visibilité à l’échelle panafricaine.",
+      name: t("sectors.media.name"),
+      description: t("sectors.media.description"),
     },
     {
       icon: Wheat,
-      name: "Agriculture, agro-industrie & commerce international",
       color: "text-green-600",
       bgColor: "bg-green-50",
-      description:
-        "Production, transformation, nutrition animale, import-export, et structuration de filières agricoles compétitives et durables.",
+      name: t("sectors.agriculture.name"),
+      description: t("sectors.agriculture.description"),
     },
     {
       icon: Briefcase,
-      name: "Business Development, Tourisme d’affaires & Tourisme spécialisé",
       color: "text-indigo-600",
       bgColor: "bg-indigo-50",
-      description:
-        "Mise en relation B2B, B2G, développement de marchés, missions économiques, voyages d’affaires sur mesure via AfricaBusinessTour.com, et accompagnement en tourisme professionnel, médical ou religieux.",
+      name: t("sectors.business.name"),
+      description: t("sectors.business.description"),
     },
     {
-      icon: CalendarCheck, // Icône suggérée pour l'événementiel
-      name: "Événementiel international & rayonnement africain",
+      icon: CalendarCheck,
       color: "text-orange-600",
       bgColor: "bg-orange-50",
-      description:
-        "Conception de forums, salons, conférences et événements majeurs à fort impact comme La Grande Soirée de l’Afrique ou Africa IT Summit.",
+      name: t("sectors.event.name"),
+      description: t("sectors.event.description"),
     },
   ];
 
-  const locations = [
+  const locations = (t: ReturnType<typeof useTranslations>) => [
     {
-      name: "Madagascar",
-      status: "Siège Social",
-      color: "bg-gradient-to-br from-red-500 to-red-600",
       code: "mg",
+      color: "bg-gradient-to-br from-red-500 to-red-600",
+      name: t("locations.mg.name"),
+      status: t("locations.mg.status"),
     },
     {
-      name: "Île Maurice",
-      status: "Bureau Régional",
-      color: "bg-gradient-to-br from-blue-500 to-blue-600",
       code: "mu",
+      color: "bg-gradient-to-br from-blue-500 to-blue-600",
+      name: t("locations.mu.name"),
+      status: t("locations.mu.status"),
     },
     {
-      name: "International",
-      status: "Expansion Active",
+      code: "intl",
       color: "bg-gradient-to-br from-purple-500 to-pink-500",
+      name: t("locations.intl.name"),
+      status: t("locations.intl.status"),
       icon: "🚀",
     },
   ];
-
+  const sectorItems = sectors(t);
+  const locationItems = locations(t);
   return (
     <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <div className="container mx-auto px-4 py-10">
@@ -104,20 +101,19 @@ export default function ProfessionalLayout() {
                 <div className="inline-flex items-center px-3 py-1 bg-blue-50 rounded-full border border-blue-200 mb-3">
                   <Briefcase className="w-3 h-3 mr-1 text-blue-600" />
                   <span className="text-xs font-semibold text-blue-700">
-                    Nos Activités
+                    {t("activity")}
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  Business Development & Tourisme d&apos;affaires
+                  {t("activity_title")}
                 </h2>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Des secteurs stratégiques au service d&apos;un développement
-                  intégré, durable et panafricain.
+                  {t("activity_description")}
                 </p>
               </div>
 
               <div className="">
-                {sectors.map((sector, index) => {
+                {sectorItems.map((sector, index) => {
                   const Icon = sector.icon;
                   return (
                     <div
@@ -151,20 +147,19 @@ export default function ProfessionalLayout() {
                   <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 rounded-full border border-blue-200/50 mb-3">
                     <MapPin className="w-3 h-3 mr-1 text-blue-600" />
                     <span className="text-xs font-semibold text-blue-700">
-                      Nos Implantations
+                      {t("implantation")}
                     </span>
                   </div>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                    Présence Internationale
+                    {t("implantation_title")}
                   </h2>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Un réseau stratégique en expansion continue pour servir nos
-                    clients à travers le monde.
+                    {t("implantation_description")}
                   </p>
                 </div>
 
                 <div className="space-y-3">
-                  {locations.map((location, index) => (
+                  {locationItems.map((location, index) => (
                     <div
                       key={index}
                       className="flex items-center space-x-3 py-2 px-3 rounded-lg hover:bg-blue-50/50 transition-colors duration-200 cursor-pointer group"
@@ -207,13 +202,11 @@ export default function ProfessionalLayout() {
                       <TrendingUp className="w-4 h-4 text-white" />
                     </div>
                     <h4 className="font-bold text-gray-900 text-sm">
-                      Expansion Continue
+                      {t("expansion_title")}
                     </h4>
                   </div>
                   <p className="text-gray-700 text-xs leading-relaxed">
-                    Notre stratégie de développement international nous
-                    positionne comme un acteur clé dans l&apos;océan Indien et
-                    au-delà.
+                    {t("expansion_description")}
                   </p>
                 </div>
               </div>
