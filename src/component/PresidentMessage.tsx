@@ -8,7 +8,7 @@ export default function PresidentMessage() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Mot du Président
+            Mot du PDG
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto"></div>
         </div>
