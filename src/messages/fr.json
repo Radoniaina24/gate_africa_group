@@ -240,5 +240,59 @@
     "subdescription2": "Gate Africa Agribusiness contribue activement à la souveraineté alimentaire, à la création d'emplois locaux et au développement économique durable, en positionnant l'agriculture comme <span>un véritable moteur de croissance</span> en Afrique.",
     "badge": "véritable moteur de croissance",
     "buttonLabel": "En savoir plus"
+  },
+
+  "gateAfricaDigital": {
+    "title": "Digital & Technology Division",
+    "num": "Digital",
+    "tech": "Technology",
+    "description": "Accelerating Africa's digital transformation through innovation, artificial intelligence and digital solutions.",
+    "domainsTitle": "Our areas of expertise",
+    "domains": [
+      {
+        "title": "Digital Platforms",
+        "description": "Development of digital platforms (education, media, recruitment, social economy)"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "description": "Artificial intelligence & automation (through our technological university UST-IO)"
+      },
+      {
+        "title": "Cybersecurity & Cloud",
+        "description": "Cybersecurity, cloud and digital infrastructure"
+      },
+      {
+        "title": "Digital Content",
+        "description": "Creation of digital content, audiovisual production and pan-African media"
+      },
+      {
+        "title": "Digital Transformation",
+        "description": "Digital transformation of businesses and administrations"
+      }
+    ],
+    "projectsTitle": "Digital projects for the future",
+    "projectsDescription": "Two revolutionary initiatives under development",
+    "projectBadge": "Coming soon",
+    "inDevelopment": "In development",
+    "projects": [
+      {
+        "name": "GateAfri",
+        "subtitle": "Réseau socio-économique",
+        "description": "Le réseau panafricain pour connecter talents, entreprises et opportunités à travers le continent.",
+        "image": "https://res.cloudinary.com/dikefxjpd/image/upload/v1750660067/africagate_u18a88.jpg",
+        "color": "indigo",
+        "features": ["Réseau Social", "Opportunités", "Talents", "Continental"],
+        "badge": "À venir"
+      },
+      {
+        "name": "Afrimuz",
+        "subtitle": "Plateforme musicale",
+        "description": "Une plateforme musicale pour valoriser les artistes africains à l'échelle mondiale.",
+        "image": "https://res.cloudinary.com/dikefxjpd/image/upload/v1750660067/africamuz_lqpkh7.jpg",
+        "color": "fuchsia",
+        "features": ["Musique", "Culture", "Artistes", "International"],
+        "badge": "À venir"
+      }
+    ]
   }
 }

@@ -236,5 +236,58 @@
     "subdescription2": "Gate Africa Agribusiness 积极推动粮食自主、地方就业与可持续经济发展，将农业定位为非洲<span>真正的增长引擎</span>。",
     "badge": "真正的增长引擎",
     "buttonLabel": "了解更多"
+  },
+  "gateAfricaDigital": {
+    "title": "数字与科技部门",
+    "num": "数字化",
+    "tech": "科技",
+    "description": "通过创新、人工智能和数字解决方案，加速非洲的数字化转型。",
+    "domainsTitle": "我们的专业领域",
+    "domains": [
+      {
+        "title": "数字平台",
+        "description": "开发数字平台（教育、媒体、招聘、社会经济）"
+      },
+      {
+        "title": "人工智能",
+        "description": "人工智能与自动化（通过我们的技术大学 UST-IO）"
+      },
+      {
+        "title": "网络安全与云服务",
+        "description": "网络安全、云计算与数字基础设施"
+      },
+      {
+        "title": "数字内容",
+        "description": "数字内容创作、视听制作及泛非媒体"
+      },
+      {
+        "title": "数字化转型",
+        "description": "企业与政府的数字化转型"
+      }
+    ],
+    "projectsTitle": "面向未来的数字项目",
+    "projectsDescription": "两个正在开发中的革命性计划",
+    "projectBadge": "即将推出",
+    "inDevelopment": "开发中",
+    "projects": [
+      {
+        "name": "GateAfri",
+        "subtitle": "社会经济网络",
+        "description": "泛非网络，连接非洲大陆的人才、企业与机遇。",
+        "image": "https://res.cloudinary.com/dikefxjpd/image/upload/v1750660067/africagate_u18a88.jpg",
+        "color": "indigo",
+        "features": ["社交网络", "机遇", "人才", "全非洲"],
+        "badge": "即将推出"
+      },
+      {
+        "name": "Afrimuz",
+        "subtitle": "音乐平台",
+        "description": "一个旨在将非洲艺术家推向全球的音乐平台。",
+        "image": "https://res.cloudinary.com/dikefxjpd/image/upload/v1750660067/africamuz_lqpkh7.jpg",
+        "color": "fuchsia",
+        "features": ["音乐", "文化", "艺术家", "国际"],
+        "badge": "即将推出"
+      }
+    ]
   }
 }
