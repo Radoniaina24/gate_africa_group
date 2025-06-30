@@ -371,5 +371,17 @@
         "color": "purple"
       }
     ]
+  },
+  "footer": {
+    "aboutText": "Ensemble, responsabiliser l’avenir de toute l’Afrique ! Rejoignez Gate Africa Group pour transformer des vies grâce à l’éducation, la santé et l’innovation pour un avenir meilleur !",
+    "contactTitle": "Contact",
+    "address": "Nanisana, Antananarivo 101, Madagascar",
+    "phone": "+23054884377",
+    "email": "contact@gateafricagroup.com",
+    "newsletterTitle": "Newsletter",
+    "newsletterText": "Abonnez-vous à notre newsletter pour recevoir les dernières actualités et offres spéciales.",
+    "placeholder": "Votre adresse email",
+    "subscribe": "S’abonner",
+    "rights": "Tous droits réservés."
   }
 }

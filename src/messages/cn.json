@@ -366,5 +366,17 @@
         "color": "purple"
       }
     ]
+  },
+  "footer": {
+    "aboutText": "携手共建非洲的美好未来！加入 Gate Africa Group，通过教育、医疗和创新改善生活，创造更美好的明天。",
+    "contactTitle": "联系我们",
+    "address": "Nanisana, Antananarivo 101, 马达加斯加",
+    "phone": "+23054884377",
+    "email": "contact@gateafricagroup.com",
+    "newsletterTitle": "订阅电子报",
+    "newsletterText": "订阅我们的电子报，获取最新资讯与独家优惠。",
+    "placeholder": "请输入您的邮箱地址",
+    "subscribe": "订阅",
+    "rights": "版权所有。"
   }
 }
