@@ -1,8 +1,10 @@
 /* eslint-disable */
 import React, { useState, useEffect } from "react";
 import AnimatedButton from "../Button/Button";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("hero");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -28,7 +30,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center  overflow-hidden bg-gradient-to-br from-gray-900 via-red-950 to-black">
+    <section className="relative h-screen flex  items-center  overflow-hidden bg-gradient-to-br from-gray-900 via-red-950 to-black">
       {/* Enhanced Background with Multiple Layers */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 transition-transform duration-1000 ease-out"
@@ -40,7 +42,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-20 w-full container mx-auto px-6 lg:px-12">
+      <div className="relative z-20 w-full max-w-5xl mx-auto px-6 lg:px-12">
         <div
           className={`text-left transition-all duration-2000 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
@@ -49,31 +51,31 @@ export default function Hero() {
           {/* Enhanced Main Heading */}
           <div className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl font-black  leading-[0.9] tracking-tight space-y-5 ">
             <p className="block bg-gradient-to-r from-white via-red-100 to-red-200 bg-clip-text text-transparent hover:from-red-300 hover:via-white hover:to-red-100 transition-all duration-1000 cursor-default drop-shadow-2xl">
-              ACCÉLÉRATEUR
+              {t("p1")}
             </p>
             <p className="block bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent hover:from-red-600 hover:via-red-400 hover:to-red-500 transition-all duration-1000 cursor-default drop-shadow-2xl">
-              DE TRANSFORMATION
+              {t("p2")}
             </p>
             <p className="block text-white/95 text-2xl sm:text-3xl lg:text-4xl xl:text-4xl mt-6 font-light tracking-wide">
-              AU SERVICE D'UN DÉVELOPPEMENT
+              {t("p3")}
             </p>
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent font-semibold">
-                INTELLIGENT,
+                {t("p4")}
               </span>
               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-red-400 to-red-600 transform scale-x-0 hover:scale-x-100 transition-transform duration-500" />
             </span>
             {", "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent font-semibold">
-                INCLUSIF
+                {t("p5")}
               </span>
               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-red-400 to-red-600 transform scale-x-0 hover:scale-x-100 transition-transform duration-500" />
             </span>
             <span className="text-white">{" ET "}</span>
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent font-semibold">
-                PÉRENNE
+                {t("p6")}
               </span>
               <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-red-400 to-red-600 transform scale-x-0 hover:scale-x-100 transition-transform duration-500" />
             </span>
@@ -90,7 +92,7 @@ export default function Hero() {
           <div className="absolute -inset-2 bg-gradient-to-r from-red-400/20 to-red-600/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
         <div className="text-white/50 group-hover:text-red-300/80 text-sm mt-3 text-center transition-colors duration-300 tracking-wider">
-          DÉFILER
+          {t("p7")}
         </div>
       </div>
 

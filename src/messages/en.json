@@ -1,6 +1,14 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "navigation": {
+    "title": "A Pan-African Vision to Transform <br/>Africa, Sector by Sector"
+  },
+  "hero": {
+    "p1": "ACCELERATOR",
+    "p2": "OF TRANSFORMATION",
+    "p3": "IN SERVICE OF A",
+    "p4": "SMART,",
+    "p5": "INCLUSIVE",
+    "p6": "AND SUSTAINABLE DEVELOPMENT",
+    "p7": "SCROLL"
   }
 }

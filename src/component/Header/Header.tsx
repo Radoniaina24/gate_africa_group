@@ -6,8 +6,11 @@ import Hero from "../Hero/Hero";
 import AnimatedButton from "../Button/Button";
 import Image from "next/image";
 import Link from "next/link";
+import LanguageSwitcher from "../LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
+  const t = useTranslations("navigation");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
@@ -63,11 +66,12 @@ const Navbar = () => {
               />
             </div>
             <div className="text-center py-4">
-              <p className="text-xl font-extrabold bg-gradient-to-r from-red-600 via-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-sm">
-                Une vision panafricaine pour transformer <br /> l&apos;Afrique,
-                secteur par secteur
-              </p>
+              <div
+                className="text-xl font-extrabold bg-gradient-to-r from-red-600 via-red-400 to-red-600 bg-clip-text text-transparent drop-shadow-sm"
+                dangerouslySetInnerHTML={{ __html: t.raw("title") }}
+              />
             </div>
+            <LanguageSwitcher />
             {/* CTA Button */}
             {/* <div className="hidden md:block">
               <a href="" download className="button_anime" type="button">

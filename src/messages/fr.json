@@ -1,6 +1,14 @@
 {
-  "HomePage": {
-    "title": "Bonjour le monde",
-    "about": "Aller à la page about"
+  "navigation": {
+    "title": "Une vision panafricaine pour transformer <br/>l'Afrique, secteur par secteur"
+  },
+  "hero": {
+    "p1": "ACCÉLÉRATEUR",
+    "p2": "DE TRANSFORMATION",
+    "p3": "AU SERVICE D'UN DÉVELOPPEMENT",
+    "p4": "INTELLIGENT,",
+    "p5": "INCLUSIF",
+    "p6": " PÉRENNE",
+    "p7": " DÉFILER"
   }
 }
