@@ -205,5 +205,18 @@
       "badge4": "Suivi post-traitement",
       "buttonLabel": "En savoir plus"
     }
+  },
+  "sophys": {
+    "title": "Sophys",
+    "subtitle": "— Hygiène, Propreté & Solutions Sanitaires",
+    "paragraph1": "Sophys est la filiale spécialisée de Gate Africa Group dans les métiers de l'hygiène professionnelle, du nettoyage industriel, de la désinfection et des solutions sanitaires globales.",
+    "paragraph2": "Au-delà des services classiques de propreté, Sophys développe également ses propres gammes de produits d'entretien et de désinfection, dont la marque <span> VIRUSTOP </span>, permettant de garantir à ses clients des standards de qualité et de sécurité maîtrisés de bout en bout.",
+    "badge1": "Qualité maîtrisée",
+    "badge2": "Solutions sanitaires",
+    "stat1": "100%",
+    "stat2": "24/7",
+    "satisfaction": "Satisfaction",
+    "guarantee": "Garantie",
+    "buttonLabel": "En savoir plus"
   }
 }

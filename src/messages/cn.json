@@ -201,5 +201,18 @@
       "badge4": "治疗后跟进",
       "buttonLabel": "了解更多"
     }
+  },
+  "sophys": {
+    "title": "Sophys",
+    "subtitle": "— 卫生、清洁与综合卫生解决方案",
+    "paragraph1": "Sophys 是 Gate Africa Group 专注于专业卫生、工业清洁、消毒及全面卫生解决方案的子公司。",
+    "paragraph2": "除了传统的清洁服务，Sophys 还自主研发清洁与消毒产品系列，其中包括 <span>VIRUSTOP</span> 品牌，从源头到终端为客户提供全面可控的质量与安全保障。",
+    "badge1": "品质可控",
+    "badge2": "卫生解决方案",
+    "stat1": "100%",
+    "stat2": "24/7",
+    "satisfaction": "满意度",
+    "guarantee": "保障",
+    "buttonLabel": "了解更多"
   }
 }

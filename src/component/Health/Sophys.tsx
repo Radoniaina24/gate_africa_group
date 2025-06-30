@@ -1,8 +1,12 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import AlbumSophys from "./Album/AlbumSophys";
+
 export default function Sophys() {
+  const t = useTranslations("sophys");
+
   const handleClick = () => {
     window.open(
       "https://www.facebook.com/profile.php?id=100075924167986",
@@ -10,11 +14,12 @@ export default function Sophys() {
       "noopener,noreferrer"
     );
   };
+
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-16 ">
+    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-16">
       <div className="max-w-7xl mx-auto space-y-2 px-10 lg:px-10">
-        <div className="">
-          {/* En-tête avec logo et titre */}
+        <div>
+          {/* Header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl shadow-lg mb-6">
               <svg
@@ -42,62 +47,58 @@ export default function Sophys() {
 
             <h1 className="text-3xl font-bold text-gray-800 mb-4">
               <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                Sophys
+                {t("title")}
               </span>
-              <span className="text-gray-700">
-                {" "}
-                — Hygiène, Propreté & Solutions Sanitaires
-              </span>
+              <span className="text-gray-700"> {t("subtitle")}</span>
             </h1>
 
-            <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto"></div>
+            <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto" />
           </div>
 
-          {/* Contenu principal en deux colonnes */}
+          {/* Content */}
           <div className="flex flex-col-reverse items-center lg:grid lg:grid-cols-2 gap-12 lg:items-start place-items-center">
-            {/* Colonne gauche - Description */}
-            <div className="">
+            {/* Texte */}
+            <div>
               <p className="text-md text-gray-700 leading-relaxed">
-                <span className="font-semibold text-blue-700">Sophys</span> est
-                la filiale spécialisée de
-                <span className="font-medium"> Gate Africa Group</span> dans les
-                métiers de l&apos;hygiène professionnelle, du nettoyage
-                industriel, de la désinfection et des solutions sanitaires
-                globales.
+                {t("paragraph1")}
               </p>
-
               <p className="text-gray-600 leading-relaxed">
-                Au-delà des services classiques de propreté, Sophys développe
-                également ses propres gammes de produits d&apos;entretien et de
-                désinfection, dont la marque
+                {/* {t("paragraph2").replace("VIRUSTOP", "")}
                 <span className="inline-flex items-center px-2 py-1 mx-1 bg-red-100 text-red-700 text-sm font-semibold rounded-md">
                   VIRUSTOP
-                </span>
-                , permettant de garantir à ses clients des standards de qualité
-                et de sécurité maîtrisés de bout en bout.
+                </span> */}
+                {t.rich("paragraph2", {
+                  span: (chuncks) => (
+                    <span className="inline-flex items-center px-2 py-1 mx-1 bg-red-100 text-red-700 text-sm font-semibold rounded-md">
+                      {chuncks}
+                    </span>
+                  ),
+                })}
               </p>
 
-              {/* Statistiques ou points forts */}
+              {/* Statistiques */}
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-                  <div className="text-2xl font-bold text-blue-600">100%</div>
-                  <div className="text-sm text-gray-600">Qualité maîtrisée</div>
+                  <div className="text-2xl font-bold text-blue-600">
+                    {t("stat1")}
+                  </div>
+                  <div className="text-sm text-gray-600">{t("badge1")}</div>
                 </div>
                 <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-                  <div className="text-2xl font-bold text-indigo-600">24/7</div>
-                  <div className="text-sm text-gray-600">
-                    Solutions sanitaires
+                  <div className="text-2xl font-bold text-indigo-600">
+                    {t("stat2")}
                   </div>
+                  <div className="text-sm text-gray-600">{t("badge2")}</div>
                 </div>
               </div>
 
-              {/* Bouton d'action centré */}
+              {/* Bouton */}
               <div className="mt-10">
                 <button
                   onClick={handleClick}
-                  className=" group inline-flex text-sm items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                  className="group inline-flex text-sm items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                 >
-                  <span>En savoir plus</span>
+                  <span>{t("buttonLabel")}</span>
                   <svg
                     className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"
@@ -115,7 +116,7 @@ export default function Sophys() {
               </div>
             </div>
 
-            {/* Image avec badge animé */}
+            {/* Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -137,12 +138,13 @@ export default function Sophys() {
                 viewport={{ once: true }}
                 className="absolute -bottom-5 -right-10 bg-yellow-400 text-gray-900 p-3 rounded-2xl shadow-lg"
               >
-                <div className="text-sm font-bold">100%</div>
-                <div className="font-semibold text-xs ">Satisfaction</div>
-                <div className="font-semibold text-xs">Garantie</div>
+                <div className="text-sm font-bold">{t("stat1")}</div>
+                <div className="font-semibold text-xs">{t("satisfaction")}</div>
+                <div className="font-semibold text-xs">{t("guarantee")}</div>
               </motion.div>
             </motion.div>
           </div>
+
           {/* Galerie */}
           <div className="relative">
             <AlbumSophys />
