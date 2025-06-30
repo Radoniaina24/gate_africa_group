@@ -89,7 +89,9 @@ export default function LanguageSwitcher() {
                   : "text-gray-700"
               }`}
             >
-              <img
+              <Image
+                width={10}
+                height={10}
                 src={`https://flagcdn.com/w40/${lang.countryCode}.png`}
                 alt={lang.name}
                 className="w-6 h-4 object-cover rounded-sm shadow-sm"

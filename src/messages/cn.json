@@ -10,5 +10,26 @@
     "p5": "包容性",
     "p6": "和可持续的发展",
     "p7": "滚动"
-  }
+  },
+  "event_title": "焦点活动",
+  "event_btn": "了解更多",
+  "events": [
+    {
+      "title": "就业论坛",
+      "date": "2025年9月19日至20日",
+      "location": "安塔那那利佛卡尔顿酒店",
+      "description": "马达加斯加国际招聘的战略性盛会。由Gate Africa Group主办，汇聚企业、机构与优秀人才。",
+      "label": "活动",
+      "link": "https://www.carrefour-emploi.com",
+      "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003214/event_jp92ix_1_dohm0e.jpg"
+    },
+    {
+      "title": "大学展览会",
+      "date": "2025年8月30日至31日",
+      "location": "安塔那那利佛宜必思酒店",
+      "description": "专注于了解集团旗下大学所提供课程与专业的活动。两天面对面交流与升学指导。",
+      "label": "活动",
+      "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg"
+    }
+  ]
 }

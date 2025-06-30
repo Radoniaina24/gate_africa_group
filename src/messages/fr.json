@@ -10,5 +10,26 @@
     "p5": "INCLUSIF",
     "p6": " PÉRENNE",
     "p7": " DÉFILER"
-  }
+  },
+  "event_title": "À la Une",
+  "event_btn": "En savoir plus",
+  "events": [
+    {
+      "title": "Carrefour de l'Emploi",
+      "date": "19 & 20 Septembre 2025",
+      "location": "HÔTEL Carlton Antananarivo",
+      "description": "Le rendez-vous stratégique du recrutement international à Madagascar. Organisé par Gate Africa Group, l'événement réunit entreprises, institutions et talents qualifiés.",
+      "label": "ÉVÉNEMENT",
+      "link": "https://www.carrefour-emploi.com",
+      "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003214/event_jp92ix_1_dohm0e.jpg"
+    },
+    {
+      "title": "Salon des Universités",
+      "date": "30 & 31 Août 2025",
+      "location": "HÔTEL Ibis Antananarivo",
+      "description": "Un rendez-vous dédié à la découverte des filières et formations proposées par les établissements universitaires du groupe. Deux journées d'échanges et d'orientation.",
+      "label": "ÉVÉNEMENT",
+      "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg"
+    }
+  ]
 }

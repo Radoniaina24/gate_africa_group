@@ -10,5 +10,26 @@
     "p5": "INCLUSIVE",
     "p6": "AND SUSTAINABLE DEVELOPMENT",
     "p7": "SCROLL"
-  }
+  },
+  "event_title": "Spotlight",
+  "event_btn": "Learn more",
+  "events": [
+    {
+      "title": "Employment Forum",
+      "date": "19 & 20 September 2025",
+      "location": "Carlton Hotel Antananarivo",
+      "description": "The strategic gathering for international recruitment in Madagascar. Organized by Gate Africa Group, the event brings together companies, institutions, and qualified talents.",
+      "label": "EVENT",
+      "link": "https://www.carrefour-emploi.com",
+      "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003214/event_jp92ix_1_dohm0e.jpg"
+    },
+    {
+      "title": "University Fair",
+      "date": "30 & 31 August 2025",
+      "location": "Ibis Hotel Antananarivo",
+      "description": "An event dedicated to discovering programs and courses offered by the group’s universities. Two days of discussion and academic orientation.",
+      "label": "EVENT",
+      "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg"
+    }
+  ]
 }

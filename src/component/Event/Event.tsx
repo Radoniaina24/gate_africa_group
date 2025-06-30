@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import React, { useEffect } from "react";
@@ -14,33 +15,9 @@ type EventData = {
   link?: string; // Ajout du lien optionnel
 };
 
-const events: EventData[] = [
-  {
-    title: "Carrefour de l'Emploi",
-    date: "19 & 20 Septembre 2025",
-    location: "HÔTEL Carlton Antananarivo",
-    description:
-      "Le rendez-vous stratégique du recrutement international à Madagascar. Organisé par Gate Africa Group, l'événement réunit entreprises, institutions et talents qualifiés.",
-    imageUrl:
-      "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003214/event_jp92ix_1_dohm0e.jpg",
-    label: "ÉVÉNEMENT",
-    link: "https://www.carrefour-emploi.com", // Exemple de lien
-  },
-  {
-    title: "Salon des Universités",
-    date: "30 & 31 Août 2025",
-    location: "HÔTEL Ibis Antananarivo",
-    description:
-      "Un rendez-vous dédié à la découverte des filières et formations proposées par les établissements universitaires du groupe. Deux journées d'échanges et d'orientation.",
-    imageUrl:
-      "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg",
-    label: "ÉVÉNEMENT",
-    // link: "", // Exemple de lien
-  },
-];
-
 export default function FeaturedEvents() {
-  // Auto-rotate header title
+  const t = useTranslations();
+  const events: EventData[] = t.raw("events"); // Accès direct à l'objet JSON
 
   // Animate on scroll
   useEffect(() => {
@@ -62,7 +39,7 @@ export default function FeaturedEvents() {
     <div className="relative bg-gradient-to-br py-20 from-red-600 via-red-700 to-red-900 text-white overflow-hidden font-sans">
       <header className="text-center relative z-10 ">
         <h1 className="text-4xl mb-5 font-black leading-tight bg-gradient-to-r from-white to-red-100 bg-clip-text text-transparent">
-          À la Une
+          {t("event_title")}
         </h1>
         <BackgroundVisuals />
       </header>
@@ -96,6 +73,7 @@ function EventCard({
   label,
   link,
 }: EventData) {
+  const t = useTranslations();
   return (
     <article className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border-t-8 border-red-600 max-w-4xl mx-auto">
       {/* Image visible en entier */}
@@ -140,14 +118,14 @@ function EventCard({
         </p>
 
         {link && (
-          <div className="flex justify-center">
+          <div className="flex ">
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-xs px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-300 group/btn"
             >
-              En savoir plus
+              {t("event_btn")}
               <ArrowRightIcon className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
             </a>
           </div>
