@@ -81,7 +81,6 @@ export default function ProfessionalLayout() {
       status: t("locations.mu.status"),
     },
     {
-      code: "intl",
       color: "bg-gradient-to-br from-purple-500 to-pink-500",
       name: t("locations.intl.name"),
       status: t("locations.intl.status"),
