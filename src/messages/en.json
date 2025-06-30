@@ -179,5 +179,31 @@
       "description": "Academy focused on construction, energy, entrepreneurship, and applied technical professions",
       "tags": ["Construction", "Energy", "Business"]
     }
+  },
+  "health": {
+    "title": "Health Segment — Innovation Clinic & International Medical Tourism",
+    "subtitle": "Gate Africa Group also develops activities in the health sector through two complementary entities",
+    "clinic": {
+      "title": "Innovation Clinic",
+      "tagline": "A modern medical center focused on quality care and medical innovation,",
+      "subtagline": "combining local expertise with international standards.",
+      "description": "Innovation Clinic offers specialized care, advanced diagnostic services, and personalized patient support.",
+      "badge1": "Specialized Care",
+      "badge2": "Advanced Diagnostics",
+      "badge3": "Personalized Support",
+      "buttonLabel": "Learn More"
+    },
+    "tourism": {
+      "title": "International Medical Tourism",
+      "tagline": "A specialized platform organizing international healthcare journeys,",
+      "subtagline": "facilitating patient access to the best medical facilities.",
+      "description": "International Medical Tourism manages the entire process: diagnosis, logistical organization, administrative support, and post-treatment follow-up.",
+      "region": "in Africa, Mauritius, India, and Europe.",
+      "badge1": "Diagnosis",
+      "badge2": "Logistical Organization",
+      "badge3": "Administrative Support",
+      "badge4": "Post-Treatment Follow-up",
+      "buttonLabel": "Learn More"
+    }
   }
 }

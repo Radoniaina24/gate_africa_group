@@ -179,5 +179,31 @@
       "description": "Académie orientée vers le BTP, l'énergie, l'entrepreneuriat et les métiers techniques appliqués",
       "tags": ["BTP", "Énergie", "Business"]
     }
+  },
+  "health": {
+    "title": "Volet Santé — Clinique Innovation & Medical Tourisme International",
+    "subtitle": "Gate Africa Group développe également des activités dans le domaine de la santé à travers deux structures complémentaires",
+    "clinic": {
+      "title": "Clinique Innovation",
+      "tagline": "Un centre médical moderne, orienté vers la qualité des soins et l'innovation médicale,",
+      "subtagline": "combinant expertise locale et standards internationaux.",
+      "description": "Clinique Innovation propose des soins spécialisés, des services de diagnostic avancés et un accompagnement personnalisé des patients.",
+      "badge1": "Soins spécialisés",
+      "badge2": "Diagnostic avancé",
+      "badge3": "Accompagnement personnalisé",
+      "buttonLabel": "En savoir plus"
+    },
+    "tourism": {
+      "title": "Medical Tourisme International",
+      "tagline": "Une plateforme spécialisée dans l'organisation de parcours de soins internationaux,",
+      "subtagline": "facilitant l'accès des patients aux meilleures structures médicales",
+      "description": "Medical Tourisme International prend en charge l'ensemble du processus : diagnostic, organisation logistique, accompagnement administratif et suivi post-traitement.",
+      "region": "en Afrique, à l'île Maurice, en Inde et en Europe.",
+      "badge1": "Diagnostic",
+      "badge2": "Organisation logistique",
+      "badge3": "Accompagnement administratif",
+      "badge4": "Suivi post-traitement",
+      "buttonLabel": "En savoir plus"
+    }
   }
 }

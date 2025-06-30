@@ -1,8 +1,13 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import AlbumClinique from "./Album/AlbumClinique";
+import { useTranslations } from "next-intl";
+
 export default function CliniqueInnovationHero() {
+  const t = useTranslations("health"); // Utilise les traductions du contexte
+
   const handleClick = () => {
     window.open(
       "https://www.facebook.com/Clinique.Innovation.Nanisana?",
@@ -10,52 +15,53 @@ export default function CliniqueInnovationHero() {
       "noopener,noreferrer"
     );
   };
+
   return (
-    <div className="bg-gradient-to-br ">
+    <div className="bg-gradient-to-br">
       <div className="container mx-auto px-6 pt-8">
-        <div className="flex flex-col-reverse  lg:flex-row  items-center justify-between">
-          {/* Contenu texte - Côté gauche */}
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
+          {/* Côté gauche : Texte */}
           <div className="lg:w-1/2 space-y-2 lg:pr-12">
-            {/* Titre principal */}
             <div className="space-y-2">
               <h1 className="text-4xl mt-8 md:mt-0 font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent leading-tight">
-                Clinique Innovation
+                {t("clinic.title")}
               </h1>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
             </div>
 
-            {/* Description principale */}
-            <p className="text-md  text-white leading-relaxed font-light">
-              Un centre médical moderne, orienté vers la qualité des soins et
-              l&apos;innovation médicale,
-              <span className="font-medium text-white ">
+            <p className="text-md text-white leading-relaxed font-light">
+              {t("clinic.tagline")}
+              <span className="font-medium text-white">
                 {" "}
-                combinant expertise locale et standards internationaux.
+                {t("clinic.subtagline")}
               </span>
             </p>
 
-            {/* Description secondaire */}
             <p className="text-md text-white leading-relaxed max-w-xl">
-              Clinique Innovation propose des soins spécialisés, des services de
-              diagnostic avancés et un accompagnement personnalisé des patients.
+              {t("clinic.description")}
             </p>
-            {/* Indicateurs de qualité */}
+
             <div className="flex flex-wrap gap-6 pt-2 text-white">
-              <div className="flex items-center space-x-2 ">
+              <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium">Soins spécialisés</span>
+                <span className="text-sm font-medium">
+                  {t("clinic.badge1")}
+                </span>
               </div>
-              <div className="flex items-center space-x-2 ">
+              <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium">Diagnostic avancé</span>
+                <span className="text-sm font-medium">
+                  {t("clinic.badge2")}
+                </span>
               </div>
-              <div className="flex items-center space-x-2 ">
+              <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium">
-                  Accompagnement personnalisé
+                  {t("clinic.badge3")}
                 </span>
               </div>
             </div>
+
             {/* Bouton d'action */}
             <div className="pt-6">
               <button
@@ -63,7 +69,7 @@ export default function CliniqueInnovationHero() {
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 overflow-hidden"
               >
                 <span className="relative text-sm z-10 flex items-center space-x-2">
-                  <span>En savoir plus</span>
+                  <span>{t("clinic.buttonLabel")}</span>
                   <svg
                     className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"
@@ -83,7 +89,7 @@ export default function CliniqueInnovationHero() {
             </div>
           </div>
 
-          {/* Logo - Côté droit */}
+          {/* Côté droit : Image */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
             <div className="relative">
               <motion.div
@@ -91,7 +97,6 @@ export default function CliniqueInnovationHero() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.9 }}
                 viewport={{ once: true }}
-                className="relative"
               >
                 <Image
                   src="https://res.cloudinary.com/dikefxjpd/image/upload/v1750244496/innovation_clique_bmkzyo.jpg"
@@ -100,13 +105,6 @@ export default function CliniqueInnovationHero() {
                   width={450}
                   height={450}
                 />
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                  viewport={{ once: true }}
-                  className="absolute -bottom-5 -right-10 bg-yellow-400 text-gray-900 p-3 rounded-2xl shadow-lg"
-                ></motion.div>
               </motion.div>
             </div>
           </div>
