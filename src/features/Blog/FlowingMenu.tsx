@@ -77,7 +77,7 @@ const MenuItem = ({ posts }: { posts: Post[] }) => {
               target="_blank"
               href={post.link}
               rel="noopener noreferrer"
-              className="text-xs hover:text-red-700 line-clamp-2"
+              className="text-xs hover:text-red-700 text-gray-900 line-clamp-2"
             >
               {post.title.rendered}
             </Link>
