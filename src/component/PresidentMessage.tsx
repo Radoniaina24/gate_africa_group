@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 export default function PresidentMessage() {
-  const t = useTranslations("president");
+  const t = useTranslations("gate_presentation.president");
   const paragraphs: string[] = t.raw("paragraphs");
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">

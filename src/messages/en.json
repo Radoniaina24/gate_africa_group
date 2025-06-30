@@ -86,21 +86,40 @@
     "implantation_title": "International Presence",
     "implantation_description": "A continuously expanding strategic network to serve our clients around the world.",
     "expansion_title": "Ongoing Expansion",
-    "expansion_description": "Our international development strategy positions us as a key player in the Indian Ocean and beyond."
-  },
-  "president": {
-    "title": "Message from the CEO",
-    "name": "Rojo Claudino Andrianasolo",
-    "role": "President – Gate Africa Group",
-    "paragraphs": [
-      "“Africa is rich in talent, ideas, and resources. What it needs today is an ecosystem capable of structuring this wealth, nurturing it, and connecting it to real opportunities. That is where Gate Africa Group comes in.”",
-      "Our mission is clear: to support the continent’s transformation sector by sector, with education, technology, health, agriculture, media, economic development, and innovation at the heart of our strategy.",
-      "Based in Madagascar and Mauritius and expanding internationally, our group serves as a bridge between African expertise and global markets, while remaining deeply rooted in local realities.",
-      "Through our universities, digital platforms, pan-African events, agribusiness projects, initiatives in health, tourism, business development, and recruitment, we believe in a strong, autonomous, and connected Africa.",
-      "And because we lead with heart, we place people at the center of our commitment. Through our NGO, Gate Africa Humanitarian, we work alongside communities to support children's education, fight childhood cancer, protect the environment, prevent gender-based violence, and assist the most vulnerable.",
-      "Developing Africa also means helping others grow.",
-      "Gate Africa Group is not just a multisectoral group. It is a vision, a mechanism for impact, and a constant drive to build tomorrow’s Africa with method, confidence, and boldness.",
-      "“Development is not a promise, it is a construction. And we are laying the foundations.”"
-    ]
+    "expansion_description": "Our international development strategy positions us as a key player in the Indian Ocean and beyond.",
+    "president": {
+      "title": "Message from the CEO",
+      "name": "Rojo Claudino Andrianasolo",
+      "role": "President – Gate Africa Group",
+      "paragraphs": [
+        "“Africa is rich in talent, ideas, and resources. What it needs today is an ecosystem capable of structuring this wealth, nurturing it, and connecting it to real opportunities. That is where Gate Africa Group comes in.”",
+        "Our mission is clear: to support the continent’s transformation sector by sector, with education, technology, health, agriculture, media, economic development, and innovation at the heart of our strategy.",
+        "Based in Madagascar and Mauritius and expanding internationally, our group serves as a bridge between African expertise and global markets, while remaining deeply rooted in local realities.",
+        "Through our universities, digital platforms, pan-African events, agribusiness projects, initiatives in health, tourism, business development, and recruitment, we believe in a strong, autonomous, and connected Africa.",
+        "And because we lead with heart, we place people at the center of our commitment. Through our NGO, Gate Africa Humanitarian, we work alongside communities to support children's education, fight childhood cancer, protect the environment, prevent gender-based violence, and assist the most vulnerable.",
+        "Developing Africa also means helping others grow.",
+        "Gate Africa Group is not just a multisectoral group. It is a vision, a mechanism for impact, and a constant drive to build tomorrow’s Africa with method, confidence, and boldness.",
+        "“Development is not a promise, it is a construction. And we are laying the foundations.”"
+      ]
+    },
+    "infoCards": {
+      "devise": {
+        "title": "Our Motto",
+        "description": "“Building tomorrow’s Africa through education, innovation, and opportunity.”"
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be a leading Pan-African player capable of connecting talent, knowledge, resources, and businesses around concrete projects for economic, technological, educational, and social development."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "list": [
+          "Integrated solutions in education, health, technology, agribusiness, and media",
+          "Train professionals for economic transformation",
+          "Create bridges to international markets",
+          "Contribute to the sustainable development of territories"
+        ]
+      }
+    }
   }
 }

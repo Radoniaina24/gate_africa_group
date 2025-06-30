@@ -5,6 +5,7 @@ import {
   CheckCircle,
   LucideIcon,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type InfoCardProps = {
   icon: LucideIcon;
@@ -50,38 +51,32 @@ const InfoCard = ({
   </div>
 );
 
-const cards: InfoCardProps[] = [
-  {
-    icon: Lightbulb,
-    iconColor: "text-yellow-300",
-    iconBg: "bg-yellow-500",
-    title: "Notre Devise",
-    description:
-      "« Construire l'Afrique de demain par l'éducation, l'innovation et les opportunités. »",
-  },
-  {
-    icon: Target,
-    iconColor: "text-green-300",
-    iconBg: "bg-green-500",
-    title: "Notre Vision",
-    description:
-      "Être un acteur panafricain de référence, capable de connecter les talents, les savoirs, les ressources et les entreprises autour de projets concrets de développement économique, technologique, éducatif et social.",
-  },
-  {
-    icon: Users,
-    iconColor: "text-red-300",
-    iconBg: "bg-red-500",
-    title: "Notre Mission",
-    list: [
-      "Solutions intégrées dans l'éducation, santé, technologie, agro-industrie, médias",
-      "Former des professionnels pour la transformation économique",
-      "Créer des passerelles vers les marchés internationaux",
-      "Contribuer au développement durable des territoires",
-    ],
-  },
-];
-
 export default function Mission() {
+  const t = useTranslations("gate_presentation.infoCards");
+  const cards: InfoCardProps[] = [
+    {
+      icon: Lightbulb,
+      iconColor: "text-yellow-300",
+      iconBg: "bg-yellow-500",
+      title: t("devise.title"),
+      description: t("devise.description"),
+    },
+    {
+      icon: Target,
+      iconColor: "text-green-300",
+      iconBg: "bg-green-500",
+      title: t("vision.title"),
+      description: t("vision.description"),
+    },
+    {
+      icon: Users,
+      iconColor: "text-red-300",
+      iconBg: "bg-red-500",
+      title: t("mission.title"),
+      list: t.raw("mission.list"), // récupère le tableau tel quel
+    },
+  ];
+
   return (
     <div className="bg-gradient-to-br from-red-600 via-purple-600 to-blue-700 rounded-2xl p-8 text-white relative overflow-hidden">
       {/* Arrière-plan décoratif */}

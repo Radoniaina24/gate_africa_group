@@ -32,6 +32,7 @@
       "imageUrl": "https://res.cloudinary.com/dikefxjpd/image/upload/v1751003106/conference_1_jgkb0o.jpg"
     }
   ],
+
   "gate_presentation": {
     "description_title": "Gate Africa Group est un groupe panafricain implanté à Madagascar, à l'île Maurice et en pleine expansion à l'international.",
     "title": "Gate Africa Group",
@@ -86,21 +87,40 @@
     "implantation_title": "Présence Internationale",
     "implantation_description": "Un réseau stratégique en expansion continue pour servir nos clients à travers le monde.",
     "expansion_title": "Expansion Continue",
-    "expansion_description": "Notre stratégie de développement international nous positionne comme un acteur clé dans l'océan Indien et au-delà."
-  },
-  "president": {
-    "title": "Mot du PDG",
-    "name": "Rojo Claudino Andrianasolo",
-    "role": "Président – Gate Africa Group",
-    "paragraphs": [
-      "« L'Afrique est riche de ses talents, de ses idées, de ses ressources. Ce qu'il lui faut aujourd'hui, c'est un écosystème capable de structurer cette richesse, de la faire grandir, et de la connecter à des opportunités réelles. C'est là qu'intervient Gate Africa Group. »",
-      "Notre mission est claire : accompagner la transformation du continent secteur par secteur, en plaçant l'éducation, la technologie, la santé, l'agriculture, les médias, le développement économique et l'innovation au cœur de notre stratégie.",
-      "Implanté à Madagascar, à l'île Maurice et tourné vers l'international, notre groupe agit comme un pont entre les compétences africaines et les marchés mondiaux, tout en restant profondément ancré dans les réalités locales.",
-      "À travers nos universités, nos plateformes numériques, nos événements panafricains, nos projets agro-industriels, nos actions dans la santé, le tourisme, le business development ou encore le recrutement, nous croyons à une Afrique forte, autonome et connectée.",
-      "Et parce que nous avons un cœur avant tout, nous plaçons également l'humain au centre de notre engagement. À travers notre ONG Gate Africa Humanitarian, nous agissons aux côtés des communautés pour soutenir la scolarisation des enfants, lutter contre le cancer infantile, protéger l'environnement, prévenir les violences basées sur le genre, et accompagner les plus vulnérables.",
-      "Développer l'Afrique, c'est aussi faire grandir les autres.",
-      "Gate Africa Group, ce n'est pas seulement un groupe multisectoriel. C'est une vision, une mécanique d'impact, et une volonté constante de bâtir l'Afrique de demain avec méthode, confiance et audace.",
-      "« Le développement n'est pas une promesse, c'est une construction. Et nous en posons les fondations. »"
-    ]
+    "expansion_description": "Notre stratégie de développement international nous positionne comme un acteur clé dans l'océan Indien et au-delà.",
+    "president": {
+      "title": "Mot du PDG",
+      "name": "Rojo Claudino Andrianasolo",
+      "role": "Président – Gate Africa Group",
+      "paragraphs": [
+        "« L'Afrique est riche de ses talents, de ses idées, de ses ressources. Ce qu'il lui faut aujourd'hui, c'est un écosystème capable de structurer cette richesse, de la faire grandir, et de la connecter à des opportunités réelles. C'est là qu'intervient Gate Africa Group. »",
+        "Notre mission est claire : accompagner la transformation du continent secteur par secteur, en plaçant l'éducation, la technologie, la santé, l'agriculture, les médias, le développement économique et l'innovation au cœur de notre stratégie.",
+        "Implanté à Madagascar, à l'île Maurice et tourné vers l'international, notre groupe agit comme un pont entre les compétences africaines et les marchés mondiaux, tout en restant profondément ancré dans les réalités locales.",
+        "À travers nos universités, nos plateformes numériques, nos événements panafricains, nos projets agro-industriels, nos actions dans la santé, le tourisme, le business development ou encore le recrutement, nous croyons à une Afrique forte, autonome et connectée.",
+        "Et parce que nous avons un cœur avant tout, nous plaçons également l'humain au centre de notre engagement. À travers notre ONG Gate Africa Humanitarian, nous agissons aux côtés des communautés pour soutenir la scolarisation des enfants, lutter contre le cancer infantile, protéger l'environnement, prévenir les violences basées sur le genre, et accompagner les plus vulnérables.",
+        "Développer l'Afrique, c'est aussi faire grandir les autres.",
+        "Gate Africa Group, ce n'est pas seulement un groupe multisectoriel. C'est une vision, une mécanique d'impact, et une volonté constante de bâtir l'Afrique de demain avec méthode, confiance et audace.",
+        "« Le développement n'est pas une promesse, c'est une construction. Et nous en posons les fondations. »"
+      ]
+    },
+    "infoCards": {
+      "devise": {
+        "title": "Notre Devise",
+        "description": "« Construire l'Afrique de demain par l'éducation, l'innovation et les opportunités. »"
+      },
+      "vision": {
+        "title": "Notre Vision",
+        "description": "Être un acteur panafricain de référence, capable de connecter les talents, les savoirs, les ressources et les entreprises autour de projets concrets de développement économique, technologique, éducatif et social."
+      },
+      "mission": {
+        "title": "Notre Mission",
+        "list": [
+          "Solutions intégrées dans l'éducation, santé, technologie, agro-industrie, médias",
+          "Former des professionnels pour la transformation économique",
+          "Créer des passerelles vers les marchés internationaux",
+          "Contribuer au développement durable des territoires"
+        ]
+      }
+    }
   }
 }
