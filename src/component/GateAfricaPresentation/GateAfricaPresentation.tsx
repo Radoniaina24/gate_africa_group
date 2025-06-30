@@ -3,6 +3,7 @@ import Header from "./Header";
 import Implantations from "./Implantations";
 
 import Mission from "./Mission";
+import PresidentMessage from "../PresidentMessage";
 
 export default function GateAfricaPresentation() {
   return (
@@ -13,7 +14,7 @@ export default function GateAfricaPresentation() {
       {/* Section principale */}
       <div className=" mx-auto container px-6 py-16">
         <Implantations />
-
+        <PresidentMessage />
         <Mission />
       </div>
     </div>

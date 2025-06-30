@@ -24,6 +24,7 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-red-900 to-gray-900 overflow-hidden">
         <Event />
         <GateAfricaPresentation />
+
         <GateOfAfricaDesign />
         <FlowingMenu />
         <RadioSection />

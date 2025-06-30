@@ -20,7 +20,7 @@ const FlowingMenu = () => {
         // setLoading(false);
       });
   }, []);
-
+  // console.log(posts);
   return (
     <div className="menu-wrap">
       <nav className="menu">
@@ -51,23 +51,28 @@ const MenuItem = ({ posts }: { posts: Post[] }) => {
             key={index}
             className="my-5 px-5 flex items-center gap-1 cursor-pointer"
           >
-            <Image
-              src={post.blog_post_layout_featured_media_urls.thumbnail[0]}
-              alt={post.blog_post_layout_featured_media_urls.thumbnail[0]}
-              className="w-12 h-12 rounded object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-              width={150}
-              height={150}
-              onError={(e) => {
-                // Fallback vers le gradient si l'image ne charge pas
-                const target = e.target as HTMLImageElement;
-                target.style.display = "none";
-                const parent = target.parentElement;
-                if (parent) {
-                  parent.classList.add(`bg-gradient-to-br`, "");
-                }
-              }}
-            />
+            {post.blog_post_layout_featured_media_urls.thumbnail[0] ? (
+              <Image
+                src={post.blog_post_layout_featured_media_urls.thumbnail[0]}
+                alt={post.slug}
+                className="w-12 h-12 rounded object-cover transition-transform duration-300 group-hover:scale-110"
+                loading="lazy"
+                width={150}
+                height={150}
+                onError={(e) => {
+                  // Fallback vers le gradient si l'image ne charge pas
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = "none";
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.classList.add(`bg-gradient-to-br`, "");
+                  }
+                }}
+              />
+            ) : (
+              ""
+            )}
+
             <Link
               target="_blank"
               href={post.link}
