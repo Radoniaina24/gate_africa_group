@@ -214,5 +214,27 @@
     "satisfaction": "满意度",
     "guarantee": "保障",
     "buttonLabel": "了解更多"
+  },
+  "landmark": {
+    "title": "Landm'Ark",
+    "subtitle": "传播、营销与高端活动策划",
+    "description1": "是 Gate Africa Group 在传播、公关、战略营销和高附加值活动策划方面的专业子公司。",
+    "description2": "Landm'Ark 结合创意、技术专长与实地经验，助力企业与机构在非洲及国际范围内制定和执行其传播、品牌推广与知名度提升战略。",
+    "description3": {
+      "before": "凭借资深团队、专业设备及国际网络，Landm'Ark 提供",
+      "highlight": "一体化解决方案",
+      "after": "，兼具创新性，满足公共与私营经济体的多样化需求。"
+    },
+    "buttonLabel": "了解更多",
+    "download": "下载手册"
+  },
+  "agribusiness": {
+    "title": "Gate Africa 农业与农工板块",
+    "tagline": "农业与农工产业",
+    "description": "<span>Gate Africa Agribusiness</span> 是 Gate Africa Group 的农业与农工产业分支，致力于农业在生产、加工及增值方面的战略性发展。",
+    "subdescription1": "我们的方法涵盖整个价值链，从生产到市场销售，注重可持续模式、技术创新与农业创业精神。",
+    "subdescription2": "Gate Africa Agribusiness 积极推动粮食自主、地方就业与可持续经济发展，将农业定位为非洲<span>真正的增长引擎</span>。",
+    "badge": "真正的增长引擎",
+    "buttonLabel": "了解更多"
   }
 }

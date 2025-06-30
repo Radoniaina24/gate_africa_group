@@ -218,5 +218,27 @@
     "satisfaction": "Satisfaction",
     "guarantee": "Guarantee",
     "buttonLabel": "Learn More"
+  },
+  "landmark": {
+    "title": "Landm'Ark",
+    "subtitle": "Communication, Marketing & Event Management",
+    "description1": "is Gate Africa Group’s specialized subsidiary in strategic communication, marketing, and high-value event management.",
+    "description2": "Combining creativity, technical expertise, and a field-driven approach, Landm'Ark supports companies and institutions in designing and implementing their communication, visibility, and branding strategies across Africa and beyond.",
+    "description3": {
+      "before": "Thanks to its experienced teams, professional equipment, and international network, Landm'Ark offers ",
+      "highlight": "integrated solutions",
+      "after": " that are innovative and tailored to the needs of both public and private sector players."
+    },
+    "buttonLabel": "Learn More",
+    "download": "Download the brochure"
+  },
+  "agribusiness": {
+    "title": "Gate Africa Agribusiness",
+    "tagline": "Agriculture & Agribusiness",
+    "description": "<span>Gate Africa Agribusiness</span> is the agricultural and agro-industrial branch of Gate Africa Group, committed to developing strategic agricultural value chains in production, processing, and enhancement.",
+    "subdescription1": "Our approach integrates the entire value chain, from production to commercialization, promoting sustainable models, technological innovation, and agro-entrepreneurship.",
+    "subdescription2": "Gate Africa Agribusiness actively contributes to food sovereignty, local job creation, and sustainable economic development, positioning agriculture as <span>a true driver of growth</span> in Africa.",
+    "badge": "a true driver of growth",
+    "buttonLabel": "Learn More"
   }
 }

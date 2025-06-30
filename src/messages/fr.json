@@ -218,5 +218,27 @@
     "satisfaction": "Satisfaction",
     "guarantee": "Garantie",
     "buttonLabel": "En savoir plus"
+  },
+  "landmark": {
+    "title": "Landm'Ark",
+    "subtitle": "Communication, Marketing & Événementiel",
+    "description1": "est la filiale spécialisée de Gate Africa Group dans les métiers de la communication, du marketing stratégique et de l'événementiel à forte valeur ajoutée.",
+    "description2": "Alliant créativité, expertise technique et approche terrain, Landm'Ark accompagne les entreprises et institutions dans la conception et la mise en œuvre de leurs stratégies de communication, de visibilité et de développement de marque, en Afrique et à l'international.",
+    "description3": {
+      "before": "Grâce à ses équipes expérimentées, ses équipements professionnels et son réseau international, Landm'Ark propose des ",
+      "highlight": "solutions intégrées",
+      "after": " et innovantes, adaptées aux besoins des acteurs économiques publics et privés."
+    },
+    "buttonLabel": "En savoir plus",
+    "download": "Télécharger la brochure"
+  },
+  "agribusiness": {
+    "title": "Gate Africa Agribusiness",
+    "tagline": "Agriculture & Agro-Industrie",
+    "description": "<span>Gate Africa Agribusiness</span> est la branche agricole et agro-industrielle de Gate Africa Group, engagée dans le développement des filières stratégiques de production, de transformation et de valorisation agricole.",
+    "subdescription1": "Notre approche intègre l'ensemble de la chaîne de valeur, depuis la production jusqu'à la commercialisation, en favorisant les modèles durables, l'innovation technologique et l'agro-entrepreneuriat.",
+    "subdescription2": "Gate Africa Agribusiness contribue activement à la souveraineté alimentaire, à la création d'emplois locaux et au développement économique durable, en positionnant l'agriculture comme <span>un véritable moteur de croissance</span> en Afrique.",
+    "badge": "véritable moteur de croissance",
+    "buttonLabel": "En savoir plus"
   }
 }
