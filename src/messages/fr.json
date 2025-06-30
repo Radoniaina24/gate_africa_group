@@ -122,5 +122,62 @@
         ]
       }
     }
+  },
+  "africa_magazine": {
+    "title": "Volet média - National & International",
+    "subtitle": "GATE OF AFRICA MAGAZINE",
+    "headline": "Suivez en temps réel",
+    "subheadline": "l'évolution de l'Afrique",
+    "description": "Découvrez l'actualité économique, politique et sociale du continent africain avec le média en ligne de référence du groupe Gate Africa.",
+    "highlights": [
+      "Suivi par des millions de personnes",
+      "Couverture panafricaine",
+      "Actualités en temps réel"
+    ],
+    "cta": "Visitez GateOfAfrica.com",
+    "caption": "Votre source d'information de référence sur l'Afrique"
+  },
+  "radio": {
+    "title": "E-media 107.8 FM",
+    "subtitle": "Votre radio locale préférée",
+    "visitStudio": "Visitez notre studio",
+    "about": {
+      "features": [
+        "Écoutez de la bonne musique, vos émissions préférées et accédez à des contenus éducatifs de qualité.",
+        "E-media FM : la radio économique et éducative numéro 1 à Madagascar, écoutée dans plus de 5 grandes régions du pays."
+      ],
+      "cta": "Écouter la radio",
+      "stats": [
+        { "title": "#1", "subtitle": "Radio Économique" },
+        { "title": "5+", "subtitle": "Grandes Régions" },
+        { "title": "📻", "subtitle": "Contenu Éducatif" }
+      ]
+    }
+  },
+  "university": {
+    "title": "Volet éducation et enseignement supérieur",
+    "learnMore": "En savoir plus",
+    "synergy": "Grâce à cette synergie, nous formons des talents immédiatement opérationnels et parfaitement adaptés aux besoins des entreprises et des institutions.",
+    "sectionHeader": {
+      "badge": "Excellence Académique",
+      "title": "La force de nos 3 universités",
+      "text1": "Notre force réside dans la complémentarité stratégique de nos trois pôles universitaires.",
+      "text2": "Chaque établissement apporte une expertise ciblée — technologies avancées, management stratégique et industries créatives — couvrant ainsi l'ensemble des compétences essentielles pour accompagner les grandes transformations économiques de l'Afrique."
+    },
+    "emedia": {
+      "name": "E-Media",
+      "description": "Université dédiée à l'audiovisuel, au cinéma, au son et aux métiers créatifs de l'image et de la production",
+      "tags": ["Audiovisuel", "Cinéma", "Production"]
+    },
+    "ust": {
+      "name": "UST-IO",
+      "description": "Université spécialisée en robotique, intelligence artificielle, automatisation et technologies émergentes",
+      "tags": ["Robotique", "IA", "Tech"]
+    },
+    "aeli": {
+      "name": "AELI",
+      "description": "Académie orientée vers le BTP, l'énergie, l'entrepreneuriat et les métiers techniques appliqués",
+      "tags": ["BTP", "Énergie", "Business"]
+    }
   }
 }

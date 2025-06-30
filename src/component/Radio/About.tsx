@@ -1,47 +1,55 @@
 "use client";
-import React from "react";
 
+import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import Galerie from "./Galerie";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("radio.about");
+  const features = t.raw("features") as string[];
+  const stats = t.raw("stats") as { title: string; subtitle: string }[];
+
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
       {/* Bloc texte */}
-      <motion.div className="md:col-span-2  p-6 rounded-xl bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
-        <div className="grid grid-cols-1 xl:grid-cols-2 ">
-          <div className="rounded-2xl p-5 sm:p-10 ">
-            <div className=" flex gap-3 text-md font-semibold  text-white leading-relaxed ">
-              <div>
-                <CheckCircle className="text-red-500" />{" "}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="md:col-span-2 p-6 rounded-xl bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900"
+      >
+        <div className="grid grid-cols-1 xl:grid-cols-2">
+          <div className="rounded-2xl p-5 sm:p-10 space-y-4">
+            {features.map((feature, i) => (
+              <div
+                key={i}
+                className="flex gap-3 text-md font-semibold text-white leading-relaxed"
+              >
+                <CheckCircle className="text-red-500 shrink-0 mt-1" />
+                {feature}
               </div>
-              Écoutez de la bonne musique, vos émissions préférées et accédez à
-              des contenus éducatifs de qualité.
-            </div>
-            <div className=" flex gap-3 text-md font-semibold leading-relaxed">
-              <div>
-                <CheckCircle className="text-red-500" />
-              </div>
-              E-media FM : la radio économique et éducative numéro 1 à
-              Madagascar, écoutée dans plus de 5 grandes régions du pays.
-            </div>
-            <div className="mt-4">
+            ))}
+
+            <div className="mt-6">
               <a
                 href="https://www.facebook.com/share/18v4DXYssJ/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 flex justify-center items-center py-3 rounded-xl font-semibold transition-all duration-300 transform  hover:shadow-2xl  group"
+                className="bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-3 flex justify-center items-center rounded-xl font-semibold transition-all duration-300 transform hover:shadow-2xl group"
               >
-                Ecouter la radio
+                {t("cta")}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-            </div>{" "}
+            </div>
           </div>
-          <StatsSection />
+
+          <StatsSection stats={stats} />
         </div>
       </motion.div>
 
+      {/* Galerie */}
       <Galerie />
     </section>
   );
@@ -59,13 +67,7 @@ const StatCard = ({ title, subtitle }: StatCardProps) => (
   </div>
 );
 
-function StatsSection() {
-  const stats = [
-    { title: "#1", subtitle: "Radio Économique" },
-    { title: "5+", subtitle: "Grandes Régions" },
-    { title: "📻", subtitle: "Contenu Éducatif" },
-  ];
-
+function StatsSection({ stats }: { stats: StatCardProps[] }) {
   return (
     <div className="flex items-center">
       <div className="hidden xl:block">

@@ -3,8 +3,10 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import ArticlesSection from "./Post";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 /* eslint-disable */
 export default function Hero() {
+  const t = useTranslations("africa_magazine");
   const [isAnimated, setIsAnimated] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
@@ -14,11 +16,7 @@ export default function Hero() {
     }, 4000);
     return () => clearInterval(interval);
   }, []);
-  const highlights = [
-    "Suivi par des millions de personnes",
-    "Couverture panafricaine",
-    "Actualités en temps réel",
-  ];
+  const highlights: string[] = t.raw("highlights");
   return (
     <div className="relative z-10 max-w-7xl mx-auto px-6 pt-12">
       <section className="py-16 px-4">
@@ -26,11 +24,11 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto mb-20">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Volet média - National & International
+              {t("title")}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto rounded-full"></div>
             <p className="text-xl text-gray-400 font-medium tracking-wide">
-              GATE OF AFRICA MAGAZINE
+              {t("subtitle")}
             </p>
           </div>
         </div>
@@ -46,16 +44,14 @@ export default function Hero() {
             >
               <div className="">
                 <h1 className="text-3xl md:text-3xl font-bold text-white leading-tight">
-                  Suivez en temps réel
+                  {t("headline")}
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-white mt-2">
-                    l&apos;évolution de l&apos;Afrique
+                    {t("subheadline")}
                   </span>
                 </h1>
               </div>
               <p className="text-md text-gray-300 leading-relaxed max-w-lg">
-                Découvrez &apos;actualité économique, politique et sociale du
-                continent africain avec le média en ligne de référence du groupe
-                Gate Africa.
+                {t("description")}
               </p>
 
               {/* Highlights */}
@@ -79,7 +75,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="group bg-gradient-to-r text-sm from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
                 >
-                  Visitez GateOfAfrica.com
+                  {t("cta")}
                   <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
                 </Link>
               </div>
@@ -132,10 +128,7 @@ export default function Hero() {
 
               {/* Caption */}
               <div className="mt-6 text-center">
-                <p className="text-sm text-gray-400 italic">
-                  Votre source d&apos;information de référence sur
-                  l&apos;Afrique
-                </p>
+                <p className="text-sm text-gray-400 italic">{t("caption")}</p>
               </div>
             </div>
           </div>

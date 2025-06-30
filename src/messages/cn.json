@@ -121,5 +121,58 @@
         ]
       }
     }
+  },
+  "africa_magazine": {
+    "title": "媒体板块 - 国内与国际",
+    "subtitle": "GATE OF AFRICA 杂志",
+    "headline": "实时追踪",
+    "subheadline": "非洲的发展进程",
+    "description": "通过 Gate Africa Group 的权威在线媒体平台，了解非洲大陆的经济、政治与社会动态。",
+    "highlights": ["数百万用户关注", "泛非覆盖", "新闻实时更新"],
+    "cta": "访问 GateOfAfrica.com",
+    "caption": "您可信赖的非洲资讯来源"
+  },
+  "radio": {
+    "title": "E-media 107.8 FM",
+    "subtitle": "您喜爱的本地电台",
+    "visitStudio": "参观我们的演播室",
+    "about": {
+      "features": [
+        "收听优质音乐、您喜爱的节目，并获取高质量的教育内容。",
+        "E-media FM：马达加斯加首屈一指的经济与教育类广播电台，覆盖全国五大主要地区。"
+      ],
+      "cta": "收听广播",
+      "stats": [
+        { "title": "#1", "subtitle": "经济广播电台" },
+        { "title": "5+", "subtitle": "主要地区" },
+        { "title": "📻", "subtitle": "教育内容" }
+      ]
+    }
+  },
+  "university": {
+    "title": "教育与高等教育板块",
+    "learnMore": "了解更多",
+    "synergy": "通过这种协同，我们培养的专业人才能够立即上岗，且完美契合企业和机构的需求。",
+    "sectionHeader": {
+      "badge": "学术卓越",
+      "title": "我们的三所大学优势",
+      "text1": "我们的优势在于三大高校的战略互补。",
+      "text2": "每所学校均具备针对性专业——先进技术、战略管理及创意产业，涵盖支持非洲重大经济转型的核心能力。"
+    },
+    "emedia": {
+      "name": "E-Media",
+      "description": "专注于视听、电影、音效及创意影像制作的大学",
+      "tags": ["视听", "电影", "制作"]
+    },
+    "ust": {
+      "name": "UST-IO",
+      "description": "专攻机器人、人工智能、自动化及新兴技术的大学",
+      "tags": ["机器人", "人工智能", "科技"]
+    },
+    "aeli": {
+      "name": "AELI",
+      "description": "聚焦建筑、能源、创业及应用技术专业的学院",
+      "tags": ["建筑", "能源", "商业"]
+    }
   }
 }

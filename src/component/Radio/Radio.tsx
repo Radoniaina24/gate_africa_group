@@ -1,10 +1,12 @@
 "use client";
+
 import { Radio } from "lucide-react";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import About from "./About";
-
 import GaleriePhotoAlbum from "./AlbumStudio";
-import { motion } from "framer-motion";
+
 const itemVariants = {
   hidden: { opacity: 0, y: 50, scale: 0.95 },
   show: {
@@ -19,8 +21,11 @@ const itemVariants = {
 };
 
 export default function RadioSection() {
+  const t = useTranslations("radio");
+
   return (
-    <section className="" id="radio">
+    <section id="radio">
+      {/* Decorative SVG Top Wave */}
       <div className="relative w-full overflow-hidden leading-[0] -mb-1">
         <svg
           className="block w-full h-0 md:h-20 rotate-180"
@@ -34,40 +39,41 @@ export default function RadioSection() {
           />
         </svg>
       </div>
-      <div className="bg-blue-900 text-white  p-6 md:p-8">
-        {/* En-tête */}
-        <header className=" flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+
+      <div className="bg-blue-900 text-white p-6 md:p-8">
+        {/* Header */}
+        <header className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
           <div className="flex items-center">
             <div className="bg-red-600 rounded-full p-3 mr-4">
               <Radio size={32} />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold">
-                E-media 107.8 FM
-              </h1>
-              <p className="text-lg text-blue-200">
-                Votre radio locale préférée
-              </p>
+              <h1 className="text-3xl md:text-4xl font-bold">{t("title")}</h1>
+              <p className="text-lg text-blue-200">{t("subtitle")}</p>
             </div>
           </div>
         </header>
-        <div></div>
+
+        {/* About Section */}
         <About />
+
+        {/* Studio Gallery Section */}
         <section className="py-10">
           <motion.div
-            className="max-w-7xl mx-auto  text-center"
+            className="max-w-7xl mx-auto text-center"
             variants={itemVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-4xl font-bold text-white mb-4">
-              Visitez notre studio
+            <h2 className="text-4xl font-bold text-white mb-4">
+              {t("visitStudio")}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-6"></div>
-            {/* <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Découvrez nos installations professionnelles et notre équipement de
-            pointe
-          </p> */}
           </motion.div>
-          {/* <Album /> */} <GaleriePhotoAlbum />
+
+          {/* Galerie des photos du studio */}
+          <GaleriePhotoAlbum />
         </section>
       </div>
     </section>

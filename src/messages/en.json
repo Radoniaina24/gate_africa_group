@@ -121,5 +121,63 @@
         ]
       }
     }
+  },
+  "africa_magazine": {
+    "title": "Media Segment – National & International",
+    "subtitle": "GATE OF AFRICA MAGAZINE",
+    "headline": "Follow in Real Time",
+    "subheadline": "Africa’s Evolution",
+    "description": "Explore the economic, political, and social news of the African continent through Gate Africa Group’s leading online media platform.",
+    "highlights": [
+      "Followed by millions",
+      "Pan-African coverage",
+      "Real-time news updates"
+    ],
+    "cta": "Visit GateOfAfrica.com",
+    "caption": "Your trusted source for African news"
+  },
+  "radio": {
+    "title": "E-media 107.8 FM",
+    "subtitle": "Your favorite local radio station",
+    "visitStudio": "Visit our studio",
+
+    "about": {
+      "features": [
+        "Listen to great music, your favorite shows, and access high-quality educational content.",
+        "E-media FM: The #1 economic and educational radio station in Madagascar, heard in more than 5 major regions of the country."
+      ],
+      "cta": "Listen to the radio",
+      "stats": [
+        { "title": "#1", "subtitle": "Economic Radio" },
+        { "title": "5+", "subtitle": "Major Regions" },
+        { "title": "📻", "subtitle": "Educational Content" }
+      ]
+    }
+  },
+  "university": {
+    "title": "Education and Higher Learning Segment",
+    "learnMore": "Learn More",
+    "synergy": "Thanks to this synergy, we train talents who are immediately operational and perfectly adapted to the needs of businesses and institutions.",
+    "sectionHeader": {
+      "badge": "Academic Excellence",
+      "title": "The Strength of Our 3 Universities",
+      "text1": "Our strength lies in the strategic complementarity of our three university centers.",
+      "text2": "Each institution brings targeted expertise — advanced technologies, strategic management, and creative industries — covering all essential skills to support Africa's major economic transformations."
+    },
+    "emedia": {
+      "name": "E-Media",
+      "description": "University dedicated to audiovisual, cinema, sound, and creative fields of image and production",
+      "tags": ["Audiovisual", "Cinema", "Production"]
+    },
+    "ust": {
+      "name": "UST-IO",
+      "description": "University specialized in robotics, artificial intelligence, automation, and emerging technologies",
+      "tags": ["Robotics", "AI", "Tech"]
+    },
+    "aeli": {
+      "name": "AELI",
+      "description": "Academy focused on construction, energy, entrepreneurship, and applied technical professions",
+      "tags": ["Construction", "Energy", "Business"]
+    }
   }
 }
