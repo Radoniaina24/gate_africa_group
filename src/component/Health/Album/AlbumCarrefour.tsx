@@ -27,7 +27,7 @@ const galerie: GalerieItem[] = [
     title: "Studio Principal",
   },
   {
-    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1750772041/10_ryyncy.jpg",
+    src: "https://res.cloudinary.com/dikefxjpd/image/upload/v1751349305/10_ryyncy_m7r94x.jpg",
     alt: "Photo radio 1",
     title: "Studio Principal",
   },
