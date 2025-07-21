@@ -106,9 +106,9 @@ export default function ProfessionalLayout() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   {t("activity_title")}
                 </h2>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                {/* <p className="text-sm text-gray-600 leading-relaxed">
                   {t("activity_description")}
-                </p>
+                </p> */}
               </div>
 
               <div className="">
